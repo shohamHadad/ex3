@@ -9,7 +9,7 @@
  * operation: constructor
  */
 Game::Game() {
-	this->logic = new GameLogic(new Board(8));
+	this->logic = new GameLogic(new Board(4));
 	this->X = new Player('X');
 	this->O = new Player('O');
 }

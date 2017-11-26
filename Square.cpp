@@ -10,7 +10,7 @@ using namespace std;
  * output: a new Square object
  * operation: constructor
  */
-Square::Square(int x, int y): x(x), y(y) {
+Square::Square(int x, int y): x(x), y(y), type(' ') {
 }
 
 /**
@@ -55,3 +55,25 @@ bool Square::equals(Square other) {
 	}
 	return false;
 }
+
+/**
+ * function name: setType
+ * input: char
+ * output: void
+ * operation: set the square's type
+ */
+void Square::setType(char t) {
+	type = t;
+}
+
+/**
+ * function name: getType
+ * input: void
+ * output: char
+ * operation: returns the square's type
+ */
+char Square::getType() {
+	return type;
+}
+
+

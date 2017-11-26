@@ -2,7 +2,9 @@
 
 #ifndef BOARD_H_
 #define BOARD_H_
-
+#include "Square.h"
+#include <vector>
+using namespace std;
 enum Winner{X, O, tie};
 
 /**
@@ -12,17 +14,19 @@ class Board {
 private:
 	int size;
 	void drawLine();
-	char** array;
+	//char** array;
+	vector< vector<Square*> > array;
 
 public:
 	Board(int s = 8);
 	void print();
 	~Board();
-	char** getArray();
+	char getSquaresType(int, int);
 	int getSize();
 	bool isEmpty(int, int);
 	bool isOutOfBounderies(int, int);
 	char getType(int, int);
+	void setType(int, int, char);
 	bool isboardfull();
 	Winner whoWin();
 };

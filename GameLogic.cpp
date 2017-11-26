@@ -101,12 +101,12 @@ bool GameLogic::checkDirection(Player* current, Player* opponent, int x, int y, 
 	// if this cell is out of bounderies, or empty,
 	// or it's our cell but we didn't pass any opponent's cells on the way
 	if (board->isOutOfBounderies(x, y) || board->isEmpty(x, y)
-			|| (board->getArray()[x][y] == current->getType() && length == 0)) {
+			|| (board->getType(x,y) == current->getType() && length == 0)) {
 		return false;
 	}
 	// if we've reached our own cell
 	// (and there was an opponent's cell on our way)
-	if (board->getArray()[x][y] == current->getType()) {
+	if (board->getType(x,y) == current->getType()) {
 		return true;
 	}
 	// if this is an opponent's cell
@@ -126,13 +126,13 @@ bool GameLogic::flipInRightDirection(Player* current, Player* opponent, int x, i
 	}
 	// if we've reached our own cell
 	// (and there was an opponent's cell on our way)
-	if (board->getArray()[x][y] == current->getType()) {
+	if (board->getType(x,y) == current->getType()) {
 		return true;
 	}
 	// if this direction is good - it's the opponent's cell
 	if (flipInRightDirection(current, opponent, x+dx, y+dy, dx, dy)) {
 		// flip the disk
-		board->getArray()[x][y] = current->getType();
+		board->setType(x, y, current->getType());
 		return true;
 	} else {
 		return false;
@@ -150,35 +150,35 @@ void GameLogic::turnDisks(Player* current, Player* opponent, Square move) {
 	int y = move.getY()-1;
 	// check upper left
 	if (flipInRightDirection(current, opponent, x-1, y-1, -1, -1)) {
-		board->getArray()[x][y] = current->getType();
+		board->setType(x, y, current->getType());
 	}
 	// check upper mid
 	if (flipInRightDirection(current, opponent, x-1, y, -1, 0)) {
-		board->getArray()[x][y] = current->getType();
+		board->setType(x, y, current->getType());
 	}
 	// check upper right
 	if (flipInRightDirection(current, opponent, x-1, y+1, -1, 1)) {
-		board->getArray()[x][y] = current->getType();
+		board->setType(x, y, current->getType());
 	}
 	// check mid left
 	if (flipInRightDirection(current, opponent, x, y-1, 0, -1)) {
-		board->getArray()[x][y] = current->getType();
+		board->setType(x, y, current->getType());
 	}
 	// check mid right
 	if (flipInRightDirection(current, opponent, x, y+1, 0, 1)) {
-		board->getArray()[x][y] = current->getType();
+		board->setType(x, y, current->getType());
 	}
 	// check lower left
 	if (flipInRightDirection(current, opponent, x+1, y-1, 1, -1)) {
-		board->getArray()[x][y] = current->getType();
+		board->setType(x, y, current->getType());
 	}
 	// check lower mid
 	if (flipInRightDirection(current, opponent, x+1, y, 1, 0)) {
-		board->getArray()[x][y] = current->getType();
+		board->setType(x, y, current->getType());
 	}
 	// check mid right
 	if (flipInRightDirection(current, opponent, x+1, y+1, 1, 1)) {
-		board->getArray()[x][y] = current->getType();
+		board->setType(x, y, current->getType());
 	}
 }
 
@@ -190,13 +190,13 @@ void GameLogic::turnDisks(Player* current, Player* opponent, Square move) {
  */
 void GameLogic::printPossibleMoves(vector <Square> moves) {
 	cout << "Your possible moves are: ";
-		for (int i = 0; i < moves.size(); i++) {
-			if (i != 0) {
-				cout << ",";
-			}
-			moves[i].print();
+	for (int i = 0; i < moves.size(); i++) {
+		if (i != 0) {
+			cout << ",";
 		}
-		cout << endl;
+		moves[i].print();
+	}
+	cout << endl;
 }
 
 /**
@@ -233,6 +233,7 @@ void GameLogic::playOneTurn(Player* current, Player* opponent) {
  */
 bool GameLogic::gameShouldStop(Player* X, Player* O) {
 	if (possibleMoves(X,O).empty() && possibleMoves(O,X).empty()) {
+		board->print();
 		cout << "No more possible moves for both players." << endl;
 		return true;
 	}

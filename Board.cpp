@@ -12,18 +12,20 @@ using namespace std;
  */
 Board::Board(int s) {
 	size = s;
-	// initialize the array
-	array = new char*[size];
+	array = vector<vector<Square*> >(size, vector<Square*> (size));
 	for (int i = 0; i < size; i++) {
-		array[i] = new char[size];
+		array[i] = vector<Square*>(size);
+	}
+	for (int i = 0; i < size; i++) {
 		for (int j = 0; j < size; j++) {
-			array[i][j] = ' ';
+			array[i][j] = new Square(i, j);
 		}
 	}
-	array[size/2 - 1][size/2 - 1] = 'O';
-	array[size/2][size/2] = 'O';
-	array[size/2 - 1][size/2] = 'X';
-	array[size/2][size/2 - 1] = 'X';
+
+	array[size/2 -1][size/2 -1]->setType('O');
+	array[size/2][size/2]->setType('O');
+	array[size/2 - 1][size/2]->setType('X');
+	array[size/2][size/2 - 1]->setType('X');
 }
 
 /**
@@ -34,9 +36,10 @@ Board::Board(int s) {
  */
 Board::~Board() {
 	for (int i = 0; i < size; i++) {
-			delete array[i];
+		for (int j = 0; j < size; j++) {
+			delete array[i][j];
+		}
 	}
-	delete array;
 }
 
 /**
@@ -66,7 +69,7 @@ void Board::print() {
 					continue;
 				}
 				cout << " | " << j;
-				if (j == 8) {
+				if (j == size) {
 					cout << " |" << endl;
 					drawLine();
 					continue;
@@ -74,9 +77,9 @@ void Board::print() {
 			} else if (j == 0) {
 				cout << i << "|";
 			} else {
-				cout << " " << this->array[i - 1][j - 1] << " |";
+				cout << " " << this->array[i - 1][j - 1]->getType() << " |";
 			}
-			if (j == 8) {
+			if (j == size) {
 				cout << endl;
 				drawLine();
 			}
@@ -85,13 +88,13 @@ void Board::print() {
 }
 
 /**
- * function name: getArray
- * input: void
- * output: 2D array of chars
- * operation: returns the board's array
+ * function name: get type
+ * input: x and y indexes
+ * output: char
+ * operation: returns the state of the given location in the array
  */
-char** Board::getArray() {
-	return array;
+char Board::getType(int i, int j) {
+	return array[i][j]->getType();
 }
 
 /**
@@ -101,7 +104,7 @@ char** Board::getArray() {
  * operation: checks if the given location is empty
  */
 bool Board::isEmpty(int x, int y){
-	if (array[x][y] == ' ') {
+	if (array[x][y]->getType() == ' ') {
 		return true;
 	}
 	return false;
@@ -121,16 +124,6 @@ bool Board::isOutOfBounderies(int x, int y){
 }
 
 /**
- * function name: get type
- * input: x and y indexes
- * output: char
- * operation: returns the state of the given location in the array
- */
-char Board::getType(int x, int y) {
-	return array[x][y];
-}
-
-/**
  * function name: isBoardFull
  * input: void
  * output: boolean
@@ -139,7 +132,7 @@ char Board::getType(int x, int y) {
 bool Board::isboardfull() {
 	for (int i = 0; i < size; i++) {
 		for (int j = 0; j < size; j++) {
-			if (array[i][j] == ' ') {
+			if (array[i][j]->getType() == ' ') {
 				return false;
 			}
 		}
@@ -157,6 +150,9 @@ int Board::getSize() {
 	return size;
 }
 
+void Board::setType(int i, int j, char newType) {
+	array[i][j]->setType(newType);
+}
 /**
  * function name: whoWin
  * input: void
@@ -168,9 +164,9 @@ Winner Board::whoWin() {
 	int o = 0;
 	for (int i = 0; i < size; i++) {
 		for (int j = 0; j < size; j++) {
-			if (array[i][j] == 'X') {
+			if (array[i][j]->getType() == 'X') {
 				x++;
-			} else if (array[i][j] == 'O') {
+			} else if (array[i][j]->getType() == 'O') {
 				o++;
 			}
 		}
