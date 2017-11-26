@@ -11,7 +11,6 @@
 Game::Game() {
 	this->logic = new GameLogic(new Board(4));
 	this->X = new HumanPlayer('X');
-	this->O = new HumanPlayer('O');
 }
 
 /**
@@ -25,6 +24,30 @@ Game::~Game() {
 	delete this->X;
 	delete this->O;
 }
+
+/**
+ * function name: initialize
+ * input: void
+ * output: void
+ * operation: get the user's chosen opponent and initialize the game with it
+ */
+void Game::initialize() {
+	cout << "Welcome to Reversi!" << endl << "If you want to play against another human, enter 'H'"
+	<< endl	<< "If you want to play against the computer, enter 'C'" << endl;
+	char c;
+	cin >> c;
+	while (c != 'H' && c != 'C') {
+		printf("Please choose between 'H' and 'C\'n");
+		cin >> c;
+	}
+	if (c == 'C') {
+		this->O = new AIPlayer('O');
+	}
+	if (c == 'H') {
+		this->O = new HumanPlayer('O');
+	}
+}
+
 
 /**
  * function name: play

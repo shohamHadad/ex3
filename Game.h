@@ -3,8 +3,14 @@
 #ifndef GAME_H_
 #define GAME_H_
 #include "GameLogic.h"
-#include "stdlib.h"
 #include "HumanPlayer.h"
+#include "AIPlayer.h"
+#include "stdlib.h"
+#include <stdio.h>
+#include <iostream>
+#include <limits>
+using namespace std;
+
 
 /**
  * the game can be played.
@@ -19,6 +25,7 @@ public:
 	Game();
 	virtual ~Game();
 	void play();
+	void initialize();
 };
 
 #endif /* GAME_H_ */

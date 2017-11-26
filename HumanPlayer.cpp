@@ -1,10 +1,3 @@
-/*
- * HumanPlayer.cpp
- *
- *  Created on: Nov 26, 2017
- *      Author: shir
- */
-
 #include "HumanPlayer.h"
 
 HumanPlayer::HumanPlayer(char type): Player(type) {
