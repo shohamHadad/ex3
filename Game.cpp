@@ -37,7 +37,7 @@ void Game::initialize() {
 	char c;
 	cin >> c;
 	while (c != 'H' && c != 'C') {
-		printf("Please choose between 'H' and 'C\'n");
+		cout << "Please choose between 'H' and 'C'" << endl;
 		cin >> c;
 	}
 	if (c == 'C') {
@@ -56,6 +56,7 @@ void Game::initialize() {
  * operation: activates the game loop
  */
 void Game::play() {
+	logic->printBoard();
 	while (!logic->gameShouldStop(X, O)) {
 		Player* current;
 		Player* opponent;

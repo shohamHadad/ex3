@@ -182,22 +182,6 @@ void GameLogic::turnDisks(Player* current, Player* opponent, Square move) {
 	}
 }
 
-/**
- * function name: printPossibleMoves
- * input: vector<Square>
- * output: void
- * operation: prints out the moves
- */
-void GameLogic::printPossibleMoves(vector <Square> moves) {
-	cout << "Your possible moves are: ";
-	for (int i = 0; i < moves.size(); i++) {
-		if (i != 0) {
-			cout << ",";
-		}
-		moves[i].print();
-	}
-	cout << endl;
-}
 
 /**
  * function name: playOneTurn
@@ -206,8 +190,7 @@ void GameLogic::printPossibleMoves(vector <Square> moves) {
  * operation: prints out the board, get the player's next move and operates it
  */
 void GameLogic::playOneTurn(Player* current, Player* opponent) {
-	board->print();
-	cout << current->getType() << ": It's youre move.";
+	cout << current->getType() << ": It's youre move. ";
 	// check if there are possible moves
 	vector<Square> moves = possibleMoves(current, opponent);
 	if (moves.empty()) {
@@ -215,15 +198,29 @@ void GameLogic::playOneTurn(Player* current, Player* opponent) {
 		this->turns++;
 		return;
 	}
-	// print the moves to the current player
-	printPossibleMoves(moves);
 	// get the player's next move
 	Square nextMove = current->chooseSquare(moves);
 	// make the move
 	turnDisks(current, opponent, nextMove);
+	// print the move
+	board->print();
+	cout << current->getType() << " Played ";
+	nextMove.print();
+	cout << endl << endl;
 	// update turn
 	turns++;
 }
+
+/**
+ * function name: printBoard
+ * input: void
+ * output: void
+ * operation: prints out the board.
+ */
+void GameLogic::printBoard() {
+	board->print();
+}
+
 
 /**
  * function name: gameShouldStop
@@ -233,7 +230,6 @@ void GameLogic::playOneTurn(Player* current, Player* opponent) {
  */
 bool GameLogic::gameShouldStop(Player* X, Player* O) {
 	if (possibleMoves(X,O).empty() && possibleMoves(O,X).empty()) {
-		board->print();
 		cout << "No more possible moves for both players." << endl;
 		return true;
 	}

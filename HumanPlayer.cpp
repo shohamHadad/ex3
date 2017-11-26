@@ -14,6 +14,8 @@ HumanPlayer::~HumanPlayer() {
  * operation: get a valid move from the user and returns it
  */
 Square HumanPlayer::chooseSquare(vector<Square> possibleMoves) {
+	// print the moves to the current player
+	printPossibleMoves(possibleMoves);
 	cout << endl << "Please enter your move, row col:";
 	int x,y;
 	while (true) {
@@ -32,3 +34,19 @@ Square HumanPlayer::chooseSquare(vector<Square> possibleMoves) {
 	}
 }
 
+/**
+ * function name: printPossibleMoves
+ * input: vector<Square>
+ * output: void
+ * operation: prints out the moves
+ */
+void HumanPlayer::printPossibleMoves(vector <Square> moves) {
+	cout << "Your possible moves are: ";
+	for (int i = 0; i < moves.size(); i++) {
+		if (i != 0) {
+			cout << ",";
+		}
+		moves[i].print();
+	}
+	cout << endl;
+}

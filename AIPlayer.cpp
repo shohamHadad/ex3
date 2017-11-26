@@ -14,4 +14,5 @@ AIPlayer::~AIPlayer() {
  */
 Square AIPlayer::chooseSquare(vector<Square> possibleMoves) {
 
+	//
 }

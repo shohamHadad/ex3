@@ -62,6 +62,7 @@ void Board::drawLine() {
  * operation: print out the board
  */
 void Board::print() {
+	cout << endl;
 	for (int i = 0; i < size + 1; i++) {
 		for (int j = 0; j < size + 1; j++) {
 			if (i == 0) {

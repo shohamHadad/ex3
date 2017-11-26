@@ -20,12 +20,12 @@ public:
 	GameLogic(Board*);
 	virtual ~GameLogic();
 	vector<Square> possibleMoves(Player*, Player*);
+	void printBoard();
 	void turnDisks(Player*, Player*, Square);
 	bool flipInRightDirection(Player*, Player*, int, int, int, int);
 	bool isPossibleMove(int, int, Player*, Player*);
 	bool checkDirection(Player*, Player*, int, int, int, int, int);
 	void playOneTurn(Player*, Player*);
-	void printPossibleMoves(vector <Square>);
 	bool gameShouldStop(Player*, Player*);
 	Player* whosTurn(Player*, Player*);
 	GameOver gameStopped(Player*, Player*);

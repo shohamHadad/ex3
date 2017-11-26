@@ -6,7 +6,6 @@
 #include "HumanPlayer.h"
 #include "AIPlayer.h"
 #include "stdlib.h"
-#include <stdio.h>
 #include <iostream>
 #include <limits>
 using namespace std;

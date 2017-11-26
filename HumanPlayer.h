@@ -12,6 +12,7 @@ public:
 	HumanPlayer(char);
 	~HumanPlayer();
 	Square chooseSquare(vector<Square>);
+	void printPossibleMoves(vector <Square> moves);
 };
 
 #endif /* HUMANPLAYER_H_ */
