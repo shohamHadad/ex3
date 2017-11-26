@@ -3,8 +3,8 @@
 #ifndef GAME_H_
 #define GAME_H_
 #include "GameLogic.h"
-#include "Player.h"
 #include "stdlib.h"
+#include "HumanPlayer.h"
 
 /**
  * the game can be played.

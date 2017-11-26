@@ -11,12 +11,12 @@
  * Player can be from type X or type O.
  */
 class Player {
-private:
+protected:
 	char type;
 public:
 	Player(char);
-	Square chooseSquare(vector<Square>);
-	~Player();
+	virtual Square chooseSquare(vector<Square>);
+	virtual ~Player();
 	char getType();
 	bool equals(Player*);
 };
