@@ -2,7 +2,7 @@
 
 #ifndef SQUARE_H_
 #define SQUARE_H_
-
+#include <vector>
 using namespace std;
 
 /*
@@ -21,6 +21,7 @@ public:
 	char getType();
 	bool equals(Square);
 	void setType(char);
+	vector<Square> adaptVectorToGameFormat(vector<Square>);
 };
 
 #endif /* SQUARE_H_ */

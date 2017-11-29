@@ -16,12 +16,11 @@ AIPlayer::~AIPlayer() {
  * operation: get a valid move from the user and returns it
  */
 Square AIPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Player* opponent) {
-    vector <Square> adaptedPossibleMoves;
+    //vector <Square> adaptedPossibleMoves = possibleMoves[0].adaptVectorToGameFormat();
 	vector <Square> opponentMoves;
     vector<int> grade;
     vector<int> gradeFinal;
     int xBefore, xAfter;
-    //Board* OriginalBoard = gameLogic->getBoard();
 
     // go over possibleMoves
     for (unsigned int i = 0; i < possibleMoves.size(); i++) {
@@ -71,8 +70,9 @@ Square AIPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Pla
                 possibleMove = k;
             }
         }
+        Square result = Square(possibleMoves[possibleMove].getX()+1, possibleMoves[possibleMove].getY()+1);
         delete gameLogicCopy;
-        return possibleMoves[possibleMove];
+        return result;
 //    }
 //    return possibleMoves[0];
 }
