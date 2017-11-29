@@ -4,6 +4,7 @@
 #define AIPLAYER_H_
 #include "Player.h"
 #include "GameLogic.h"
+#include "Square.h"
 #include <iostream>
 using namespace std;
 
@@ -13,9 +14,9 @@ private:
 	GameLogic *gameLogicCopy;
 	//Board board;
 public:
-	AIPlayer(char ,GameLogic* gameLogic);
+	AIPlayer(char ,GameLogic*);
 	virtual ~AIPlayer();
-	Square chooseSquare(vector<Square>, Player* current, Player* opponent);
+	Square chooseSquare(vector<Square>, Player*, Player*);
 };
 
 #endif /* AIPLAYER_H_ */

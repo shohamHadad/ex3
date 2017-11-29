@@ -22,7 +22,7 @@ GameLogic::GameLogic(Board* board): turns(0) {
  * operation: destructor
  */
 GameLogic::~GameLogic() {
-	delete this->board;
+	delete board;
 }
 
 /**

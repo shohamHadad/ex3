@@ -76,4 +76,11 @@ char Square::getType() {
 	return type;
 }
 
-
+vector<Square> Square::adaptVectorToGameFormat(vector<Square> moves) {
+	vector<Square> adaptedMoves;
+	for (int i = 0; i < moves.size(); i++) {
+		Square s = Square(moves[i].getX()-1, moves[i].getY()-1);
+		adaptedMoves.push_back(s);
+	}
+	return adaptedMoves;
+}

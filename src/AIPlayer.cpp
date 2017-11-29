@@ -1,9 +1,9 @@
 #include "../include/AIPlayer.h"
 
-AIPlayer::AIPlayer(char type, GameLogic* gameLogic): Player(type){
-     this->gameLogic = gameLogic;
-    this->gameLogicCopy = gameLogic;
-    //this->gameLogic1 = new GameLogic((gameLogic->getBoard()));
+
+AIPlayer::AIPlayer(char type, GameLogic* gl): Player(type){
+    gameLogic = gl;
+    //gameLogicCopy = gl;
 }
 
 AIPlayer::~AIPlayer() {
@@ -16,46 +16,66 @@ AIPlayer::~AIPlayer() {
  * operation: get a valid move from the user and returns it
  */
 Square AIPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Player* opponent) {
-    vector <Square> moves;
+    vector <Square> adaptedPossibleMoves;
+	vector <Square> opponentMoves;
     vector<int> grade;
     vector<int> gradeFinal;
-    int xBefore, xAfter, y, x;
-    Board *board = this->gameLogic->getBoard();
-    for (int i = 0; i < possibleMoves.size(); ++i) {
-        Board board1(*board);
-        this->gameLogicCopy = new GameLogic(&board1);
-        this->gameLogicCopy->turnDisks(current, opponent, possibleMoves[i]);
-        moves = this->gameLogicCopy->possibleMoves(opponent, current);
-        for (int j = 0; j < moves.size(); ++j) {
-            xBefore = board1.numOfX();
-            this->gameLogicCopy->turnDisks(opponent, current, moves[j]);
-            xAfter = board1.numOfX();
+    int xBefore, xAfter;
+    //Board* OriginalBoard = gameLogic->getBoard();
+
+    // go over possibleMoves
+    for (unsigned int i = 0; i < possibleMoves.size(); i++) {
+        Board boardCopy(*(gameLogic->getBoard()));
+        gameLogicCopy = new GameLogic(&boardCopy);
+        // turn the disks of the i'th move
+        gameLogicCopy->turnDisks(current, opponent, possibleMoves[i]);
+        // create possible moves vector for the opponent for the i'th move
+        opponentMoves = gameLogicCopy->possibleMoves(opponent, current);
+
+        // go over the opponent's moves
+        for (unsigned int j = 0; j < opponentMoves.size(); j++) {
+        	xBefore = boardCopy.numOfX();
+        	// turn the disks of the j'th move
+            gameLogicCopy->turnDisks(opponent, current, opponentMoves[j]);
+            xAfter = boardCopy.numOfX();
+            // if the j'th move increases the number of x's
             if (xAfter >= xBefore) {
+            	// grade the move as the number of the added x's
                 grade.push_back(xAfter - xBefore);
             } else {
+            	// grade it as 0
                 grade.push_back(0);
             }
         }
-        if (!grade.empty()) {
+
+        // if it's not the first iteration
+ //       if (!grade.empty()) {
             int max = grade[0];
-            for (int i = 0; i < grade.size(); i++) {
-                if (grade[i] > max) {
-                    max = grade[i];
+            // go over the current grades
+            for (unsigned int k = 0; k < grade.size(); k++) {
+            	// update the max grade
+                if (grade[k] > max) {
+                    max = grade[k];
                 }
             }
+            // push the max grade as this possible move's grade
             gradeFinal.push_back(max);
-        }
-        int possibleMove = 0;
-        if (!gradeFinal.empty()) {
-            int min = gradeFinal[0];
-            for (int i = 0; i < gradeFinal.size(); i++) {
-                if (gradeFinal[i] < min) {
-                    possibleMove = i;
-                }
-            }
-            delete gameLogicCopy;
-            return possibleMoves[possibleMove];
-        }
+//        }
+
     }
-    return possibleMoves[0];
+    int possibleMove = 0;
+//    if (!gradeFinal.empty()) {
+        int min = gradeFinal[0];
+        for (unsigned int k = 0; k < gradeFinal.size(); k++) {
+            if (gradeFinal[k] < min) {
+                possibleMove = k;
+            }
+        }
+  //  }
+//    return possibleMoves[0];
+//}
+     delete gameLogicCopy;
+     return possibleMoves[possibleMove];
+//    }
+  //  return possibleMoves[0];
 }

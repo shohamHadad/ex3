@@ -20,9 +20,9 @@ Game::Game() {
  * operation: destructor
  */
 Game::~Game() {
-	delete this->logic;
-	delete this->X;
-	delete this->O;
+	delete logic;
+	delete X;
+	delete O;
 }
 
 /**
