@@ -1,9 +1,8 @@
+#include "../include/AIPlayer.h"
 
-#include "AIPlayer.h"
 
 AIPlayer::AIPlayer(char type, GameLogic* gl): Player(type){
     gameLogic = gl;
-    //gameLogicCopy = gl;
 }
 
 AIPlayer::~AIPlayer() {
@@ -16,7 +15,6 @@ AIPlayer::~AIPlayer() {
  * operation: get a valid move from the user and returns it
  */
 Square AIPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Player* opponent) {
-    //vector <Square> adaptedPossibleMoves = possibleMoves[0].adaptVectorToGameFormat();
 	vector <Square> opponentMoves;
     vector<int> grade;
     vector<int> gradeFinal;
@@ -30,7 +28,6 @@ Square AIPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Pla
         gameLogicCopy->turnDisks(current, opponent, possibleMoves[i]);
         // create possible moves vector for the opponent for the i'th move
         opponentMoves = gameLogicCopy->possibleMoves(opponent, current);
-
         // go over the opponent's moves
         for (unsigned int j = 0; j < opponentMoves.size(); j++) {
         	xBefore = boardCopy.numOfX();
@@ -46,9 +43,8 @@ Square AIPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Pla
                 grade.push_back(0);
             }
         }
-
         // if it's not the first iteration
-//        if (!grade.empty()) {
+ //       if (!grade.empty()) {
             int max = grade[0];
             // go over the current grades
             for (unsigned int k = 0; k < grade.size(); k++) {
@@ -60,7 +56,7 @@ Square AIPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Pla
             // push the max grade as this possible move's grade
             gradeFinal.push_back(max);
 //        }
-
+        delete gameLogicCopy;
     }
     int possibleMove = 0;
 //    if (!gradeFinal.empty()) {
@@ -74,5 +70,7 @@ Square AIPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Pla
         delete gameLogicCopy;
         return result;
 //    }
-//    return possibleMoves[0];
+
+     delete gameLogicCopy;
+     return possibleMoves[possibleMove];
 }

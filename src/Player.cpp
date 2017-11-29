@@ -1,6 +1,6 @@
 // Shir kempinski - 312253719 - ex2
 
-#include "Player.h"
+#include "../include/Player.h"
 #include <iostream>
 #include <limits>
 using namespace std;

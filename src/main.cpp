@@ -1,6 +1,6 @@
 // Shir kempinski - 312253719 - ex2
 
-#include "Game.h"
+#include "../include/Game.h"
 using namespace std;
 
 int main() {
