@@ -29,7 +29,7 @@ Board::Board(int s) {
 }
 
 Board::Board(const Board &board){
-	this->size = board.size;
+	size = board.size;
 	array = vector<vector<Square*> >(board.size, vector<Square*> (board.size));
 	for (int i = 0; i < size; i++) {
 		array[i] = vector<Square*>(size);

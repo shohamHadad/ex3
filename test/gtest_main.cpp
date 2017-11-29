@@ -7,7 +7,7 @@
 
 #include "gtest/gtest.h"
 
-GTEST API int main(int argc, char **argv) {
+GTEST_API_ int main(int argc, char **argv) {
 	testing::InitGoogleTest(&argc, argv);
-	return RUN ALL TESTS();
+	return RUN_ALL_TESTS();
 }
