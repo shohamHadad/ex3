@@ -199,7 +199,7 @@ void GameLogic::playOneTurn(Player* current, Player* opponent) {
 		return;
 	}
 	// get the player's next move
-	Square nextMove = current->chooseSquare(moves);
+	Square nextMove = current->chooseSquare(moves,current, opponent);
 	// make the move
 	turnDisks(current, opponent, nextMove);
 	// print the move
@@ -280,4 +280,13 @@ void GameLogic::endGame() {
 	} else {
 		cout << " No one wins - it's a tie." << endl;
 	}
+}
+/**
+ * function name: getBoard
+ * input: Board*
+ * output: board of the game.
+ * operation: returns the board of the game.
+ */
+Board* GameLogic::getBoard(){
+    return  this->board;
 }

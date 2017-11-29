@@ -28,6 +28,19 @@ Board::Board(int s) {
 	array[size/2][size/2 - 1]->setType('X');
 }
 
+Board::Board(const Board &board){
+	this->size = board.size;
+	array = vector<vector<Square*> >(board.size, vector<Square*> (board.size));
+	for (int i = 0; i < size; i++) {
+		array[i] = vector<Square*>(size);
+	}
+	for (int i = 0; i < size; i++) {
+		for (int j = 0; j < size; j++) {
+			array[i][j] = new Square(i, j);
+		}
+	}
+}
+
 /**
  * function name: ~Board
  * input: void
@@ -179,4 +192,22 @@ Winner Board::whoWin() {
 	} else {
 		return tie;
 	}
+}
+
+/**
+ * function name: numOfX
+ * input: int
+ * output: number of x's in the board.
+ * operation: the function counts number of x's in the board.
+ */
+int Board::numOfX(){
+	int x = 0;
+	for (int i = 0; i < size; i++) {
+		for (int j = 0; j < size; j++) {
+			if (array[i][j]->getType() == 'X') {
+				x++;
+			}
+		}
+	}
+	return x;
 }

@@ -19,6 +19,7 @@ private:
 
 public:
 	Board(int s = 8);
+	Board(const Board &board);
 	void print();
 	~Board();
 	char getSquaresType(int, int);
@@ -29,6 +30,7 @@ public:
 	void setType(int, int, char);
 	bool isboardfull();
 	Winner whoWin();
+	int numOfX();
 };
 
 #endif /* BOARD_H_ */

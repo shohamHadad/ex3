@@ -28,7 +28,7 @@ Player::~Player(){}
  * output: Square
  * operation: get a valid move from the user and returns it
  */
-Square Player::chooseSquare(vector<Square> possibleMoves) {
+Square Player::chooseSquare(vector<Square> possibleMoves, Player* current, Player* opponent) {
 
 }
 

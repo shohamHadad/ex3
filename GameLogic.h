@@ -30,6 +30,8 @@ public:
 	Player* whosTurn(Player*, Player*);
 	GameOver gameStopped(Player*, Player*);
 	void endGame();
+    Board* getBoard();
+
 };
 
 #endif /* GAMELOGIC_H_ */

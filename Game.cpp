@@ -41,7 +41,7 @@ void Game::initialize() {
 		cin >> c;
 	}
 	if (c == 'C') {
-		this->O = new AIPlayer('O');
+		this->O = new AIPlayer('O', logic);
 	}
 	if (c == 'H') {
 		this->O = new HumanPlayer('O');

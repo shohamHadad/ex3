@@ -13,7 +13,7 @@ HumanPlayer::~HumanPlayer() {
  * output: Square
  * operation: get a valid move from the user and returns it
  */
-Square HumanPlayer::chooseSquare(vector<Square> possibleMoves) {
+Square HumanPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Player* opponent) {
 	// print the moves to the current player
 	printPossibleMoves(possibleMoves);
 	cout << endl << "Please enter your move, row col:";
