@@ -16,7 +16,7 @@ AIPlayer::~AIPlayer() {
  * operation: get a valid move from the user and returns it
  */
 Square AIPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Player* opponent) {
-    vector<Square> moves;
+    vector <Square> moves;
     vector<int> grade;
     vector<int> gradeFinal;
     int xBefore, xAfter, y, x;
@@ -59,5 +59,4 @@ Square AIPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Pla
     }
     delete gameLogicCopy;
     return possibleMoves[0];
-
 }

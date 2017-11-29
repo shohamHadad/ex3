@@ -14,7 +14,6 @@ class Board {
 private:
 	int size;
 	void drawLine();
-	//char** array;
 	vector< vector<Square*> > array;
 
 public:
@@ -22,7 +21,6 @@ public:
 	Board(const Board &board);
 	void print();
 	~Board();
-	char getSquaresType(int, int);
 	int getSize();
 	bool isEmpty(int, int);
 	bool isOutOfBounderies(int, int);
