@@ -23,16 +23,6 @@ Player::Player(char type): type(type) {
 Player::~Player(){}
 
 /**
- * function name: chooseSquare
- * input: vector<Square>
- * output: Square
- * operation: get a valid move from the user and returns it
- */
-Square Player::chooseSquare(vector<Square> possibleMoves) {
-
-}
-
-/**
  * function name: getType
  * input: void
  * output: char

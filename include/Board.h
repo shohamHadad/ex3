@@ -14,14 +14,12 @@ class Board {
 private:
 	int size;
 	void drawLine();
-	//char** array;
 	vector< vector<Square*> > array;
 
 public:
-	Board(int s = 8);
+	Board(int s);
 	void print();
 	~Board();
-	char getSquaresType(int, int);
 	int getSize();
 	bool isEmpty(int, int);
 	bool isOutOfBounderies(int, int);

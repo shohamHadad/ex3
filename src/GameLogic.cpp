@@ -253,18 +253,6 @@ Player* GameLogic::whosTurn(Player* X, Player* O) {
 }
 
 /**
- * function name: gameStopped
- * input: 2 players
- * output: GameOver
- * operation: returns the reason for the end of the game.
- */
-GameOver GameLogic::gameStopped(Player* X, Player* O) {
-	if (board->isboardfull()) {
-		return FullBoard;
-	} return NoMoreMoves;
-}
-
-/**
  * function name: endGame
  * input: void
  * output: void

@@ -7,8 +7,6 @@
 #include <vector>
 using namespace std;
 
-enum GameOver {NoMoreMoves, FullBoard};
-
 /**
  * responsible for the logical flow of the game.
  */
@@ -28,7 +26,6 @@ public:
 	void playOneTurn(Player*, Player*);
 	bool gameShouldStop(Player*, Player*);
 	Player* whosTurn(Player*, Player*);
-	GameOver gameStopped(Player*, Player*);
 	void endGame();
 };
 
