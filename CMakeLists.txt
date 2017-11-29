@@ -1,23 +1,23 @@
 cmake_minimum_required(VERSION 3.8)
-project(ex3old)
+project(ex3)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 98)
 
 set(SOURCE_FILES
-        AIPlayer.cpp
-        AIPlayer.h
-        Board.cpp
-        Board.h
-        Game.cpp
-        Game.h
-        GameLogic.cpp
-        GameLogic.h
-        HumanPlayer.cpp
-        HumanPlayer.h
-        main.cpp
-        Player.cpp
-        Player.h
-        Square.cpp
-        Square.h)
+        src/AIPlayer.cpp
+        include/AIPlayer.h
+        src/Board.cpp
+        include/Board.h
+        src/Game.cpp
+        include/Game.h
+        src/GameLogic.cpp
+        include/GameLogic.h
+        src/HumanPlayer.cpp
+        include/HumanPlayer.h
+        src/main.cpp
+        src/Player.cpp
+        include/Player.h
+        src/Square.cpp
+        include/Square.h)
 
-add_executable(ex3old ${SOURCE_FILES})
+add_executable(ex3 ${SOURCE_FILES} src/main.cpp)

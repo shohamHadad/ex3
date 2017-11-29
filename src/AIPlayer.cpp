@@ -1,4 +1,4 @@
-#include "AIPlayer.h"
+#include "../include/AIPlayer.h"
 
 AIPlayer::AIPlayer(char type, GameLogic* gameLogic): Player(type){
      this->gameLogic = gameLogic;
@@ -57,6 +57,5 @@ Square AIPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Pla
             return possibleMoves[possibleMove];
         }
     }
-    delete gameLogicCopy;
     return possibleMoves[0];
 }

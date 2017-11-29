@@ -1,6 +1,6 @@
 // Shir kempinski - 312253719 - ex2
 
-#include "Board.h"
+#include "../include/Board.h"
 #include <iostream>
 using namespace std;
 

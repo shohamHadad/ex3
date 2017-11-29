@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="ex3old"/>
+		<Option title="ex3"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;"/>
@@ -37,8 +37,8 @@
 					<DistClean command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ex3old">
-				<Option output="/home/shoham/CLionProjects/ex3/cmake-build-debug/ex3old" prefix_auto="0" extension_auto="0"/>
+			<Target title="ex3">
+				<Option output="/home/shoham/CLionProjects/ex3/cmake-build-debug/ex3" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/shoham/CLionProjects/ex3/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -54,14 +54,14 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex3old"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex3"/>
 					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="ex3old/fast">
-				<Option output="/home/shoham/CLionProjects/ex3/cmake-build-debug/ex3old" prefix_auto="0" extension_auto="0"/>
+			<Target title="ex3/fast">
+				<Option output="/home/shoham/CLionProjects/ex3/cmake-build-debug/ex3" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/shoham/CLionProjects/ex3/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -77,13 +77,58 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex3old/fast"/>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex3/fast"/>
 					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/shoham/CLionProjects/ex3/include/AIPlayer.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/include/Board.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/include/Game.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/include/GameLogic.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/include/HumanPlayer.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/include/Player.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/include/Square.h">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/AIPlayer.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/Board.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/Game.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/GameLogic.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/HumanPlayer.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/Player.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/Square.cpp">
+			<Option target="ex3"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/main.cpp">
+			<Option target="ex3"/>
+		</Unit>
 		<Unit filename="/home/shoham/CLionProjects/ex3/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
