@@ -143,7 +143,7 @@ bool Board::isOutOfBounderies(int x, int y){
  * output: boolean
  * operation: checks if the board is full
  */
-bool Board::isboardfull() {
+bool Board::isBoardFull() {
 	for (int i = 0; i < size; i++) {
 		for (int j = 0; j < size; j++) {
 			if (array[i][j]->getType() == ' ') {

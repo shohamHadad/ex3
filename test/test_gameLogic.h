@@ -2,8 +2,11 @@
 #ifndef TEST_GAMELOGIC_H_
 #define TEST_GAMELOGIC_H_
 
+#include "GameLogic.h"
 #include "Board.h"
 #include "Player.h"
+#include "HumanPlayer.h"
+#include "AIPlayer.h"
 #include "Square.h"
 #include <iostream>
 #include <gtest/gtest.h>

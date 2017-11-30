@@ -49,8 +49,8 @@ int Square::getY() {
  * output: boolean
  * operation: checks if the given square is equal to this square
  */
-bool Square::equals(Square other) {
-	if (other.getX() == x && other.getY() == y) {
+bool Square::operator ==(const Square &other) const {
+	if (other.x == x && other.y == y && other.type == type) {
 		return true;
 	}
 	return false;
