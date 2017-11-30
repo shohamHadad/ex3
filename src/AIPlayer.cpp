@@ -3,7 +3,6 @@
 
 AIPlayer::AIPlayer(char type, GameLogic* gl): Player(type){
     gameLogic = gl;
-    //gameLogicCopy = gl;
 }
 
 AIPlayer::~AIPlayer() {
@@ -16,12 +15,10 @@ AIPlayer::~AIPlayer() {
  * operation: get a valid move from the user and returns it
  */
 Square AIPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Player* opponent) {
-    vector <Square> adaptedPossibleMoves;
 	vector <Square> opponentMoves;
     vector<int> grade;
     vector<int> gradeFinal;
     int xBefore, xAfter;
-    //Board* OriginalBoard = gameLogic->getBoard();
 
     // go over possibleMoves
     for (unsigned int i = 0; i < possibleMoves.size(); i++) {
@@ -32,7 +29,6 @@ Square AIPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Pla
         gameLogicCopy->turnDisks(current, opponent, possibleMoves[i]);
         // create possible moves vector for the opponent for the i'th move
         opponentMoves = gameLogicCopy->possibleMoves(opponent, current);
-
         // go over the opponent's moves
         for (unsigned int j = 0; j < opponentMoves.size(); j++) {
         	xBefore = boardCopy.numOfX();
@@ -48,7 +44,6 @@ Square AIPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Pla
                 grade.push_back(0);
             }
         }
-
         // if it's not the first iteration
         if (!grade.empty()) {
             int max = grade[0];
@@ -62,7 +57,8 @@ Square AIPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Pla
             // push the max grade as this possible move's grade
             gradeFinal.push_back(max);
        }
-
+//        }
+        delete gameLogicCopy;
     }
     int possibleMove = 0;
 //    if (!gradeFinal.empty()) {
@@ -72,11 +68,15 @@ Square AIPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Pla
                 possibleMove = k;
             }
         }
-  //  }
+    //  }
 //    return possibleMoves[0];
 //}
     // delete gameLogicCopy;
-     return possibleMoves[possibleMove];
+        Square result = Square(possibleMoves[possibleMove].getX()+1, possibleMoves[possibleMove].getY()+1);
+        delete gameLogicCopy;
+        return result;
 //    }
-  //  return possibleMoves[0];
+
+     delete gameLogicCopy;
+     return possibleMoves[possibleMove];
 }

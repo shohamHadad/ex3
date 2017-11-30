@@ -30,8 +30,7 @@ public:
 
 	void setType(char);
 
-	vector<Square>adaptVectorToGameFormat(vector<Square>);
-
+	vector<Square> adaptVectorToGameFormat(vector<Square>);
 };
 
 #endif /* SQUARE_H_ */
