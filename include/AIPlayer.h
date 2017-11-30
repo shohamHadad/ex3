@@ -17,6 +17,10 @@ public:
 	AIPlayer(char ,GameLogic*);
 	virtual ~AIPlayer();
 	Square chooseSquare(vector<Square>, Player*, Player*);
+
+	GameLogic *getGameLogic() const;
+
+	GameLogic *getGameLogicCopy() const;
 };
 
 #endif /* AIPLAYER_H_ */

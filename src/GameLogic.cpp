@@ -15,6 +15,10 @@ GameLogic::GameLogic(Board* board): turns(0) {
 	this->board = board;
 }
 
+
+GameLogic::GameLogic(const GameLogic &gameLogic) {
+    board =  new Board(*gameLogic.getBoard());
+}
 /**
  * function name: ~GameLogic
  * input: void
@@ -275,6 +279,10 @@ void GameLogic::endGame() {
  * output: board of the game.
  * operation: returns the board of the game.
  */
-Board* GameLogic::getBoard(){
+Board* GameLogic::getBoard() const{
     return  this->board;
+}
+
+void GameLogic::setBoard(Board *board) {
+    GameLogic::board = board;
 }

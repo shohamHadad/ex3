@@ -19,22 +19,23 @@ Square AIPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Pla
     vector<int> grade;
     vector<int> gradeFinal;
     int xBefore, xAfter;
-
     // go over possibleMoves
     for (unsigned int i = 0; i < possibleMoves.size(); i++) {
-        Board boardCopy(*(gameLogic->getBoard()));
-        boardCopy.print();
-        gameLogicCopy = new GameLogic(&boardCopy);
+        GameLogic gCopy(*getGameLogic());
         // turn the disks of the i'th move
-        gameLogicCopy->turnDisks(current, opponent, possibleMoves[i]);
+        gCopy.turnDisks(current, opponent, possibleMoves[i]);
         // create possible moves vector for the opponent for the i'th move
-        opponentMoves = gameLogicCopy->possibleMoves(opponent, current);
+        opponentMoves = gCopy.possibleMoves(opponent, current);
+        xBefore = gCopy.getBoard()->numOfX();
         // go over the opponent's moves
         for (unsigned int j = 0; j < opponentMoves.size(); j++) {
-        	xBefore = boardCopy.numOfX();
-        	// turn the disks of the j'th move
-            gameLogicCopy->turnDisks(opponent, current, opponentMoves[j]);
-            xAfter = boardCopy.numOfX();
+            GameLogic gCopy1(gCopy);
+
+            //  boardCopy1.print();
+            // turn the disks of the j'th move
+            gCopy1.turnDisks(opponent, current, opponentMoves[j]);
+          //  boardCopy1.print();
+            xAfter = gCopy1.getBoard()->numOfX();
             // if the j'th move increases the number of x's
             if (xAfter >= xBefore) {
             	// grade the move as the number of the added x's
@@ -58,25 +59,24 @@ Square AIPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Pla
             gradeFinal.push_back(max);
        }
 //        }
-        delete gameLogicCopy;
     }
     int possibleMove = 0;
-//    if (!gradeFinal.empty()) {
+    if (!gradeFinal.empty()) {
         int min = gradeFinal[0];
         for (unsigned int k = 0; k < gradeFinal.size(); k++) {
             if (gradeFinal[k] < min) {
                 possibleMove = k;
             }
         }
-    //  }
-//    return possibleMoves[0];
-//}
-    // delete gameLogicCopy;
-        Square result = Square(possibleMoves[possibleMove].getX()+1, possibleMoves[possibleMove].getY()+1);
-        delete gameLogicCopy;
-        return result;
-//    }
 
-     delete gameLogicCopy;
+    }
      return possibleMoves[possibleMove];
+}
+
+GameLogic *AIPlayer::getGameLogic() const {
+    return gameLogic;
+}
+
+GameLogic *AIPlayer::getGameLogicCopy() const {
+    return gameLogicCopy;
 }

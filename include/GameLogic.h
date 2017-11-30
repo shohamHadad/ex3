@@ -12,11 +12,13 @@ using namespace std;
  */
 class GameLogic {
 private:
-	Board* board;
+
+    Board* board;
 	int turns;
 public:
 	GameLogic(Board*);
-	virtual ~GameLogic();
+    GameLogic(const GameLogic &gameLogic);
+    virtual ~GameLogic();
 	vector<Square> possibleMoves(Player*, Player*);
 	void printBoard();
 	void turnDisks(Player*, Player*, Square);
@@ -27,7 +29,9 @@ public:
 	bool gameShouldStop(Player*, Player*);
 	Player* whosTurn(Player*, Player*);
 	void endGame();
-    Board* getBoard();
+    Board* getBoard() const;
+
+    void setBoard(Board *board);
 
 };
 

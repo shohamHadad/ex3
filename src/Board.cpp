@@ -42,7 +42,6 @@ Board::Board(const Board &board){
     for (int k = 0; k < size; k++) {
         for (int l = 0; l < size; l++) {
             array[k][l]->setType(board.getType(k, l));
-
         }
 
     }
