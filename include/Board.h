@@ -24,7 +24,7 @@ public:
 	int getSize();
 	bool isEmpty(int, int);
 	bool isOutOfBounderies(int, int);
-	char getType(int, int);
+	char getType(int, int)const;
 	void setType(int, int, char);
 	bool isBoardFull();
 	Winner whoWin();

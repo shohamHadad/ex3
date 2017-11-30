@@ -1,0 +1,17 @@
+./HumanPlayer.o
+./GameLogic.o
+./Player.o
+./Unit Test/test/gtest_main.o
+./Square.o
+./Game.o
+./AIPlayer.o
+./cmake-build-debug/CMakeFiles/ex3.dir/src/HumanPlayer.cpp.o
+./cmake-build-debug/CMakeFiles/ex3.dir/src/Square.cpp.o
+./cmake-build-debug/CMakeFiles/ex3.dir/src/main.cpp.o
+./cmake-build-debug/CMakeFiles/ex3.dir/src/Player.cpp.o
+./cmake-build-debug/CMakeFiles/ex3.dir/src/Game.cpp.o
+./cmake-build-debug/CMakeFiles/ex3.dir/src/GameLogic.cpp.o
+./cmake-build-debug/CMakeFiles/ex3.dir/src/AIPlayer.cpp.o
+./cmake-build-debug/CMakeFiles/ex3.dir/src/Board.cpp.o
+./Board.o
+./main.o
