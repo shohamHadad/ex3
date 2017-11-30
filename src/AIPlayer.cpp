@@ -26,6 +26,7 @@ Square AIPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Pla
     // go over possibleMoves
     for (unsigned int i = 0; i < possibleMoves.size(); i++) {
         Board boardCopy(*(gameLogic->getBoard()));
+        boardCopy.print();
         gameLogicCopy = new GameLogic(&boardCopy);
         // turn the disks of the i'th move
         gameLogicCopy->turnDisks(current, opponent, possibleMoves[i]);
@@ -49,7 +50,7 @@ Square AIPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Pla
         }
 
         // if it's not the first iteration
- //       if (!grade.empty()) {
+        if (!grade.empty()) {
             int max = grade[0];
             // go over the current grades
             for (unsigned int k = 0; k < grade.size(); k++) {
@@ -60,7 +61,7 @@ Square AIPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Pla
             }
             // push the max grade as this possible move's grade
             gradeFinal.push_back(max);
-//        }
+       }
 
     }
     int possibleMove = 0;
@@ -74,7 +75,7 @@ Square AIPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Pla
   //  }
 //    return possibleMoves[0];
 //}
-     delete gameLogicCopy;
+    // delete gameLogicCopy;
      return possibleMoves[possibleMove];
 //    }
   //  return possibleMoves[0];

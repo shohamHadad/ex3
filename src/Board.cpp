@@ -39,6 +39,13 @@ Board::Board(const Board &board){
 			array[i][j] = new Square(i, j);
 		}
 	}
+    for (int k = 0; k < size; k++) {
+        for (int l = 0; l < size; l++) {
+            array[k][l]->setType(board.getType(k, l));
+
+        }
+
+    }
 }
 
 /**
@@ -107,7 +114,7 @@ void Board::print() {
  * output: char
  * operation: returns the state of the given location in the array
  */
-char Board::getType(int i, int j) {
+char Board::getType(int i, int j) const {
 	return array[i][j]->getType();
 }
 
