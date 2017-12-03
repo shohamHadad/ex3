@@ -1,5 +1,3 @@
-// Shir kempinski - 312253719 - ex2
-
 #ifndef GAMELOGIC_H_
 #define GAMELOGIC_H_
 #include "Board.h"

@@ -1,10 +1,3 @@
-/*
- * gtest_main.cpp
- *
- *  Created on: Nov 27, 2017
- *      Author: shir
- */
-
 #include "gtest/gtest.h"
 
 GTEST_API_ int main(int argc, char **argv) {

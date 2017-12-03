@@ -1,5 +1,3 @@
-// Shir kempinski - 312253719 - ex2
-
 #ifndef BOARD_H_
 #define BOARD_H_
 #include "Square.h"

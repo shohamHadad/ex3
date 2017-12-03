@@ -1,4 +1,3 @@
-
 #ifndef TEST_GAMELOGIC_H_
 #define TEST_GAMELOGIC_H_
 

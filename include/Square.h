@@ -1,5 +1,3 @@
-// Shir kempinski - 312253719 - ex2
-
 #ifndef SQUARE_H_
 #define SQUARE_H_
 

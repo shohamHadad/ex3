@@ -1,5 +1,3 @@
-// Shir kempinski - 312253719 - ex2
-
 #ifndef GAME_H_
 #define GAME_H_
 #include "GameLogic.h"

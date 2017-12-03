@@ -1,4 +1,3 @@
-
 #include "test_board.h"
 
 // Tests if the size of the board is assigned correctly.

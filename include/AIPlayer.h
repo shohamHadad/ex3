@@ -1,5 +1,3 @@
-// 312253719 Shir Kempinski ex3
-
 #ifndef AIPLAYER_H_
 #define AIPLAYER_H_
 #include "Player.h"

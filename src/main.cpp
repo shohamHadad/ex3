@@ -1,5 +1,3 @@
-// Shir kempinski - 312253719 - ex2
-
 #include "../include/Game.h"
 using namespace std;
 

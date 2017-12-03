@@ -1,5 +1,3 @@
-// Shir kempinski - 312253719 - ex2
-
 #include "Square.h"
 #include <vector>
 #include "stdlib.h"

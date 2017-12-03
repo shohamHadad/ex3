@@ -1,5 +1,3 @@
-// 312253719 Shir Kempinski ex3
-
 #ifndef HUMANPLAYER_H_
 #define HUMANPLAYER_H_
 #include "Player.h"
