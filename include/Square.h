@@ -29,8 +29,6 @@ public:
 	bool operator ==(const Square &other) const;
 
 	void setType(char);
-
-	vector<Square> adaptVectorToGameFormat(vector<Square>);
 };
 
 #endif /* SQUARE_H_ */

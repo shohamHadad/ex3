@@ -12,7 +12,7 @@ class AIPlayer : public Player {
 private:
 	GameLogic* gameLogic;
 	GameLogic *gameLogicCopy;
-	//Board board;
+
 public:
 	AIPlayer(char ,GameLogic*);
 	virtual ~AIPlayer();

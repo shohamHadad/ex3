@@ -5,16 +5,19 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
 ../test/gtest_main.cpp \
+../test/test_aiPlayer.cpp \
 ../test/test_board.cpp \
 ../test/test_gameLogic.cpp 
 
 OBJS += \
 ./test/gtest_main.o \
+./test/test_aiPlayer.o \
 ./test/test_board.o \
 ./test/test_gameLogic.o 
 
 CPP_DEPS += \
 ./test/gtest_main.d \
+./test/test_aiPlayer.d \
 ./test/test_board.d \
 ./test/test_gameLogic.d 
 
