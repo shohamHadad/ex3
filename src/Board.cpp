@@ -217,15 +217,3 @@ int Board::numOfX(){
 	}
 	return x;
 }
-
-int Board::numOfO(){
-    int x = 0;
-    for (int i = 0; i < size; i++) {
-        for (int j = 0; j < size; j++) {
-            if (array[i][j]->getType() == 'O') {
-                x++;
-            }
-        }
-    }
-    return x;
-}

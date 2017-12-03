@@ -1,7 +1,7 @@
 #ifndef TEST_BOARD_H_
 #define TEST_BOARD_H_
 
-#include "Board.h"
+#include "../include/Board.h"
 #include <iostream>
 #include "gtest/gtest.h"
 

@@ -57,9 +57,33 @@ include CMakeFiles/game.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/game.dir/flags.make
 
+CMakeFiles/game.dir/src/Board.cpp.o: CMakeFiles/game.dir/flags.make
+CMakeFiles/game.dir/src/Board.cpp.o: ../src/Board.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/game.dir/src/Board.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/src/Board.cpp.o -c /home/shoham/CLionProjects/ex3/src/Board.cpp
+
+CMakeFiles/game.dir/src/Board.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/src/Board.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shoham/CLionProjects/ex3/src/Board.cpp > CMakeFiles/game.dir/src/Board.cpp.i
+
+CMakeFiles/game.dir/src/Board.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/Board.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shoham/CLionProjects/ex3/src/Board.cpp -o CMakeFiles/game.dir/src/Board.cpp.s
+
+CMakeFiles/game.dir/src/Board.cpp.o.requires:
+
+.PHONY : CMakeFiles/game.dir/src/Board.cpp.o.requires
+
+CMakeFiles/game.dir/src/Board.cpp.o.provides: CMakeFiles/game.dir/src/Board.cpp.o.requires
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/Board.cpp.o.provides.build
+.PHONY : CMakeFiles/game.dir/src/Board.cpp.o.provides
+
+CMakeFiles/game.dir/src/Board.cpp.o.provides.build: CMakeFiles/game.dir/src/Board.cpp.o
+
+
 CMakeFiles/game.dir/src/GameLogic.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/GameLogic.cpp.o: ../src/GameLogic.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/game.dir/src/GameLogic.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/game.dir/src/GameLogic.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/src/GameLogic.cpp.o -c /home/shoham/CLionProjects/ex3/src/GameLogic.cpp
 
 CMakeFiles/game.dir/src/GameLogic.cpp.i: cmake_force
@@ -83,7 +107,7 @@ CMakeFiles/game.dir/src/GameLogic.cpp.o.provides.build: CMakeFiles/game.dir/src/
 
 CMakeFiles/game.dir/src/Game.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/Game.cpp.o: ../src/Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/game.dir/src/Game.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/game.dir/src/Game.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/src/Game.cpp.o -c /home/shoham/CLionProjects/ex3/src/Game.cpp
 
 CMakeFiles/game.dir/src/Game.cpp.i: cmake_force
@@ -107,7 +131,7 @@ CMakeFiles/game.dir/src/Game.cpp.o.provides.build: CMakeFiles/game.dir/src/Game.
 
 CMakeFiles/game.dir/src/Player.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/Player.cpp.o: ../src/Player.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/game.dir/src/Player.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/game.dir/src/Player.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/src/Player.cpp.o -c /home/shoham/CLionProjects/ex3/src/Player.cpp
 
 CMakeFiles/game.dir/src/Player.cpp.i: cmake_force
@@ -131,7 +155,7 @@ CMakeFiles/game.dir/src/Player.cpp.o.provides.build: CMakeFiles/game.dir/src/Pla
 
 CMakeFiles/game.dir/src/HumanPlayer.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/HumanPlayer.cpp.o: ../src/HumanPlayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/game.dir/src/HumanPlayer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/game.dir/src/HumanPlayer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/src/HumanPlayer.cpp.o -c /home/shoham/CLionProjects/ex3/src/HumanPlayer.cpp
 
 CMakeFiles/game.dir/src/HumanPlayer.cpp.i: cmake_force
@@ -155,7 +179,7 @@ CMakeFiles/game.dir/src/HumanPlayer.cpp.o.provides.build: CMakeFiles/game.dir/sr
 
 CMakeFiles/game.dir/src/AIPlayer.cpp.o: CMakeFiles/game.dir/flags.make
 CMakeFiles/game.dir/src/AIPlayer.cpp.o: ../src/AIPlayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/game.dir/src/AIPlayer.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/game.dir/src/AIPlayer.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/src/AIPlayer.cpp.o -c /home/shoham/CLionProjects/ex3/src/AIPlayer.cpp
 
 CMakeFiles/game.dir/src/AIPlayer.cpp.i: cmake_force
@@ -175,30 +199,6 @@ CMakeFiles/game.dir/src/AIPlayer.cpp.o.provides: CMakeFiles/game.dir/src/AIPlaye
 .PHONY : CMakeFiles/game.dir/src/AIPlayer.cpp.o.provides
 
 CMakeFiles/game.dir/src/AIPlayer.cpp.o.provides.build: CMakeFiles/game.dir/src/AIPlayer.cpp.o
-
-
-CMakeFiles/game.dir/src/Board.cpp.o: CMakeFiles/game.dir/flags.make
-CMakeFiles/game.dir/src/Board.cpp.o: ../src/Board.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/game.dir/src/Board.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/game.dir/src/Board.cpp.o -c /home/shoham/CLionProjects/ex3/src/Board.cpp
-
-CMakeFiles/game.dir/src/Board.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/game.dir/src/Board.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shoham/CLionProjects/ex3/src/Board.cpp > CMakeFiles/game.dir/src/Board.cpp.i
-
-CMakeFiles/game.dir/src/Board.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/game.dir/src/Board.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shoham/CLionProjects/ex3/src/Board.cpp -o CMakeFiles/game.dir/src/Board.cpp.s
-
-CMakeFiles/game.dir/src/Board.cpp.o.requires:
-
-.PHONY : CMakeFiles/game.dir/src/Board.cpp.o.requires
-
-CMakeFiles/game.dir/src/Board.cpp.o.provides: CMakeFiles/game.dir/src/Board.cpp.o.requires
-	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/src/Board.cpp.o.provides.build
-.PHONY : CMakeFiles/game.dir/src/Board.cpp.o.provides
-
-CMakeFiles/game.dir/src/Board.cpp.o.provides.build: CMakeFiles/game.dir/src/Board.cpp.o
 
 
 CMakeFiles/game.dir/src/Square.cpp.o: CMakeFiles/game.dir/flags.make
@@ -251,24 +251,24 @@ CMakeFiles/game.dir/src/main.cpp.o.provides.build: CMakeFiles/game.dir/src/main.
 
 # Object files for target game
 game_OBJECTS = \
+"CMakeFiles/game.dir/src/Board.cpp.o" \
 "CMakeFiles/game.dir/src/GameLogic.cpp.o" \
 "CMakeFiles/game.dir/src/Game.cpp.o" \
 "CMakeFiles/game.dir/src/Player.cpp.o" \
 "CMakeFiles/game.dir/src/HumanPlayer.cpp.o" \
 "CMakeFiles/game.dir/src/AIPlayer.cpp.o" \
-"CMakeFiles/game.dir/src/Board.cpp.o" \
 "CMakeFiles/game.dir/src/Square.cpp.o" \
 "CMakeFiles/game.dir/src/main.cpp.o"
 
 # External object files for target game
 game_EXTERNAL_OBJECTS =
 
+game: CMakeFiles/game.dir/src/Board.cpp.o
 game: CMakeFiles/game.dir/src/GameLogic.cpp.o
 game: CMakeFiles/game.dir/src/Game.cpp.o
 game: CMakeFiles/game.dir/src/Player.cpp.o
 game: CMakeFiles/game.dir/src/HumanPlayer.cpp.o
 game: CMakeFiles/game.dir/src/AIPlayer.cpp.o
-game: CMakeFiles/game.dir/src/Board.cpp.o
 game: CMakeFiles/game.dir/src/Square.cpp.o
 game: CMakeFiles/game.dir/src/main.cpp.o
 game: CMakeFiles/game.dir/build.make
@@ -281,12 +281,12 @@ CMakeFiles/game.dir/build: game
 
 .PHONY : CMakeFiles/game.dir/build
 
+CMakeFiles/game.dir/requires: CMakeFiles/game.dir/src/Board.cpp.o.requires
 CMakeFiles/game.dir/requires: CMakeFiles/game.dir/src/GameLogic.cpp.o.requires
 CMakeFiles/game.dir/requires: CMakeFiles/game.dir/src/Game.cpp.o.requires
 CMakeFiles/game.dir/requires: CMakeFiles/game.dir/src/Player.cpp.o.requires
 CMakeFiles/game.dir/requires: CMakeFiles/game.dir/src/HumanPlayer.cpp.o.requires
 CMakeFiles/game.dir/requires: CMakeFiles/game.dir/src/AIPlayer.cpp.o.requires
-CMakeFiles/game.dir/requires: CMakeFiles/game.dir/src/Board.cpp.o.requires
 CMakeFiles/game.dir/requires: CMakeFiles/game.dir/src/Square.cpp.o.requires
 CMakeFiles/game.dir/requires: CMakeFiles/game.dir/src/main.cpp.o.requires
 

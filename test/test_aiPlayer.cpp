@@ -19,4 +19,5 @@ TEST_F(test_aiPlayer, chooseSquareCheck) {
 	vector<Square> moves = gl->possibleMoves(&ai, x);
 	Square nextMove = ai.chooseSquare(moves, &ai, x);
 	ASSERT_EQ(Square(3, 3), nextMove);
+	delete x;
 }

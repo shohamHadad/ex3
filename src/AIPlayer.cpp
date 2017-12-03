@@ -35,7 +35,7 @@ Square AIPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Pla
         GameLogic gCopy(*getGameLogic());
         // turn the disks of the i'th move
         gCopy.turnDisks(current, opponent, possibleMoves[i]);
-             // create possible moves vector for the opponent for the i'th move
+        // create possible moves vector for the opponent for the i'th move
         opponentMoves = gCopy.possibleMoves(opponent, current);
         xBefore = gCopy.getBoard()->numOfX();
         // go over the opponent's moves
@@ -52,7 +52,6 @@ Square AIPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Pla
             	// grade it as 0
                 grade.push_back(0);
             }
-            opponentMoves[j].print();
         }
         if (!grade.empty()) {
             // push the max grade as this possible move's grade
@@ -131,6 +130,5 @@ int AIPlayer::getMax(vector<int> vec) {
         	max = vec[i];
         }
     }
-    cout << "* " <<max;
     return max;
 }
