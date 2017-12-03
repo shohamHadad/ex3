@@ -33,8 +33,8 @@ TEST_F(test_board, setTypeCheck) {
 
 // Test if the board knows it is full.
 TEST_F(test_board, isBoardFullCheck) {
-	for (int i = 0; i <= b.getSize(); i++) {
-		for (int j = 0; j <= b.getSize(); j++) {
+	for (int i = 0; i < b.getSize(); i++) {
+		for (int j = 0; j < b.getSize(); j++) {
 			b.setType(i,j,'X');
 		}
 	}
@@ -43,20 +43,20 @@ TEST_F(test_board, isBoardFullCheck) {
 
 // Test if the board knows who won
 TEST_F(test_board, whoWinTest) {
-	for (int i = 0; i <= b.getSize(); i++) {
-		for (int j = 0; j <= b.getSize(); j++) {
+	for (int i = 0; i < b.getSize(); i++) {
+		for (int j = 0; j < b.getSize(); j++) {
 			b.setType(i,j,'X');
 		}
 	}
 	ASSERT_EQ(X, b.whoWin());
-	for (int i = 0; i <= b.getSize(); i++) {
-		for (int j = 0; j <= b.getSize(); j++) {
+	for (int i = 0; i < b.getSize(); i++) {
+		for (int j = 0; j < b.getSize(); j++) {
 			b.setType(i,j,'O');
 		}
 	}
 	ASSERT_EQ(O, b.whoWin());
-	for (int i = 0; i <= b.getSize(); i++) {
-		for (int j = 0; j <= b.getSize(); j++) {
+	for (int i = 0; i < b.getSize(); i++) {
+		for (int j = 0; j < b.getSize(); j++) {
 			b.setType(i,j,' ');
 		}
 	}

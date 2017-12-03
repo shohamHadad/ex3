@@ -56,6 +56,7 @@ Square AIPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Pla
         if (!grade.empty()) {
             // push the max grade as this possible move's grade
             gradeFinal.push_back(getMax(grade));
+            grade.clear();
        }
        grade.clear();
     }
@@ -104,8 +105,8 @@ int AIPlayer::getMinIndex(vector<int> vec) {
 	int minIndex = 0;
 	for (unsigned int i = 0; i < vec.size(); i++) {
 		if (vec[i] < min) {
-			min = i;
-			minIndex = vec[i];
+			min = vec[i];
+			minIndex = i;
 	    }
 	}
 	return minIndex;
