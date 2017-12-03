@@ -121,7 +121,7 @@ CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=ex3
+CMAKE_PROJECT_NAME:STATIC=advancedProgramming1
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -179,16 +179,10 @@ ProcessorCount_cmd_getconf:FILEPATH=/usr/bin/getconf
 ProcessorCount_cmd_sysctl:FILEPATH=/sbin/sysctl
 
 //Value Computed by CMake
-ex3_BINARY_DIR:STATIC=/home/shoham/CLionProjects/ex3/cmake-build-debug
+advancedProgramming1_BINARY_DIR:STATIC=/home/shoham/CLionProjects/ex3/cmake-build-debug
 
 //Value Computed by CMake
-ex3_SOURCE_DIR:STATIC=/home/shoham/CLionProjects/ex3
-
-//Value Computed by CMake
-ex3old_BINARY_DIR:STATIC=/home/shoham/CLionProjects/ex3/cmake-build-debug
-
-//Value Computed by CMake
-ex3old_SOURCE_DIR:STATIC=/home/shoham/CLionProjects/ex3
+advancedProgramming1_SOURCE_DIR:STATIC=/home/shoham/CLionProjects/ex3
 
 
 ########################

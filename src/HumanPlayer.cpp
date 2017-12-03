@@ -22,8 +22,8 @@ Square HumanPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, 
 		cin >> x >> y;
 		if (!cin.fail()) {
 			Square playersChoice(x,y);
-			for (int i = 0; i < possibleMoves.size(); i++) {
-				if (possibleMoves[i].equals(playersChoice)) {
+			for (unsigned int i = 0; i < possibleMoves.size(); i++) {
+				if (possibleMoves[i] == playersChoice) {
 					return playersChoice;
 				}
 			}
@@ -42,7 +42,7 @@ Square HumanPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, 
  */
 void HumanPlayer::printPossibleMoves(vector <Square> moves) {
 	cout << "Your possible moves are: ";
-	for (int i = 0; i < moves.size(); i++) {
+	for (unsigned int i = 0; i < moves.size(); i++) {
 		if (i != 0) {
 			cout << ",";
 		}

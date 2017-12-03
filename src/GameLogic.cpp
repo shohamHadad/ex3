@@ -237,7 +237,7 @@ bool GameLogic::gameShouldStop(Player* X, Player* O) {
 		cout << "No more possible moves for both players." << endl;
 		return true;
 	}
-	if (board->isboardfull()) {
+	if (board->isBoardFull()) {
 		return true;
 	}
 	return false;
@@ -280,7 +280,7 @@ void GameLogic::endGame() {
  * operation: returns the board of the game.
  */
 Board* GameLogic::getBoard() const{
-    return  this->board;
+    return this->board;
 }
 
 void GameLogic::setBoard(Board *board) {

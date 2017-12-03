@@ -12,6 +12,7 @@ RM := rm -rf
 -include test/subdir.mk
 -include src/subdir.mk
 -include gtest_src/gtest/subdir.mk
+-include cmake-build-debug/CMakeFiles/ex3.dir/src/subdir.mk
 -include objects.mk
 
 ifneq ($(MAKECMDGOALS),clean)

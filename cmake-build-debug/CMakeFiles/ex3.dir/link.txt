@@ -1,1 +1,0 @@
-/usr/bin/c++  -g   CMakeFiles/ex3.dir/src/AIPlayer.cpp.o CMakeFiles/ex3.dir/src/Board.cpp.o CMakeFiles/ex3.dir/src/Game.cpp.o CMakeFiles/ex3.dir/src/GameLogic.cpp.o CMakeFiles/ex3.dir/src/HumanPlayer.cpp.o CMakeFiles/ex3.dir/src/main.cpp.o CMakeFiles/ex3.dir/src/Player.cpp.o CMakeFiles/ex3.dir/src/Square.cpp.o  -o ex3 

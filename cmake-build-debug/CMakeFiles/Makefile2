@@ -60,39 +60,39 @@ CMAKE_SOURCE_DIR = /home/shoham/CLionProjects/ex3
 CMAKE_BINARY_DIR = /home/shoham/CLionProjects/ex3/cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/ex3.dir
+# Target rules for target CMakeFiles/game.dir
 
 # All Build rule for target.
-CMakeFiles/ex3.dir/all:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/depend
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target ex3"
-.PHONY : CMakeFiles/ex3.dir/all
+CMakeFiles/game.dir/all:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/depend
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target game"
+.PHONY : CMakeFiles/game.dir/all
 
 # Include target in all.
-all: CMakeFiles/ex3.dir/all
+all: CMakeFiles/game.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/ex3.dir/rule: cmake_check_build_system
+CMakeFiles/game.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles 9
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ex3.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/game.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/ex3.dir/rule
+.PHONY : CMakeFiles/game.dir/rule
 
 # Convenience name for target.
-ex3: CMakeFiles/ex3.dir/rule
+game: CMakeFiles/game.dir/rule
 
-.PHONY : ex3
-
-# clean rule for target.
-CMakeFiles/ex3.dir/clean:
-	$(MAKE) -f CMakeFiles/ex3.dir/build.make CMakeFiles/ex3.dir/clean
-.PHONY : CMakeFiles/ex3.dir/clean
+.PHONY : game
 
 # clean rule for target.
-clean: CMakeFiles/ex3.dir/clean
+CMakeFiles/game.dir/clean:
+	$(MAKE) -f CMakeFiles/game.dir/build.make CMakeFiles/game.dir/clean
+.PHONY : CMakeFiles/game.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/game.dir/clean
 
 .PHONY : clean
 

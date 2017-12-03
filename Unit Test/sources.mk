@@ -26,4 +26,5 @@ SUBDIRS := \
 test \
 src \
 gtest_src/gtest \
+cmake-build-debug/CMakeFiles/ex3.dir/src \
 

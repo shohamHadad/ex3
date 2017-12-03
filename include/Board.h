@@ -26,9 +26,11 @@ public:
 	bool isOutOfBounderies(int, int);
 	char getType(int, int)const;
 	void setType(int, int, char);
-	bool isboardfull();
+	bool isBoardFull();
 	Winner whoWin();
 	int numOfX();
+
+    int numOfO();
 };
 
 #endif /* BOARD_H_ */

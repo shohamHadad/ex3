@@ -26,7 +26,7 @@ public:
 
 	char getType();
 
-	bool equals(Square);
+	bool operator ==(const Square &other) const;
 
 	void setType(char);
 

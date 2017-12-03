@@ -17,10 +17,10 @@ public:
 	AIPlayer(char ,GameLogic*);
 	virtual ~AIPlayer();
 	Square chooseSquare(vector<Square>, Player*, Player*);
-
 	GameLogic *getGameLogic() const;
-
 	GameLogic *getGameLogicCopy() const;
+	int getMinIndex(vector<int>);
+	int getMax(vector<int>);
 };
 
 #endif /* AIPLAYER_H_ */
