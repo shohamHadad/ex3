@@ -59,6 +59,7 @@ Square AIPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Pla
             gradeFinal.push_back(getMax(grade));
             grade.clear();
        }
+       grade.clear();
     }
     int bestMoveIndex = 0;
     // if there is more than one possible move
