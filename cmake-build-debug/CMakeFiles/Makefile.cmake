@@ -11,14 +11,14 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.8.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.8.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.8.2/CMakeSystem.cmake"
-  "../lib/googletest-master/CMakeLists.txt"
-  "../lib/googletest-master/googlemock/CMakeLists.txt"
-  "../lib/googletest-master/googlemock/cmake/gmock.pc.in"
-  "../lib/googletest-master/googlemock/cmake/gmock_main.pc.in"
-  "../lib/googletest-master/googletest/CMakeLists.txt"
-  "../lib/googletest-master/googletest/cmake/gtest.pc.in"
-  "../lib/googletest-master/googletest/cmake/gtest_main.pc.in"
-  "../lib/googletest-master/googletest/cmake/internal_utils.cmake"
+  "../src/client/lib/googletest-master/CMakeLists.txt"
+  "../src/client/lib/googletest-master/googlemock/CMakeLists.txt"
+  "../src/client/lib/googletest-master/googlemock/cmake/gmock.pc.in"
+  "../src/client/lib/googletest-master/googlemock/cmake/gmock_main.pc.in"
+  "../src/client/lib/googletest-master/googletest/CMakeLists.txt"
+  "../src/client/lib/googletest-master/googletest/cmake/gtest.pc.in"
+  "../src/client/lib/googletest-master/googletest/cmake/gtest_main.pc.in"
+  "../src/client/lib/googletest-master/googletest/cmake/internal_utils.cmake"
   "/home/shoham/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCInformation.cmake"
   "/home/shoham/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCXXInformation.cmake"
   "/home/shoham/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCommonLanguageInclude.cmake"
@@ -57,17 +57,16 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "lib/googletest-master/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "lib/googletest-master/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "lib/googletest-master/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/client/lib/googletest-master/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/client/lib/googletest-master/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/client/lib/googletest-master/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/ex3_test.dir/DependInfo.cmake"
   "CMakeFiles/advancedProgramming1.dir/DependInfo.cmake"
-  "lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
-  "lib/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
-  "lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
-  "lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "src/client/lib/googletest-master/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
+  "src/client/lib/googletest-master/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
+  "src/client/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "src/client/lib/googletest-master/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
   )

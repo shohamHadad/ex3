@@ -47,7 +47,7 @@ set(TEST_FILES
 		test/test_gameLogic.cpp
 		test/test_gameLogic.h)
 
-add_executable(advancedProgramming1	${SOURCE_FILES} src/main.cpp)
+add_executable(advancedProgramming1	${SOURCE_FILES} src/clinte/main.cpp)
 add_executable(ex3_test	${TEST_FILES} ${SOURCE_FILES})
 
 target_link_libraries(ex3_test gtest gtest_main gmock)

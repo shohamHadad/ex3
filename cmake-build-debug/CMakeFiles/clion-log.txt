@@ -1,4 +1,9 @@
 /home/shoham/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/shoham/CLionProjects/ex3
--- Configuring done
--- Generating done
--- Build files have been written to: /home/shoham/CLionProjects/ex3/cmake-build-debug
+CMake Error at CMakeLists.txt:6 (add_subdirectory):
+  add_subdirectory given source "lib/googletest-master" which is not an
+  existing directory.
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles/CMakeError.log".
