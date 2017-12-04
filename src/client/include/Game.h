@@ -3,6 +3,7 @@
 #include "GameLogic.h"
 #include "HumanPlayer.h"
 #include "AIPlayer.h"
+#include "ClientPlayer.h"
 #include "stdlib.h"
 #include <iostream>
 #include <limits>
