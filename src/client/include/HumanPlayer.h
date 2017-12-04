@@ -7,7 +7,7 @@ using namespace std;
 
 class HumanPlayer : public Player {
 public:
-	HumanPlayer(char);
+	virtual HumanPlayer(char);
 	~HumanPlayer();
 	Square chooseSquare(vector<Square>, Player* current, Player* opponent);
 	void printPossibleMoves(vector <Square> moves);
