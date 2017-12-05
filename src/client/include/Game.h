@@ -4,6 +4,7 @@
 #include "HumanPlayer.h"
 #include "AIPlayer.h"
 #include "ClientPlayer.h"
+#include "RemotePlayer.h"
 #include "stdlib.h"
 #include <iostream>
 #include <limits>

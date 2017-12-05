@@ -7,7 +7,7 @@
 
 class ClientPlayer: public Player, public Client {
 public:
-	ClientPlayer(char type, const char *serverIP, int serverPort);
+	ClientPlayer(const char *serverIP, int serverPort);
 	void sendNextMove(Square move);
 	int readOrder();
 	virtual ~ClientPlayer();
