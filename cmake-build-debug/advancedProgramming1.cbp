@@ -57,6 +57,58 @@
 					<DistClean command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="ex3_test">
+				<Option output="/home/shoham/CLionProjects/ex3/cmake-build-debug/ex3_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/shoham/CLionProjects/ex3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/shoham/CLionProjects/ex3/src/client/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/shoham/CLionProjects/ex3/src/client/lib/googletest-master/googlemock/include"/>
+					<Add directory="/home/shoham/CLionProjects/ex3/src/client/test"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex3_test"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="ex3_test/fast">
+				<Option output="/home/shoham/CLionProjects/ex3/cmake-build-debug/ex3_test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/shoham/CLionProjects/ex3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/shoham/CLionProjects/ex3/src/client/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/shoham/CLionProjects/ex3/src/client/lib/googletest-master/googlemock/include"/>
+					<Add directory="/home/shoham/CLionProjects/ex3/src/client/test"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 ex3_test/fast"/>
+					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="install/strip">
 				<Option working_dir="/home/shoham/CLionProjects/ex3/cmake-build-debug"/>
 				<Option type="4"/>
@@ -84,10 +136,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/shoham/CLionProjects/ex3/src"/>
-					<Add directory="/home/shoham/CLionProjects/ex3/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/shoham/CLionProjects/ex3/lib/googletest-master/googlemock/include"/>
-					<Add directory="/test"/>
+					<Add directory="/home/shoham/CLionProjects/ex3/src/client/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/shoham/CLionProjects/ex3/src/client/lib/googletest-master/googlemock/include"/>
+					<Add directory="/home/shoham/CLionProjects/ex3/src/client/test"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -111,10 +162,9 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/shoham/CLionProjects/ex3/src"/>
-					<Add directory="/home/shoham/CLionProjects/ex3/lib/googletest-master/googletest/include"/>
-					<Add directory="/home/shoham/CLionProjects/ex3/lib/googletest-master/googlemock/include"/>
-					<Add directory="/test"/>
+					<Add directory="/home/shoham/CLionProjects/ex3/src/client/lib/googletest-master/googletest/include"/>
+					<Add directory="/home/shoham/CLionProjects/ex3/src/client/lib/googletest-master/googlemock/include"/>
+					<Add directory="/home/shoham/CLionProjects/ex3/src/client/test"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -340,6 +390,38 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/include/AIPlayer.h">
+			<Option target="ex3_test"/>
+			<Option target="advancedProgramming1"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/include/Board.h">
+			<Option target="ex3_test"/>
+			<Option target="advancedProgramming1"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/include/ClientPlayer.h">
+			<Option target="ex3_test"/>
+			<Option target="advancedProgramming1"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/include/Game.h">
+			<Option target="ex3_test"/>
+			<Option target="advancedProgramming1"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/include/GameLogic.h">
+			<Option target="ex3_test"/>
+			<Option target="advancedProgramming1"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/include/HumanPlayer.h">
+			<Option target="ex3_test"/>
+			<Option target="advancedProgramming1"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/include/Player.h">
+			<Option target="ex3_test"/>
+			<Option target="advancedProgramming1"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/include/Square.h">
+			<Option target="ex3_test"/>
+			<Option target="advancedProgramming1"/>
+		</Unit>
 		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/lib/googletest-master/googlemock/src/gmock-all.cc">
 			<Option target="gmock_main"/>
 			<Option target="gmock"/>
@@ -354,6 +436,71 @@
 		</Unit>
 		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/lib/googletest-master/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/src/AIPlayer.cpp">
+			<Option target="ex3_test"/>
+			<Option target="advancedProgramming1"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/src/Board.cpp">
+			<Option target="ex3_test"/>
+			<Option target="advancedProgramming1"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/src/ClientPlayer.cpp">
+			<Option target="ex3_test"/>
+			<Option target="advancedProgramming1"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/src/Game.cpp">
+			<Option target="ex3_test"/>
+			<Option target="advancedProgramming1"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/src/GameLogic.cpp">
+			<Option target="ex3_test"/>
+			<Option target="advancedProgramming1"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/src/HumanPlayer.cpp">
+			<Option target="ex3_test"/>
+			<Option target="advancedProgramming1"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/src/Player.cpp">
+			<Option target="ex3_test"/>
+			<Option target="advancedProgramming1"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/src/Square.cpp">
+			<Option target="ex3_test"/>
+			<Option target="advancedProgramming1"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/src/main.cpp">
+			<Option target="advancedProgramming1"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/test/gtest_main.cpp">
+			<Option target="ex3_test"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/test/test_aiPlayer.cpp">
+			<Option target="ex3_test"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/test/test_aiPlayer.h">
+			<Option target="ex3_test"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/test/test_board.cpp">
+			<Option target="ex3_test"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/test/test_board.h">
+			<Option target="ex3_test"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/test/test_gameLogic.cpp">
+			<Option target="ex3_test"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/test/test_gameLogic.h">
+			<Option target="ex3_test"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/server/Server.cpp">
+			<Option target="ex3_test"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/server/Server.h">
+			<Option target="ex3_test"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/server/main.cpp">
+			<Option target="ex3_test"/>
 		</Unit>
 		<Unit filename="/home/shoham/CLionProjects/ex3/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

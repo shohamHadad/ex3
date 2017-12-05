@@ -48,7 +48,7 @@ void Game::initialize() {
 		break;
 	case 3:
 		try {
-			ClientPlayer* cp = new ClientPlayer('O', "127.0.0.1", 8000);
+			clientPlayer* cp = new clientPlayer('O', "127.0.0.1", 8000);
 			cp->connectToServer();
 			this->O = cp;
 		} catch (const char *msg) {
