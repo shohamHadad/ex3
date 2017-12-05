@@ -2,6 +2,7 @@
 /home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles/list_install_components.dir
 /home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles/ex3_test.dir
 /home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles/install/strip.dir
 /home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles/install/local.dir
 /home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir
