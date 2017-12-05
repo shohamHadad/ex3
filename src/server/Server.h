@@ -22,14 +22,19 @@ class Server {
 private:
     int serverSocket;
     int port;
+    int clientSocket;
+    int clientSocket1;
+    int turns;
 
 public:
     Server(int port);
-    ~Server();
     void start();
     void stop();
-    void handleClient(int clientSocket);
-    Square passMove(Square currentMove)const;
+    void handleClient(int clientSocket, int clientSocket1);
+    void sendMove(Square currentMove, int clientSocket1)const;
+    int recieveMove(Square currentMove,int clientSocket, int clientSocket1)const;
+    int whosTurn(int clientSocket, int clientSocket1);
+    void sendOrder(int clientSocket, int order);
 
 };
 
