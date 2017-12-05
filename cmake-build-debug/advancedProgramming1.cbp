@@ -398,6 +398,10 @@
 			<Option target="ex3_test"/>
 			<Option target="advancedProgramming1"/>
 		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/include/ClientPlayer.h">
+			<Option target="ex3_test"/>
+			<Option target="advancedProgramming1"/>
+		</Unit>
 		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/include/Game.h">
 			<Option target="ex3_test"/>
 			<Option target="advancedProgramming1"/>
@@ -438,6 +442,10 @@
 			<Option target="advancedProgramming1"/>
 		</Unit>
 		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/src/Board.cpp">
+			<Option target="ex3_test"/>
+			<Option target="advancedProgramming1"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/src/ClientPlayer.cpp">
 			<Option target="ex3_test"/>
 			<Option target="advancedProgramming1"/>
 		</Unit>

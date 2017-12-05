@@ -22,6 +22,12 @@ Square.h
 vector
 -
 
+/home/shoham/CLionProjects/ex3/src/client/include/ClientPlayer.h
+HumanPlayer.h
+/home/shoham/CLionProjects/ex3/src/client/include/HumanPlayer.h
+Square.h
+/home/shoham/CLionProjects/ex3/src/client/include/Square.h
+
 /home/shoham/CLionProjects/ex3/src/client/include/Game.h
 GameLogic.h
 /home/shoham/CLionProjects/ex3/src/client/include/GameLogic.h
@@ -29,6 +35,8 @@ HumanPlayer.h
 /home/shoham/CLionProjects/ex3/src/client/include/HumanPlayer.h
 AIPlayer.h
 /home/shoham/CLionProjects/ex3/src/client/include/AIPlayer.h
+ClientPlayer.h
+/home/shoham/CLionProjects/ex3/src/client/include/ClientPlayer.h
 stdlib.h
 /home/shoham/CLionProjects/ex3/src/client/include/stdlib.h
 iostream
@@ -45,7 +53,7 @@ vector
 -
 
 /home/shoham/CLionProjects/ex3/src/client/include/HumanPlayer.h
-Player.h
+../include/Player.h
 /home/shoham/CLionProjects/ex3/src/client/include/Player.h
 iostream
 -
@@ -72,6 +80,24 @@ vector
 ../include/Board.h
 /home/shoham/CLionProjects/ex3/src/client/include/Board.h
 iostream
+-
+
+/home/shoham/CLionProjects/ex3/src/client/src/ClientPlayer.cpp
+ClientPlayer.h
+/home/shoham/CLionProjects/ex3/src/client/src/ClientPlayer.h
+iostream
+-
+sys/socket.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+netdb.h
+-
+string.h
+-
+unistd.h
 -
 
 /home/shoham/CLionProjects/ex3/src/client/src/Game.cpp

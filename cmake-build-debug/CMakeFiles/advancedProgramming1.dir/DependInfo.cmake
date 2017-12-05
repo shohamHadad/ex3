@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/shoham/CLionProjects/ex3/src/client/src/AIPlayer.cpp" "/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/AIPlayer.cpp.o"
   "/home/shoham/CLionProjects/ex3/src/client/src/Board.cpp" "/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/Board.cpp.o"
+  "/home/shoham/CLionProjects/ex3/src/client/src/ClientPlayer.cpp" "/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/ClientPlayer.cpp.o"
   "/home/shoham/CLionProjects/ex3/src/client/src/Game.cpp" "/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/Game.cpp.o"
   "/home/shoham/CLionProjects/ex3/src/client/src/GameLogic.cpp" "/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/GameLogic.cpp.o"
   "/home/shoham/CLionProjects/ex3/src/client/src/HumanPlayer.cpp" "/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/HumanPlayer.cpp.o"

@@ -22,7 +22,9 @@ set(SOURCE_FILES
 		src/client/src/AIPlayer.cpp
 		src/client/include/AIPlayer.h
 		src/client/src/Square.cpp
-		src/client/include/Square.h)
+		src/client/include/Square.h
+		src/client/src/ClientPlayer.cpp
+		src/client/include/ClientPlayer.h)
 
 set(TEST_FILES
 		src/client/include/Board.h
