@@ -16,6 +16,7 @@ public:
 	virtual Square chooseSquare(vector<Square>, Player* current, Player* opponent);
 	virtual ~Player();
 	char getType();
+	void setType(char);
 	bool equals(Player*);
 };
 

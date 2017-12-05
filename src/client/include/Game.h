@@ -24,6 +24,7 @@ public:
 	virtual ~Game();
 	void play();
 	void initialize();
+	void assignClientAndRemotePlayers();
 };
 
 #endif /* GAME_H_ */
