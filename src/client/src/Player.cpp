@@ -12,6 +12,8 @@ using namespace std;
 Player::Player(char type): type(type) {
 }
 
+Player::Player() {}
+
 /**
  * function name: ~Player
  * input: void

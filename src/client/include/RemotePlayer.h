@@ -9,6 +9,7 @@ class RemotePlayer: public Player, public Client {
 public:
 	RemotePlayer(const char *serverIP, int serverPort);
 	Square getNextMove();
+	Square chooseSquare(vector<Square>, Player*, Player*);
 	virtual ~RemotePlayer();
 };
 
