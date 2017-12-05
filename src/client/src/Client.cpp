@@ -7,9 +7,7 @@
 #include <string.h>
 #include <unistd.h>
 
-Client::Client(const char *serverIP, int serverPort) {
-	// TODO Auto-generated constructor stub
-
+Client::Client(const char* serverIP, int serverPort): serverIP(serverIP), serverPort(serverPort){
 }
 
 Client::~Client() {
