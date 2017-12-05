@@ -21,7 +21,6 @@ Player::Player(char type): type(type) {
 Player::~Player(){}
 
 /**
-<<<<<<< HEAD:Player.cpp
  * function name: chooseSquare
  * input: vector<Square>
  * output: Square
@@ -32,8 +31,6 @@ Square Player::chooseSquare(vector<Square> possibleMoves, Player* current, Playe
 }
 
 /**
-=======
->>>>>>> 711e55a28fdc8d063a7095cf1f55bb47b301b354:src/Player.cpp
  * function name: getType
  * input: void
  * output: char
@@ -52,4 +49,8 @@ char Player::getType() {
 bool Player::equals(Player* other) {
 	if (this->type == other->type) {return true;}
 	return false;
+}
+
+void Player::setType(char t) {
+	type = t;
 }

@@ -8,7 +8,6 @@
  */
 Game::Game() {
 	this->logic = new GameLogic(new Board(8));
-	this->X = new HumanPlayer('X');
 }
 
 /**
@@ -41,21 +40,15 @@ void Game::initialize() {
 	}
 	switch (choice) {
 	case 1:
+		X = new HumanPlayer('X');
 		O = new HumanPlayer('O');
 		break;
 	case 2:
+		X = new HumanPlayer('X');
 		O = new AIPlayer('O', logic);
 		break;
 	case 3:
-		try {
-			clientPlayer* cp = new clientPlayer('O', "127.0.0.1", 8000);
-			cp->connectToServer();
-			this->O = cp;
-		} catch (const char *msg) {
-			cout << "Failed to connect to server. Reason: " << msg << endl;
-			exit(-1);
-		}
-		O->connectToServer();
+		assignClientAndRemotePlayers();
 		break;
 	default:
 		break;
@@ -85,4 +78,28 @@ void Game::play() {
 		logic->playOneTurn(current, opponent);
 	}
 	logic->endGame();
+}
+
+
+
+void Game::assignClientAndRemotePlayers() {
+	try {
+		ClientPlayer* cp = new clientPlayer("127.0.0.1", 8000);
+		rp = new RemotePlayer("127.0.0.1", 8000);
+		cp->connectToServer();
+		rp->connectToServer();
+		int cpOrder = cp->readOrder();
+		if (cpOrder == 1) {
+			X = cp;
+			O = rp;
+		} else {
+			O = cp;
+			X = rp;
+		}
+		X->setType('X');
+		O->setType('O');
+	} catch (const char *msg) {
+		cout << "Failed to connect to server. Reason: " << msg << endl;
+		exit(-1);
+	}
 }

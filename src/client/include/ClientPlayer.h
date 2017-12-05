@@ -1,19 +1,16 @@
 #ifndef CLIENTPLAYER_H_
 #define CLIENTPLAYER_H_
 
-#include "HumanPlayer.h"
+#include "Client.h"
+#include "Player.h"
 #include "Square.h"
 
-class clientPlayer: public HumanPlayer {
+class ClientPlayer: public Player, public Client {
 public:
-	clientPlayer(char type, const char *serverIP, int serverPort);
-	void connectToServer();
-	Square sendNextMove(Square move);
-	virtual ~clientPlayer();
-private:
-	const char *serverIP;
-	int serverPort;
-	int clientSocket;
+	ClientPlayer(char type, const char *serverIP, int serverPort);
+	void sendNextMove(Square move);
+	int readOrder();
+	virtual ~ClientPlayer();
 };
 
 #endif /* CLIENTPLAYER_H_ */

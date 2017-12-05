@@ -9,57 +9,49 @@
 
 using namespace std;
 
-clientPlayer::clientPlayer(char type, const char *serverIP, int serverPort): Player(type) ,
-		serverIP(serverIP), serverPort(serverPort), clientSocket(0) {
-	cout << "clientPlayer" << endl;
+ClientPlayer::ClientPlayer(const char *serverIP, int serverPort): Client(serverIP, serverPort,
+		clientSocket) {
 }
 
-clientPlayer::~clientPlayer() {
+ClientPlayer::~ClientPlayer() {
 }
 
-void clientPlayer::connectToServer() {
-	// Create a socket point
-	clientSocket = socket(AF_INET, SOCK_STREAM, 0);
-	if (clientSocket == -1) {
-		throw "Error opening socket";
-	}
-	// Convert the ip string to a network address
-	struct in_addr address;
-	if (!inet_aton(serverIP, &address)) {
-		throw "Can't parse IP address";
-	}
-	// Get a hostent structure for the given host address
-	struct	hostent	*server;
-	server = gethostbyaddr((const void*)&address, sizeof(address), AF_INET);
-	if (server == NULL) {
-		throw "Host is unreachable";
-	}
-	// Create a structure for the server address
-	struct sockaddr_in serverAddress;
-	bzero((char*)&address, sizeof(address));
-	serverAddress.sin_family = AF_INET;
-	memcpy((char*)&serverAddress.sin_addr.s_addr, (char*)server->h_addr, server->h_length);
-	// htons converts values between host and network byte orders
-	serverAddress.sin_port = htons(serverPort);
-	// Establish a connection with the TCP server
-	if (connect(clientSocket, (struct sockaddr*)&serverAddress, sizeof(serverAddress)) == -1) {
-		throw "Error connecting to server";
-	}
-	cout << "Connected to server" << endl;
-}
-
-Square clientPlayer::sendNextMove(Square move) {
+void ClientPlayer::sendNextMove(Square move) {
 	// write the move to the socket
 	int n = write(clientSocket, &move, sizeof(move));
 	if (n == -1) {
 		throw "Error writing move to socket";
 	}
+}
 
-	// read the opponent's next move from the socket
-	Square opponentMove;
-	n = read(clientSocket, &opponentMove, sizeof(opponentMove));
+int ClientPlayer::readOrder() {
+	// read the player's order from the socket
+	int order;
+	n = read(clientSocket, &order, sizeof(order));
 	if (n == -1) {
 		throw "Error reading opponentMove from socket";
 	}
-	return opponentMove;
+	return order;
+}
+
+Square ClientPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Player* opponent) {
+	// print the moves to the current player
+	printPossibleMoves(possibleMoves);
+	cout << endl << "Please enter your move, row col:";
+	int x,y;
+	while (true) {
+		cin >> x >> y;
+		if (!cin.fail()) {
+			Square playersChoice(x,y);
+			for (unsigned int i = 0; i < possibleMoves.size(); i++) {
+				if (possibleMoves[i] == playersChoice) {
+					sendNextMove(playersChoice);
+					return playersChoice;
+				}
+			}
+		}
+		cout << endl << "Not a valid choice. Please enter your move row,col:";
+		cin.clear();
+		cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+	}
 }
