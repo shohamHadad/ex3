@@ -55,7 +55,7 @@ void Game::initialize() {
 			cout << "Failed to connect to server. Reason: " << msg << endl;
 			exit(-1);
 		}
-		O->connectToServer();
+		///O->connectToServer();
 		break;
 	default:
 		break;

@@ -4,8 +4,8 @@ using namespace std;
 #define MAX_CONNECTED_CLIENTS 2
 
 Server::Server(int port): port(port), serverSocket(0) {
+    turns = 0;
     cout << "Server" << endl;
-    this->capacity = 2;
 }
 
 void Server::start() {
@@ -32,56 +32,115 @@ void Server::start() {
 
     while(true) {
         cout << "Waiting for client connections..." << endl;
-        // Accept a new client connection
-        int clientSocket = accept(serverSocket, (struct sockaddr*)& clientAddress,
-                                  &clientAddressLen);
-        cout << "Client connected" << endl;
-        if(clientSocket == -1){
-            throw "Error on accept";
+        int numberOfClients = 0;
+        while (numberOfClients != 2) {
+            // Accept a new client connection
+            if(numberOfClients == 0) {
+                clientSocket = accept(serverSocket, (struct sockaddr *) &clientAddress,
+                                      &clientAddressLen);
+                cout << "Client connected" << endl;
+                if (clientSocket == -1) {
+                    throw "Error on accept";
+                }
+                sendOrder(clientSocket , numberOfClients+1);
+            } else {
+                clientSocket1 = accept(serverSocket, (struct sockaddr *) &clientAddress,
+                                      &clientAddressLen);
+                cout << "Client connected" << endl;
+                if (clientSocket1 == -1) {
+                    throw "Error on accept";
+                }
+                sendOrder(clientSocket1 , numberOfClients+1);
+            }
+            numberOfClients++;
         }
-
-        handleClient(clientSocket);
+        handleClient(clientSocket, clientSocket1);
         // Close communication with the client
         close(clientSocket);
     }
+
 }
 
 void Server::stop(){
     close(serverSocket);
 }
 
-void Server:: handleClient(int clientSocket){
-    int arg1, arg2;
-    char op;
-
+void Server:: handleClient(int clientSocket, int clientSocket1){
+    Square currentMove = Square(0 ,0);
     while(true) {
-    // Read new exercise arguments
-        int n = read(clientSocket, &arg1, sizeof(arg1));
-        if (n == -1) {
-            cout << "Error reading arg1"<< endl;
-            return;
+        int result;
+        if (whosTurn(clientSocket, clientSocket1) == clientSocket) {
+            result = recieveMove(currentMove,clientSocket, clientSocket1);
+            sendMove(currentMove, clientSocket1);
+        } else{
+            result = recieveMove(currentMove,clientSocket1, clientSocket);
+            sendMove(currentMove, clientSocket);
         }
-        if(n == 0) {
-            cout << "Client disconnected" << endl;
-            return;
+        if(result == 1){
+            break;
         }
-        n = read(clientSocket, &op, sizeof(op));
-        if(n == -1) {
-            cout << "Error reading operator" << endl;
-            return;
-        }
-        n = read(clientSocket, &arg2, sizeof(arg2));
-        if (n == -1) {
-            cout << "Error reading arg2"<< endl;
-            return;
-        }
-        cout << "Got exercise: " << arg1 << op << arg2 << endl;
-        int result = calc(arg1, op, arg2);
-        // Write the result back to the client
-        n = write(clientSocket, &result, sizeof(result));
-        if (n == -1) {
-            cout << "Error writing to socket" << endl;
-            return;
-        }
+        turns ++;
+    }
+}
+
+/**
+ * function name: recieveMove
+ * input: Square currentMove,int clientSocket, int clientSocket1
+ * output: int
+ * operation: Read new exercise current move
+ */
+int Server:: recieveMove(Square currentMove,int clientSocket, int clientSocket1)const{
+    //Read new exercise current move.
+    int n = read(clientSocket, &currentMove, sizeof(Square));
+    if (n == -1) {
+        cout << "Error reading currentMove"<< endl;
+        return 1;
+    }
+    if(n == 0) {
+        cout << "Client disconnected" << endl;
+        return 1;
+    }
+}
+
+/**
+ * function name: sendMove
+ * input: Square currentMove, int clientSocket1
+ * output: void
+ * operation: Write the result back to the client
+ */
+void Server:: sendMove(Square currentMove, int clientSocket1)const{
+    // Write the result back to the client
+     int n = write(clientSocket1, &currentMove, sizeof(Square));
+     if (n == -1) {
+         cout << "Error writing to socket" << endl;
+         return;
+     }
+}
+
+/**
+ * function name: whosTurn
+ * input: 2 clientSockets
+ * output: clientSocket
+ * operation: returns the clientSocket who's turn it is
+ */
+int Server::whosTurn(int first, int second) {
+    if (turns % 2 == 0) {
+        return first;
+    }
+    return second;
+}
+
+/**
+ * function name: sendOrder
+ * input: clientSocket, order
+ * output: void
+ * operation: Write to clientSocket who kind of player you are.
+ */
+void Server::sendOrder(int clientSocket, int order){
+    // Write who kind of player you are.
+    int n = write(clientSocket, &order, sizeof(order));
+    if (n == -1) {
+        cout << "Error writing to socket" << endl;
+        return;
     }
 }

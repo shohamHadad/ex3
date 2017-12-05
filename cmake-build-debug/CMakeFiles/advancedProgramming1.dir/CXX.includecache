@@ -83,8 +83,8 @@ iostream
 -
 
 /home/shoham/CLionProjects/ex3/src/client/src/ClientPlayer.cpp
-ClientPlayer.h
-/home/shoham/CLionProjects/ex3/src/client/src/ClientPlayer.h
+../include/ClientPlayer.h
+/home/shoham/CLionProjects/ex3/src/client/include/ClientPlayer.h
 iostream
 -
 sys/socket.h

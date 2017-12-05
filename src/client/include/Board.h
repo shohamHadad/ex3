@@ -28,7 +28,6 @@ public:
 	Winner whoWin();
 	int numOfX();
 
-    int numOfO();
 };
 
 #endif /* BOARD_H_ */
