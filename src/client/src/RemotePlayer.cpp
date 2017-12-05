@@ -5,7 +5,6 @@ RemotePlayer::RemotePlayer(const char *serverIP, int serverPort): Client(serverI
 }
 
 RemotePlayer::~RemotePlayer() {
-	// TODO Auto-generated destructor stub
 }
 
 Square RemotePlayer::getNextMove() {

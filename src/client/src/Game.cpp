@@ -48,14 +48,6 @@ void Game::initialize() {
 		O = new AIPlayer('O', logic);
 		break;
 	case 3:
-		try {
-			ClientPlayer* cp = new ClientPlayer('O', "127.0.0.1", 8000);
-			cp->connectToServer();
-			this->O = cp;
-		} catch (const char *msg) {
-			cout << "Failed to connect to server. Reason: " << msg << endl;
-			exit(-1);
-		}
 		assignClientAndRemotePlayers();
 		break;
 	default:
@@ -93,7 +85,7 @@ void Game::play() {
 void Game::assignClientAndRemotePlayers() {
 	try {
 		ClientPlayer* cp = new ClientPlayer("127.0.0.1", 8000);
-		RemotePlayer* rp = new RemotePlayer("127.0.0.1", 8000);
+		RemotePlayer rp = new RemotePlayer("127.0.0.1", 8000);
 		cp->connectToServer();
 		rp->connectToServer();
 		int cpOrder = cp->readOrder();
