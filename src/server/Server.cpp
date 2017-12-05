@@ -58,7 +58,6 @@ void Server::start() {
         // Close communication with the client
         close(clientSocket);
     }
-
 }
 
 void Server::stop(){

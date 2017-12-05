@@ -7,11 +7,15 @@
 #include <string.h>
 #include <unistd.h>
 
+<<<<<<< HEAD
 using namespace std;
 
 Client::Client(const char *serverIP, int serverPort) : serverIP(serverIP), serverPort(serverPort){
     // TODO Auto-generated constructor stub
 
+=======
+Client::Client(const char* serverIP, int serverPort): serverIP(serverIP), serverPort(serverPort){
+>>>>>>> dc74ce6f604646343aa2c6af8b03c6ef7d3a1ce1
 }
 
 Client::~Client() {

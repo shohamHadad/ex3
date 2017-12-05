@@ -8,7 +8,7 @@ public:
 	void connectToServer();
 
 protected:
-	const char *serverIP;
+	const char* serverIP;
 	int serverPort;
 	int clientSocket;
 };
