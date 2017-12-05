@@ -22,9 +22,13 @@ Square.h
 vector
 -
 
+/home/shoham/CLionProjects/ex3/src/client/include/Client.h
+
 /home/shoham/CLionProjects/ex3/src/client/include/ClientPlayer.h
-HumanPlayer.h
-/home/shoham/CLionProjects/ex3/src/client/include/HumanPlayer.h
+Client.h
+/home/shoham/CLionProjects/ex3/src/client/include/Client.h
+Player.h
+/home/shoham/CLionProjects/ex3/src/client/include/Player.h
 Square.h
 /home/shoham/CLionProjects/ex3/src/client/include/Square.h
 
