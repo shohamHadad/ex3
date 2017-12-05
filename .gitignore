@@ -7,4 +7,7 @@ ex1.zip
 ex2.zip
 ex3.zip
 README.docx
+CMakeLists.txt
+git log
+cmake-build-debug/
 *.idea

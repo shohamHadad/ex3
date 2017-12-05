@@ -30,20 +30,37 @@ Game::~Game() {
  * operation: get the user's chosen opponent and initialize the game with it
  */
 void Game::initialize() {
-	cout << "Welcome to Reversi!" << endl << "If you want to play against another human, enter 'H'"
-	<< endl	<< "If you want to play against the computer, enter 'C'" << endl;
-	char c;
-	cin >> c;
-	while (c != 'H' && c != 'C') {
-		cout << "Please choose between 'H' and 'C'" << endl;
-		cin >> c;
+	cout << "Welcome to Reversi!" << endl << "Choose an opponent type:"	<< endl	<<
+			"1. a human local player" << endl << "2. an AI player" << endl << "3. a remote player"
+			<< endl;
+	int choice;
+	cin >> choice;
+	while (choice != 1 && choice != 2 && choice != 3) {
+		cout << "Please choose 1, 2 or 3" << endl;
+		cin >> choice;
 	}
-	if (c == 'C') {
-		this->O = new AIPlayer('O', logic);
+	switch (choice) {
+	case 1:
+		O = new HumanPlayer('O');
+		break;
+	case 2:
+		O = new AIPlayer('O', logic);
+		break;
+	case 3:
+		try {
+			ClientPlayer* cp = new ClientPlayer('O', "127.0.0.1", 8000);
+			cp->connectToServer();
+			this->O = cp;
+		} catch (const char *msg) {
+			cout << "Failed to connect to server. Reason: " << msg << endl;
+			exit(-1);
+		}
+		O->connectToServer();
+		break;
+	default:
+		break;
 	}
-	if (c == 'H') {
-		this->O = new HumanPlayer('O');
-	}
+
 }
 
 
