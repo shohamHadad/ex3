@@ -9,12 +9,12 @@
 
 using namespace std;
 
-ClientPlayer::ClientPlayer(const char *serverIP, int serverPort): Client(serverIP, serverPort,
-		clientSocket) {
+ClientPlayer::ClientPlayer(const char *serverIP, int serverPort): Client(serverIP, serverPort){
+
 }
 
 ClientPlayer::~ClientPlayer() {
-}
+}                                                      
 
 void ClientPlayer::sendNextMove(Square move) {
 	// write the move to the socket

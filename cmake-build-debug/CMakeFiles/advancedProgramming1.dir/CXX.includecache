@@ -41,6 +41,8 @@ AIPlayer.h
 /home/shoham/CLionProjects/ex3/src/client/include/AIPlayer.h
 ClientPlayer.h
 /home/shoham/CLionProjects/ex3/src/client/include/ClientPlayer.h
+RemotePlayer.h
+/home/shoham/CLionProjects/ex3/src/client/include/RemotePlayer.h
 stdlib.h
 /home/shoham/CLionProjects/ex3/src/client/include/stdlib.h
 iostream
@@ -72,6 +74,14 @@ vector
 stdlib.h
 /home/shoham/CLionProjects/ex3/src/client/include/stdlib.h
 
+/home/shoham/CLionProjects/ex3/src/client/include/RemotePlayer.h
+Player.h
+/home/shoham/CLionProjects/ex3/src/client/include/Player.h
+Client.h
+/home/shoham/CLionProjects/ex3/src/client/include/Client.h
+Square.h
+/home/shoham/CLionProjects/ex3/src/client/include/Square.h
+
 /home/shoham/CLionProjects/ex3/src/client/include/Square.h
 vector
 -
@@ -84,6 +94,24 @@ vector
 ../include/Board.h
 /home/shoham/CLionProjects/ex3/src/client/include/Board.h
 iostream
+-
+
+/home/shoham/CLionProjects/ex3/src/client/src/Client.cpp
+../include/Client.h
+/home/shoham/CLionProjects/ex3/src/client/include/Client.h
+iostream
+-
+sys/socket.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+netdb.h
+-
+string.h
+-
+unistd.h
 -
 
 /home/shoham/CLionProjects/ex3/src/client/src/ClientPlayer.cpp
@@ -126,6 +154,10 @@ iostream
 limits
 -
 
+/home/shoham/CLionProjects/ex3/src/client/src/RemotePlayer.cpp
+../include/RemotePlayer.h
+/home/shoham/CLionProjects/ex3/src/client/include/RemotePlayer.h
+
 /home/shoham/CLionProjects/ex3/src/client/src/Square.cpp
 ../include/Square.h
 /home/shoham/CLionProjects/ex3/src/client/include/Square.h
@@ -135,4 +167,32 @@ iostream
 /home/shoham/CLionProjects/ex3/src/client/src/main.cpp
 ../include/Game.h
 /home/shoham/CLionProjects/ex3/src/client/include/Game.h
+
+/home/shoham/CLionProjects/ex3/src/server/Server.cpp
+../server/Server.h
+/home/shoham/CLionProjects/ex3/src/server/Server.h
+
+/home/shoham/CLionProjects/ex3/src/server/Server.h
+../client/include/Square.h
+/home/shoham/CLionProjects/ex3/src/client/include/Square.h
+sys/socket.h
+-
+netinet/in.h
+-
+unistd.h
+-
+string.h
+-
+iostream
+-
+stdio.h
+-
+
+/home/shoham/CLionProjects/ex3/src/server/main.cpp
+Server.h
+/home/shoham/CLionProjects/ex3/src/server/Server.h
+iostream
+-
+stdlib.h
+-
 

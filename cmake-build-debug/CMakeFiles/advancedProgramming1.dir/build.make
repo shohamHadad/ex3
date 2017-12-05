@@ -249,9 +249,105 @@ CMakeFiles/advancedProgramming1.dir/src/client/src/ClientPlayer.cpp.o.provides: 
 CMakeFiles/advancedProgramming1.dir/src/client/src/ClientPlayer.cpp.o.provides.build: CMakeFiles/advancedProgramming1.dir/src/client/src/ClientPlayer.cpp.o
 
 
+CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.o: CMakeFiles/advancedProgramming1.dir/flags.make
+CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.o: ../src/client/src/RemotePlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.o -c /home/shoham/CLionProjects/ex3/src/client/src/RemotePlayer.cpp
+
+CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shoham/CLionProjects/ex3/src/client/src/RemotePlayer.cpp > CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.i
+
+CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shoham/CLionProjects/ex3/src/client/src/RemotePlayer.cpp -o CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.s
+
+CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.o.requires:
+
+.PHONY : CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.o.requires
+
+CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.o.provides: CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/advancedProgramming1.dir/build.make CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.o.provides.build
+.PHONY : CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.o.provides
+
+CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.o.provides.build: CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.o
+
+
+CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.o: CMakeFiles/advancedProgramming1.dir/flags.make
+CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.o: ../src/client/src/Client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.o -c /home/shoham/CLionProjects/ex3/src/client/src/Client.cpp
+
+CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shoham/CLionProjects/ex3/src/client/src/Client.cpp > CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.i
+
+CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shoham/CLionProjects/ex3/src/client/src/Client.cpp -o CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.s
+
+CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.o.requires:
+
+.PHONY : CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.o.requires
+
+CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.o.provides: CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.o.requires
+	$(MAKE) -f CMakeFiles/advancedProgramming1.dir/build.make CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.o.provides.build
+.PHONY : CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.o.provides
+
+CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.o.provides.build: CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.o
+
+
+CMakeFiles/advancedProgramming1.dir/src/server/Server.cpp.o: CMakeFiles/advancedProgramming1.dir/flags.make
+CMakeFiles/advancedProgramming1.dir/src/server/Server.cpp.o: ../src/server/Server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/advancedProgramming1.dir/src/server/Server.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/advancedProgramming1.dir/src/server/Server.cpp.o -c /home/shoham/CLionProjects/ex3/src/server/Server.cpp
+
+CMakeFiles/advancedProgramming1.dir/src/server/Server.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/advancedProgramming1.dir/src/server/Server.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shoham/CLionProjects/ex3/src/server/Server.cpp > CMakeFiles/advancedProgramming1.dir/src/server/Server.cpp.i
+
+CMakeFiles/advancedProgramming1.dir/src/server/Server.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/advancedProgramming1.dir/src/server/Server.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shoham/CLionProjects/ex3/src/server/Server.cpp -o CMakeFiles/advancedProgramming1.dir/src/server/Server.cpp.s
+
+CMakeFiles/advancedProgramming1.dir/src/server/Server.cpp.o.requires:
+
+.PHONY : CMakeFiles/advancedProgramming1.dir/src/server/Server.cpp.o.requires
+
+CMakeFiles/advancedProgramming1.dir/src/server/Server.cpp.o.provides: CMakeFiles/advancedProgramming1.dir/src/server/Server.cpp.o.requires
+	$(MAKE) -f CMakeFiles/advancedProgramming1.dir/build.make CMakeFiles/advancedProgramming1.dir/src/server/Server.cpp.o.provides.build
+.PHONY : CMakeFiles/advancedProgramming1.dir/src/server/Server.cpp.o.provides
+
+CMakeFiles/advancedProgramming1.dir/src/server/Server.cpp.o.provides.build: CMakeFiles/advancedProgramming1.dir/src/server/Server.cpp.o
+
+
+CMakeFiles/advancedProgramming1.dir/src/server/main.cpp.o: CMakeFiles/advancedProgramming1.dir/flags.make
+CMakeFiles/advancedProgramming1.dir/src/server/main.cpp.o: ../src/server/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/advancedProgramming1.dir/src/server/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/advancedProgramming1.dir/src/server/main.cpp.o -c /home/shoham/CLionProjects/ex3/src/server/main.cpp
+
+CMakeFiles/advancedProgramming1.dir/src/server/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/advancedProgramming1.dir/src/server/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shoham/CLionProjects/ex3/src/server/main.cpp > CMakeFiles/advancedProgramming1.dir/src/server/main.cpp.i
+
+CMakeFiles/advancedProgramming1.dir/src/server/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/advancedProgramming1.dir/src/server/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shoham/CLionProjects/ex3/src/server/main.cpp -o CMakeFiles/advancedProgramming1.dir/src/server/main.cpp.s
+
+CMakeFiles/advancedProgramming1.dir/src/server/main.cpp.o.requires:
+
+.PHONY : CMakeFiles/advancedProgramming1.dir/src/server/main.cpp.o.requires
+
+CMakeFiles/advancedProgramming1.dir/src/server/main.cpp.o.provides: CMakeFiles/advancedProgramming1.dir/src/server/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/advancedProgramming1.dir/build.make CMakeFiles/advancedProgramming1.dir/src/server/main.cpp.o.provides.build
+.PHONY : CMakeFiles/advancedProgramming1.dir/src/server/main.cpp.o.provides
+
+CMakeFiles/advancedProgramming1.dir/src/server/main.cpp.o.provides.build: CMakeFiles/advancedProgramming1.dir/src/server/main.cpp.o
+
+
 CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o: CMakeFiles/advancedProgramming1.dir/flags.make
 CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o: ../src/client/src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o -c /home/shoham/CLionProjects/ex3/src/client/src/main.cpp
 
 CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.i: cmake_force
@@ -283,6 +379,10 @@ advancedProgramming1_OBJECTS = \
 "CMakeFiles/advancedProgramming1.dir/src/client/src/AIPlayer.cpp.o" \
 "CMakeFiles/advancedProgramming1.dir/src/client/src/Square.cpp.o" \
 "CMakeFiles/advancedProgramming1.dir/src/client/src/ClientPlayer.cpp.o" \
+"CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.o" \
+"CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.o" \
+"CMakeFiles/advancedProgramming1.dir/src/server/Server.cpp.o" \
+"CMakeFiles/advancedProgramming1.dir/src/server/main.cpp.o" \
 "CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o"
 
 # External object files for target advancedProgramming1
@@ -296,10 +396,14 @@ advancedProgramming1: CMakeFiles/advancedProgramming1.dir/src/client/src/HumanPl
 advancedProgramming1: CMakeFiles/advancedProgramming1.dir/src/client/src/AIPlayer.cpp.o
 advancedProgramming1: CMakeFiles/advancedProgramming1.dir/src/client/src/Square.cpp.o
 advancedProgramming1: CMakeFiles/advancedProgramming1.dir/src/client/src/ClientPlayer.cpp.o
+advancedProgramming1: CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.o
+advancedProgramming1: CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.o
+advancedProgramming1: CMakeFiles/advancedProgramming1.dir/src/server/Server.cpp.o
+advancedProgramming1: CMakeFiles/advancedProgramming1.dir/src/server/main.cpp.o
 advancedProgramming1: CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o
 advancedProgramming1: CMakeFiles/advancedProgramming1.dir/build.make
 advancedProgramming1: CMakeFiles/advancedProgramming1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable advancedProgramming1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable advancedProgramming1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/advancedProgramming1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -315,6 +419,10 @@ CMakeFiles/advancedProgramming1.dir/requires: CMakeFiles/advancedProgramming1.di
 CMakeFiles/advancedProgramming1.dir/requires: CMakeFiles/advancedProgramming1.dir/src/client/src/AIPlayer.cpp.o.requires
 CMakeFiles/advancedProgramming1.dir/requires: CMakeFiles/advancedProgramming1.dir/src/client/src/Square.cpp.o.requires
 CMakeFiles/advancedProgramming1.dir/requires: CMakeFiles/advancedProgramming1.dir/src/client/src/ClientPlayer.cpp.o.requires
+CMakeFiles/advancedProgramming1.dir/requires: CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.o.requires
+CMakeFiles/advancedProgramming1.dir/requires: CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.o.requires
+CMakeFiles/advancedProgramming1.dir/requires: CMakeFiles/advancedProgramming1.dir/src/server/Server.cpp.o.requires
+CMakeFiles/advancedProgramming1.dir/requires: CMakeFiles/advancedProgramming1.dir/src/server/main.cpp.o.requires
 CMakeFiles/advancedProgramming1.dir/requires: CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o.requires
 
 .PHONY : CMakeFiles/advancedProgramming1.dir/requires

@@ -1,4 +1,4 @@
-#include "RemotePlayer.h"
+#include "../include/RemotePlayer.h"
 
 RemotePlayer::RemotePlayer(const char *serverIP, int serverPort): Client(serverIP, serverPort,
 		clientSocket) {

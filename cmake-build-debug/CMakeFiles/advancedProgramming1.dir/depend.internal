@@ -12,6 +12,9 @@ CMakeFiles/advancedProgramming1.dir/src/client/src/Board.cpp.o
  /home/shoham/CLionProjects/ex3/src/client/include/Board.h
  /home/shoham/CLionProjects/ex3/src/client/include/Square.h
  /home/shoham/CLionProjects/ex3/src/client/src/Board.cpp
+CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.o
+ /home/shoham/CLionProjects/ex3/src/client/include/Client.h
+ /home/shoham/CLionProjects/ex3/src/client/src/Client.cpp
 CMakeFiles/advancedProgramming1.dir/src/client/src/ClientPlayer.cpp.o
  /home/shoham/CLionProjects/ex3/src/client/include/Client.h
  /home/shoham/CLionProjects/ex3/src/client/include/ClientPlayer.h
@@ -27,6 +30,7 @@ CMakeFiles/advancedProgramming1.dir/src/client/src/Game.cpp.o
  /home/shoham/CLionProjects/ex3/src/client/include/GameLogic.h
  /home/shoham/CLionProjects/ex3/src/client/include/HumanPlayer.h
  /home/shoham/CLionProjects/ex3/src/client/include/Player.h
+ /home/shoham/CLionProjects/ex3/src/client/include/RemotePlayer.h
  /home/shoham/CLionProjects/ex3/src/client/include/Square.h
  /home/shoham/CLionProjects/ex3/src/client/src/Game.cpp
 CMakeFiles/advancedProgramming1.dir/src/client/src/GameLogic.cpp.o
@@ -44,6 +48,12 @@ CMakeFiles/advancedProgramming1.dir/src/client/src/Player.cpp.o
  /home/shoham/CLionProjects/ex3/src/client/include/Player.h
  /home/shoham/CLionProjects/ex3/src/client/include/Square.h
  /home/shoham/CLionProjects/ex3/src/client/src/Player.cpp
+CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.o
+ /home/shoham/CLionProjects/ex3/src/client/include/Client.h
+ /home/shoham/CLionProjects/ex3/src/client/include/Player.h
+ /home/shoham/CLionProjects/ex3/src/client/include/RemotePlayer.h
+ /home/shoham/CLionProjects/ex3/src/client/include/Square.h
+ /home/shoham/CLionProjects/ex3/src/client/src/RemotePlayer.cpp
 CMakeFiles/advancedProgramming1.dir/src/client/src/Square.cpp.o
  /home/shoham/CLionProjects/ex3/src/client/include/Square.h
  /home/shoham/CLionProjects/ex3/src/client/src/Square.cpp
@@ -56,5 +66,14 @@ CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o
  /home/shoham/CLionProjects/ex3/src/client/include/GameLogic.h
  /home/shoham/CLionProjects/ex3/src/client/include/HumanPlayer.h
  /home/shoham/CLionProjects/ex3/src/client/include/Player.h
+ /home/shoham/CLionProjects/ex3/src/client/include/RemotePlayer.h
  /home/shoham/CLionProjects/ex3/src/client/include/Square.h
  /home/shoham/CLionProjects/ex3/src/client/src/main.cpp
+CMakeFiles/advancedProgramming1.dir/src/server/Server.cpp.o
+ /home/shoham/CLionProjects/ex3/src/client/include/Square.h
+ /home/shoham/CLionProjects/ex3/src/server/Server.cpp
+ /home/shoham/CLionProjects/ex3/src/server/Server.h
+CMakeFiles/advancedProgramming1.dir/src/server/main.cpp.o
+ /home/shoham/CLionProjects/ex3/src/client/include/Square.h
+ /home/shoham/CLionProjects/ex3/src/server/Server.h
+ /home/shoham/CLionProjects/ex3/src/server/main.cpp

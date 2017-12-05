@@ -398,6 +398,10 @@
 			<Option target="ex3_test"/>
 			<Option target="advancedProgramming1"/>
 		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/include/Client.h">
+			<Option target="ex3_test"/>
+			<Option target="advancedProgramming1"/>
+		</Unit>
 		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/include/ClientPlayer.h">
 			<Option target="ex3_test"/>
 			<Option target="advancedProgramming1"/>
@@ -415,6 +419,10 @@
 			<Option target="advancedProgramming1"/>
 		</Unit>
 		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/include/Player.h">
+			<Option target="ex3_test"/>
+			<Option target="advancedProgramming1"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/include/RemotePlayer.h">
 			<Option target="ex3_test"/>
 			<Option target="advancedProgramming1"/>
 		</Unit>
@@ -445,6 +453,10 @@
 			<Option target="ex3_test"/>
 			<Option target="advancedProgramming1"/>
 		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/src/Client.cpp">
+			<Option target="ex3_test"/>
+			<Option target="advancedProgramming1"/>
+		</Unit>
 		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/src/ClientPlayer.cpp">
 			<Option target="ex3_test"/>
 			<Option target="advancedProgramming1"/>
@@ -462,6 +474,10 @@
 			<Option target="advancedProgramming1"/>
 		</Unit>
 		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/src/Player.cpp">
+			<Option target="ex3_test"/>
+			<Option target="advancedProgramming1"/>
+		</Unit>
+		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/src/RemotePlayer.cpp">
 			<Option target="ex3_test"/>
 			<Option target="advancedProgramming1"/>
 		</Unit>
@@ -495,12 +511,15 @@
 		</Unit>
 		<Unit filename="/home/shoham/CLionProjects/ex3/src/server/Server.cpp">
 			<Option target="ex3_test"/>
+			<Option target="advancedProgramming1"/>
 		</Unit>
 		<Unit filename="/home/shoham/CLionProjects/ex3/src/server/Server.h">
 			<Option target="ex3_test"/>
+			<Option target="advancedProgramming1"/>
 		</Unit>
 		<Unit filename="/home/shoham/CLionProjects/ex3/src/server/main.cpp">
 			<Option target="ex3_test"/>
+			<Option target="advancedProgramming1"/>
 		</Unit>
 		<Unit filename="/home/shoham/CLionProjects/ex3/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>

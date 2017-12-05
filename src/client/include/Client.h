@@ -3,7 +3,7 @@
 
 class Client {
 public:
-	Client();
+	Client(const char *serverIP, int serverPort);
 	virtual ~Client();
 	void connectToServer();
 

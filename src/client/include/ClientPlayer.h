@@ -5,7 +5,7 @@
 #include "Player.h"
 #include "Square.h"
 
-class ClientPlayer: public Player, public Client {
+class ClientPlayer: public Client,  public Player {
 public:
 	ClientPlayer(const char *serverIP, int serverPort);
 	void sendNextMove(Square move);

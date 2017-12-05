@@ -1,4 +1,4 @@
-#include "Client.h"
+#include "../include/Client.h"
 #include <iostream>
 #include <sys/socket.h>
 #include <netinet/in.h>
@@ -7,15 +7,17 @@
 #include <string.h>
 #include <unistd.h>
 
-Client::Client(const char *serverIP, int serverPort) {
-	// TODO Auto-generated constructor stub
+using namespace std;
+
+Client::Client(const char *serverIP, int serverPort) : serverIP(serverIP), serverPort(serverPort){
+    // TODO Auto-generated constructor stub
 
 }
 
 Client::~Client() {
 }
 
-void ClientPlayer::connectToServer() {
+void Client::connectToServer() {
 	// Create a socket point
 	clientSocket = socket(AF_INET, SOCK_STREAM, 0);
 	if (clientSocket == -1) {

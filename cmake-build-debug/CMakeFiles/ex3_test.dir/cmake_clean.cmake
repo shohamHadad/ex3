@@ -10,9 +10,11 @@ file(REMOVE_RECURSE
   "CMakeFiles/ex3_test.dir/src/client/test/test_board.cpp.o"
   "CMakeFiles/ex3_test.dir/src/client/test/test_aiPlayer.cpp.o"
   "CMakeFiles/ex3_test.dir/src/client/test/test_gameLogic.cpp.o"
+  "CMakeFiles/ex3_test.dir/src/client/src/ClientPlayer.cpp.o"
+  "CMakeFiles/ex3_test.dir/src/client/src/RemotePlayer.cpp.o"
+  "CMakeFiles/ex3_test.dir/src/client/src/Client.cpp.o"
   "CMakeFiles/ex3_test.dir/src/server/Server.cpp.o"
   "CMakeFiles/ex3_test.dir/src/server/main.cpp.o"
-  "CMakeFiles/ex3_test.dir/src/client/src/ClientPlayer.cpp.o"
   "ex3_test.pdb"
   "ex3_test"
 )
