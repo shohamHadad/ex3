@@ -1,1 +1,0 @@
-/usr/bin/c++   -lpthread -g     -o ex3 src/client/lib/googletest-master/googlemock/gtest/libgtestd.a src/client/lib/googletest-master/googlemock/gtest/libgtest_maind.a src/client/lib/googletest-master/googlemock/libgmockd.a src/client/lib/googletest-master/googlemock/gtest/libgtestd.a -pthread 
