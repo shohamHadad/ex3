@@ -8,7 +8,7 @@
 #include <unistd.h>
 using namespace std;
 
-Client::Client(const char *serverIP, int serverPort) : serverIP(serverIP), serverPort(serverPort) {
+Client::Client(const char *serverIP, int serverPort): serverIP(serverIP), serverPort(serverPort) {
 }
 
 Client::~Client() {

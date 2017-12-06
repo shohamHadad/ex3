@@ -12,7 +12,7 @@ class Player {
 protected:
 	char type;
 public:
-	Player(char);
+	Player(char = ' ');
 	virtual Square chooseSquare(vector<Square>, Player* current, Player* opponent);
 	virtual ~Player();
 	char getType();
