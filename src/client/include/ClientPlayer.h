@@ -9,7 +9,7 @@
 class ClientPlayer: public Client,  public Player {
 public:
 	ClientPlayer(const char *serverIP, int serverPort);
-	void sendNextMove(Square move);
+	void sendNextMove(char* move);
 	int readOrder();
 	Square chooseSquare(vector<Square>, Player*, Player*);
 	void printPossibleMoves(vector <Square> moves);

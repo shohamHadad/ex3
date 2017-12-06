@@ -4,17 +4,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/shir/CLionProjects/ex3/src/client/src/AIPlayer.cpp" "/home/shir/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/AIPlayer.cpp.o"
-  "/home/shir/CLionProjects/ex3/src/client/src/Board.cpp" "/home/shir/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/Board.cpp.o"
-  "/home/shir/CLionProjects/ex3/src/client/src/Client.cpp" "/home/shir/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.o"
-  "/home/shir/CLionProjects/ex3/src/client/src/ClientPlayer.cpp" "/home/shir/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/ClientPlayer.cpp.o"
-  "/home/shir/CLionProjects/ex3/src/client/src/Game.cpp" "/home/shir/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/Game.cpp.o"
-  "/home/shir/CLionProjects/ex3/src/client/src/GameLogic.cpp" "/home/shir/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/GameLogic.cpp.o"
-  "/home/shir/CLionProjects/ex3/src/client/src/HumanPlayer.cpp" "/home/shir/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/HumanPlayer.cpp.o"
-  "/home/shir/CLionProjects/ex3/src/client/src/Player.cpp" "/home/shir/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/Player.cpp.o"
-  "/home/shir/CLionProjects/ex3/src/client/src/RemotePlayer.cpp" "/home/shir/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.o"
-  "/home/shir/CLionProjects/ex3/src/client/src/Square.cpp" "/home/shir/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/Square.cpp.o"
-  "/home/shir/CLionProjects/ex3/src/client/src/main.cpp" "/home/shir/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o"
+  "/home/shoham/CLionProjects/ex3/src/client/src/AIPlayer.cpp" "/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/AIPlayer.cpp.o"
+  "/home/shoham/CLionProjects/ex3/src/client/src/Board.cpp" "/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/Board.cpp.o"
+  "/home/shoham/CLionProjects/ex3/src/client/src/Client.cpp" "/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.o"
+  "/home/shoham/CLionProjects/ex3/src/client/src/ClientPlayer.cpp" "/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/ClientPlayer.cpp.o"
+  "/home/shoham/CLionProjects/ex3/src/client/src/Game.cpp" "/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/Game.cpp.o"
+  "/home/shoham/CLionProjects/ex3/src/client/src/GameLogic.cpp" "/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/GameLogic.cpp.o"
+  "/home/shoham/CLionProjects/ex3/src/client/src/HumanPlayer.cpp" "/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/HumanPlayer.cpp.o"
+  "/home/shoham/CLionProjects/ex3/src/client/src/Player.cpp" "/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/Player.cpp.o"
+  "/home/shoham/CLionProjects/ex3/src/client/src/RemotePlayer.cpp" "/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.o"
+  "/home/shoham/CLionProjects/ex3/src/client/src/Square.cpp" "/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/Square.cpp.o"
+  "/home/shoham/CLionProjects/ex3/src/client/src/main.cpp" "/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

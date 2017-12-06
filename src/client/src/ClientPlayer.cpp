@@ -15,9 +15,9 @@ ClientPlayer::ClientPlayer(const char *serverIP, int serverPort): Client(serverI
 ClientPlayer::~ClientPlayer() {
 }
 
-void ClientPlayer::sendNextMove(Square move) {
+void ClientPlayer::sendNextMove(char* move) {
 	// write the move to the socket
-	int n = write(clientSocket, &move, sizeof(move));
+	int n = write(clientSocket, &move, sizeof(char*));
 	if (n == -1) {
 		throw "Error writing move to socket";
 	}
@@ -44,7 +44,8 @@ Square ClientPlayer::chooseSquare(vector<Square> possibleMoves, Player* current,
 			Square playersChoice(x,y);
 			for (unsigned int i = 0; i < possibleMoves.size(); i++) {
 				if (possibleMoves[i] == playersChoice) {
-					sendNextMove(playersChoice);
+                    char s[2];
+					sendNextMove(playersChoice.toString(s));
 					return playersChoice;
 				}
 			}

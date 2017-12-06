@@ -2,7 +2,7 @@
 #define SQUARE_H_
 
 #include <vector>
-
+#include <string>
 using namespace std;
 
 /*
@@ -15,18 +15,14 @@ private:
 	char type;
 public:
 	Square(int, int);
-
 	void print();
-
 	int getX();
-
 	int getY();
-
 	char getType();
-
 	bool operator ==(const Square &other) const;
-
 	void setType(char);
+	Square fromString(const char*);
+	char* toString(char*);
 };
 
 #endif /* SQUARE_H_ */
