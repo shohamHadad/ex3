@@ -45,19 +45,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/shoham/clion-2017.2.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/shir/Downloads/clion-2017.2.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/shoham/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/shir/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/shoham/CLionProjects/ex3
+CMAKE_SOURCE_DIR = /home/shir/CLionProjects/ex3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/shoham/CLionProjects/ex3/cmake-build-debug
+CMAKE_BINARY_DIR = /home/shir/CLionProjects/ex3/cmake-build-debug
 
 #=============================================================================
 # Target rules for target CMakeFiles/advancedProgramming1.dir
@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/shoham/CLionProjects/ex3/cmake-build-debug
 CMakeFiles/advancedProgramming1.dir/all:
 	$(MAKE) -f CMakeFiles/advancedProgramming1.dir/build.make CMakeFiles/advancedProgramming1.dir/depend
 	$(MAKE) -f CMakeFiles/advancedProgramming1.dir/build.make CMakeFiles/advancedProgramming1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target advancedProgramming1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/shir/CLionProjects/ex3/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14 "Built target advancedProgramming1"
 .PHONY : CMakeFiles/advancedProgramming1.dir/all
 
 # Include target in all.
@@ -76,9 +76,9 @@ all: CMakeFiles/advancedProgramming1.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/advancedProgramming1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shir/CLionProjects/ex3/cmake-build-debug/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/advancedProgramming1.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/shoham/CLionProjects/ex3/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/shir/CLionProjects/ex3/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/advancedProgramming1.dir/rule
 
 # Convenience name for target.
