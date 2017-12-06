@@ -6,5 +6,5 @@ CXX_FLAGS =  -lpthread -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/shoham/CLionProjects/ex3/src/client/lib/googletest-master/googletest/include -I/home/shoham/CLionProjects/ex3/src/client/lib/googletest-master/googlemock/include -I/home/shoham/CLionProjects/ex3/src/client/test 
+CXX_INCLUDES = 
 

@@ -26,7 +26,7 @@ void ClientPlayer::sendNextMove(Square move) {
 int ClientPlayer::readOrder() {
 	// read the player's order from the socket
 	int order;
-	n = read(clientSocket, &order, sizeof(order));
+	int n = read(clientSocket, &order, sizeof(order));
 	if (n == -1) {
 		throw "Error reading opponentMove from socket";
 	}
@@ -53,4 +53,22 @@ Square ClientPlayer::chooseSquare(vector<Square> possibleMoves, Player* current,
 		cin.clear();
 		cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 	}
+}
+
+
+/**
+ * function name: printPossibleMoves
+ * input: vector<Square>
+ * output: void
+ * operation: prints out the moves
+ */
+void ClientPlayer::printPossibleMoves(vector <Square> moves) {
+	cout << "Your possible moves are: ";
+	for (unsigned int i = 0; i < moves.size(); i++) {
+		if (i != 0) {
+			cout << ",";
+		}
+		moves[i].print();
+	}
+	cout << endl;
 }

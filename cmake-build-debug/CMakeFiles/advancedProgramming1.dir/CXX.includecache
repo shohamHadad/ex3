@@ -31,6 +31,8 @@ Player.h
 /home/shoham/CLionProjects/ex3/src/client/include/Player.h
 Square.h
 /home/shoham/CLionProjects/ex3/src/client/include/Square.h
+limits
+-
 
 /home/shoham/CLionProjects/ex3/src/client/include/Game.h
 GameLogic.h
@@ -157,6 +159,20 @@ limits
 /home/shoham/CLionProjects/ex3/src/client/src/RemotePlayer.cpp
 ../include/RemotePlayer.h
 /home/shoham/CLionProjects/ex3/src/client/include/RemotePlayer.h
+iostream
+-
+sys/socket.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+netdb.h
+-
+string.h
+-
+unistd.h
+-
 
 /home/shoham/CLionProjects/ex3/src/client/src/Square.cpp
 ../include/Square.h
