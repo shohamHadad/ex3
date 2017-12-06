@@ -13,6 +13,7 @@ public:
 	int readOrder();
 	Square chooseSquare(vector<Square>, Player*, Player*);
 	void printPossibleMoves(vector <Square> moves);
+	void waitForOtherPlayer();
 	virtual ~ClientPlayer();
 };
 

@@ -87,11 +87,11 @@ void Game::assignClientAndRemotePlayers() {
 		ClientPlayer* cp = new ClientPlayer("127.0.0.1", 8000);
 		RemotePlayer* rp = new RemotePlayer("127.0.0.1", 8000);
 		cp->connectToServer();
-		rp->connectToServer();
 		int cpOrder = cp->readOrder();
 		if (cpOrder == 1) {
 			X = cp;
 			O = rp;
+            cp->waitForOtherPlayer();
 		} else {
 			O = cp;
 			X = rp;

@@ -17,7 +17,7 @@ ClientPlayer::~ClientPlayer() {
 
 void ClientPlayer::sendNextMove(char* move) {
 	// write the move to the socket
-	int n = write(clientSocket, &move, sizeof(char*));
+	int n = write(clientSocket, move, sizeof(move));
 	if (n == -1) {
 		throw "Error writing move to socket";
 	}
@@ -72,4 +72,14 @@ void ClientPlayer::printPossibleMoves(vector <Square> moves) {
 		moves[i].print();
 	}
 	cout << endl;
+}
+
+void ClientPlayer::waitForOtherPlayer() {
+	cout << "Waiting for other player to join..." << endl;
+	// read the server's message
+	char* msg;
+	int n = read(clientSocket, &msg, sizeof(msg));
+	if (n == -1) {
+		throw "Error reading msg from socket";
+	}
 }
