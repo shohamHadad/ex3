@@ -23,10 +23,7 @@ set(SOURCE_FILES
 		src/client/src/RemotePlayer.cpp
         src/client/include/RemotePlayer.h
         src/client/src/Client.cpp
-        src/client/include/Client.h
-        src/server/Server.cpp
-        src/server/Server.h
-        src/server/main.cpp)
+        src/client/include/Client.h)
 
 
 

@@ -147,15 +147,6 @@
 		<Unit filename="/home/shir/CLionProjects/ex3/src/client/src/main.cpp">
 			<Option target="advancedProgramming1"/>
 		</Unit>
-		<Unit filename="/home/shir/CLionProjects/ex3/src/server/Server.cpp">
-			<Option target="advancedProgramming1"/>
-		</Unit>
-		<Unit filename="/home/shir/CLionProjects/ex3/src/server/Server.h">
-			<Option target="advancedProgramming1"/>
-		</Unit>
-		<Unit filename="/home/shir/CLionProjects/ex3/src/server/main.cpp">
-			<Option target="advancedProgramming1"/>
-		</Unit>
 		<Unit filename="/home/shir/CLionProjects/ex3/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

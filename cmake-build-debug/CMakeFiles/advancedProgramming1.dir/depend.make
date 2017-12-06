@@ -69,11 +69,3 @@ CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o: ../src/client/inc
 CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o: ../src/client/include/Square.h
 CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o: ../src/client/src/main.cpp
 
-CMakeFiles/advancedProgramming1.dir/src/server/Server.cpp.o: ../src/client/include/Square.h
-CMakeFiles/advancedProgramming1.dir/src/server/Server.cpp.o: ../src/server/Server.cpp
-CMakeFiles/advancedProgramming1.dir/src/server/Server.cpp.o: ../src/server/Server.h
-
-CMakeFiles/advancedProgramming1.dir/src/server/main.cpp.o: ../src/client/include/Square.h
-CMakeFiles/advancedProgramming1.dir/src/server/main.cpp.o: ../src/server/Server.h
-CMakeFiles/advancedProgramming1.dir/src/server/main.cpp.o: ../src/server/main.cpp
-

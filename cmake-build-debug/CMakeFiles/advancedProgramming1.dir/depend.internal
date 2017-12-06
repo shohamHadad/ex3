@@ -69,11 +69,3 @@ CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o
  /home/shir/CLionProjects/ex3/src/client/include/RemotePlayer.h
  /home/shir/CLionProjects/ex3/src/client/include/Square.h
  /home/shir/CLionProjects/ex3/src/client/src/main.cpp
-CMakeFiles/advancedProgramming1.dir/src/server/Server.cpp.o
- /home/shir/CLionProjects/ex3/src/client/include/Square.h
- /home/shir/CLionProjects/ex3/src/server/Server.cpp
- /home/shir/CLionProjects/ex3/src/server/Server.h
-CMakeFiles/advancedProgramming1.dir/src/server/main.cpp.o
- /home/shir/CLionProjects/ex3/src/client/include/Square.h
- /home/shir/CLionProjects/ex3/src/server/Server.h
- /home/shir/CLionProjects/ex3/src/server/main.cpp

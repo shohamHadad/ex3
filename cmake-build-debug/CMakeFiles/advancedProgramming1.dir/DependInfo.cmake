@@ -15,8 +15,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/shir/CLionProjects/ex3/src/client/src/RemotePlayer.cpp" "/home/shir/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.o"
   "/home/shir/CLionProjects/ex3/src/client/src/Square.cpp" "/home/shir/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/Square.cpp.o"
   "/home/shir/CLionProjects/ex3/src/client/src/main.cpp" "/home/shir/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o"
-  "/home/shir/CLionProjects/ex3/src/server/Server.cpp" "/home/shir/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/server/Server.cpp.o"
-  "/home/shir/CLionProjects/ex3/src/server/main.cpp" "/home/shir/CLionProjects/ex3/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/server/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

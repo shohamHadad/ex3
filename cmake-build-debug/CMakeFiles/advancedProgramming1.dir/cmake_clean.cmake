@@ -9,8 +9,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/advancedProgramming1.dir/src/client/src/ClientPlayer.cpp.o"
   "CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.o"
   "CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.o"
-  "CMakeFiles/advancedProgramming1.dir/src/server/Server.cpp.o"
-  "CMakeFiles/advancedProgramming1.dir/src/server/main.cpp.o"
   "CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o"
   "advancedProgramming1.pdb"
   "advancedProgramming1"
