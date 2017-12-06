@@ -9,10 +9,8 @@ using namespace std;
  * output: new object of player
  * operation: constructor
  */
-Player::Player(char type): type(type) {
-}
+Player::Player(char type): type(type) {}
 
-Player::Player() {}
 
 /**
  * function name: ~Player
