@@ -83,6 +83,8 @@ Client.h
 /home/shir/CLionProjects/ex4_client/src/client/include/Client.h
 Square.h
 /home/shir/CLionProjects/ex4_client/src/client/include/Square.h
+iostream
+-
 
 /home/shir/CLionProjects/ex4_client/src/client/include/Square.h
 vector
@@ -161,18 +163,6 @@ limits
 /home/shir/CLionProjects/ex4_client/src/client/src/RemotePlayer.cpp
 ../include/RemotePlayer.h
 /home/shir/CLionProjects/ex4_client/src/client/include/RemotePlayer.h
-iostream
--
-sys/socket.h
--
-netinet/in.h
--
-arpa/inet.h
--
-netdb.h
--
-string.h
--
 unistd.h
 -
 

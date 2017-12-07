@@ -4,6 +4,7 @@
 #include "Player.h"
 #include "Client.h"
 #include "Square.h"
+#include <iostream>
 
 class RemotePlayer: public Player, public Client {
 public:
