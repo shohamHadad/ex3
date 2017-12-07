@@ -15,12 +15,16 @@ ClientPlayer::ClientPlayer(const char *serverIP, int serverPort): Client(serverI
 ClientPlayer::~ClientPlayer() {
 }
 
-void ClientPlayer::sendNextMove(char* move) {
+void ClientPlayer::sendNextMove(int x, int y) {
 	// write the move to the socket
-	int n = write(clientSocket, move, sizeof(move));
+	int n = write(clientSocket, &x, sizeof(x));
 	if (n == -1) {
 		throw "Error writing move to socket";
 	}
+    n = write(clientSocket, &y, sizeof(y));
+    if (n == -1) {
+        throw "Error writing move to socket";
+    }
 }
 
 int ClientPlayer::readOrder() {
@@ -34,6 +38,7 @@ int ClientPlayer::readOrder() {
 }
 
 Square ClientPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Player* opponent) {
+    waitForOtherPlayerMove();
 	// print the moves to the current player
 	printPossibleMoves(possibleMoves);
 	cout << endl << "Please enter your move, row col:";
@@ -44,8 +49,7 @@ Square ClientPlayer::chooseSquare(vector<Square> possibleMoves, Player* current,
 			Square playersChoice(x,y);
 			for (unsigned int i = 0; i < possibleMoves.size(); i++) {
 				if (possibleMoves[i] == playersChoice) {
-                    char s[2];
-					sendNextMove(playersChoice.toString(s));
+					sendNextMove(playersChoice.getX(), playersChoice.getY());
 					return playersChoice;
 				}
 			}
@@ -82,4 +86,14 @@ void ClientPlayer::waitForOtherPlayer() {
 	if (n == -1) {
 		throw "Error reading msg from socket";
 	}
+}
+
+void ClientPlayer::waitForOtherPlayerMove() {
+    cout << "Waiting for other player's move..." << endl;
+    // read the server's message
+    char* msg;
+    int n = read(clientSocket, &msg, sizeof(msg));
+    if (n == -1) {
+        throw "Error reading msg from socket";
+    }
 }
