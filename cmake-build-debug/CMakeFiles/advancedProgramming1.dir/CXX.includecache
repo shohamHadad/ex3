@@ -6,103 +6,103 @@
 
 #IncludeRegexTransform: 
 
-/home/shoham/CLionProjects/ex3/src/client/include/AIPlayer.h
+/home/shir/CLionProjects/ex4_client/src/client/include/AIPlayer.h
 Player.h
-/home/shoham/CLionProjects/ex3/src/client/include/Player.h
+/home/shir/CLionProjects/ex4_client/src/client/include/Player.h
 GameLogic.h
-/home/shoham/CLionProjects/ex3/src/client/include/GameLogic.h
+/home/shir/CLionProjects/ex4_client/src/client/include/GameLogic.h
 Square.h
-/home/shoham/CLionProjects/ex3/src/client/include/Square.h
+/home/shir/CLionProjects/ex4_client/src/client/include/Square.h
 iostream
 -
 
-/home/shoham/CLionProjects/ex3/src/client/include/Board.h
+/home/shir/CLionProjects/ex4_client/src/client/include/Board.h
 Square.h
-/home/shoham/CLionProjects/ex3/src/client/include/Square.h
+/home/shir/CLionProjects/ex4_client/src/client/include/Square.h
 vector
 -
 
-/home/shoham/CLionProjects/ex3/src/client/include/Client.h
+/home/shir/CLionProjects/ex4_client/src/client/include/Client.h
 
-/home/shoham/CLionProjects/ex3/src/client/include/ClientPlayer.h
+/home/shir/CLionProjects/ex4_client/src/client/include/ClientPlayer.h
 Client.h
-/home/shoham/CLionProjects/ex3/src/client/include/Client.h
+/home/shir/CLionProjects/ex4_client/src/client/include/Client.h
 Player.h
-/home/shoham/CLionProjects/ex3/src/client/include/Player.h
+/home/shir/CLionProjects/ex4_client/src/client/include/Player.h
 Square.h
-/home/shoham/CLionProjects/ex3/src/client/include/Square.h
+/home/shir/CLionProjects/ex4_client/src/client/include/Square.h
 limits
 -
 
-/home/shoham/CLionProjects/ex3/src/client/include/Game.h
+/home/shir/CLionProjects/ex4_client/src/client/include/Game.h
 GameLogic.h
-/home/shoham/CLionProjects/ex3/src/client/include/GameLogic.h
+/home/shir/CLionProjects/ex4_client/src/client/include/GameLogic.h
 HumanPlayer.h
-/home/shoham/CLionProjects/ex3/src/client/include/HumanPlayer.h
+/home/shir/CLionProjects/ex4_client/src/client/include/HumanPlayer.h
 AIPlayer.h
-/home/shoham/CLionProjects/ex3/src/client/include/AIPlayer.h
+/home/shir/CLionProjects/ex4_client/src/client/include/AIPlayer.h
 ClientPlayer.h
-/home/shoham/CLionProjects/ex3/src/client/include/ClientPlayer.h
+/home/shir/CLionProjects/ex4_client/src/client/include/ClientPlayer.h
 RemotePlayer.h
-/home/shoham/CLionProjects/ex3/src/client/include/RemotePlayer.h
+/home/shir/CLionProjects/ex4_client/src/client/include/RemotePlayer.h
 stdlib.h
-/home/shoham/CLionProjects/ex3/src/client/include/stdlib.h
+/home/shir/CLionProjects/ex4_client/src/client/include/stdlib.h
 iostream
 -
 limits
 -
 
-/home/shoham/CLionProjects/ex3/src/client/include/GameLogic.h
+/home/shir/CLionProjects/ex4_client/src/client/include/GameLogic.h
 Board.h
-/home/shoham/CLionProjects/ex3/src/client/include/Board.h
+/home/shir/CLionProjects/ex4_client/src/client/include/Board.h
 Player.h
-/home/shoham/CLionProjects/ex3/src/client/include/Player.h
+/home/shir/CLionProjects/ex4_client/src/client/include/Player.h
 vector
 -
 
-/home/shoham/CLionProjects/ex3/src/client/include/HumanPlayer.h
+/home/shir/CLionProjects/ex4_client/src/client/include/HumanPlayer.h
 ../include/Player.h
-/home/shoham/CLionProjects/ex3/src/client/include/Player.h
+/home/shir/CLionProjects/ex4_client/src/client/include/Player.h
 iostream
 -
 limits
 -
 
-/home/shoham/CLionProjects/ex3/src/client/include/Player.h
+/home/shir/CLionProjects/ex4_client/src/client/include/Player.h
 Square.h
-/home/shoham/CLionProjects/ex3/src/client/include/Square.h
+/home/shir/CLionProjects/ex4_client/src/client/include/Square.h
 vector
 -
 stdlib.h
-/home/shoham/CLionProjects/ex3/src/client/include/stdlib.h
+/home/shir/CLionProjects/ex4_client/src/client/include/stdlib.h
 
-/home/shoham/CLionProjects/ex3/src/client/include/RemotePlayer.h
+/home/shir/CLionProjects/ex4_client/src/client/include/RemotePlayer.h
 Player.h
-/home/shoham/CLionProjects/ex3/src/client/include/Player.h
+/home/shir/CLionProjects/ex4_client/src/client/include/Player.h
 Client.h
-/home/shoham/CLionProjects/ex3/src/client/include/Client.h
+/home/shir/CLionProjects/ex4_client/src/client/include/Client.h
 Square.h
-/home/shoham/CLionProjects/ex3/src/client/include/Square.h
+/home/shir/CLionProjects/ex4_client/src/client/include/Square.h
 
-/home/shoham/CLionProjects/ex3/src/client/include/Square.h
+/home/shir/CLionProjects/ex4_client/src/client/include/Square.h
 vector
 -
 string
 -
 
-/home/shoham/CLionProjects/ex3/src/client/src/AIPlayer.cpp
+/home/shir/CLionProjects/ex4_client/src/client/src/AIPlayer.cpp
 ../include/AIPlayer.h
-/home/shoham/CLionProjects/ex3/src/client/include/AIPlayer.h
+/home/shir/CLionProjects/ex4_client/src/client/include/AIPlayer.h
 
-/home/shoham/CLionProjects/ex3/src/client/src/Board.cpp
+/home/shir/CLionProjects/ex4_client/src/client/src/Board.cpp
 ../include/Board.h
-/home/shoham/CLionProjects/ex3/src/client/include/Board.h
+/home/shir/CLionProjects/ex4_client/src/client/include/Board.h
 iostream
 -
 
-/home/shoham/CLionProjects/ex3/src/client/src/Client.cpp
+/home/shir/CLionProjects/ex4_client/src/client/src/Client.cpp
 ../include/Client.h
-/home/shoham/CLionProjects/ex3/src/client/include/Client.h
+/home/shir/CLionProjects/ex4_client/src/client/include/Client.h
 iostream
 -
 sys/socket.h
@@ -118,9 +118,9 @@ string.h
 unistd.h
 -
 
-/home/shoham/CLionProjects/ex3/src/client/src/ClientPlayer.cpp
+/home/shir/CLionProjects/ex4_client/src/client/src/ClientPlayer.cpp
 ../include/ClientPlayer.h
-/home/shoham/CLionProjects/ex3/src/client/include/ClientPlayer.h
+/home/shir/CLionProjects/ex4_client/src/client/include/ClientPlayer.h
 iostream
 -
 sys/socket.h
@@ -136,31 +136,31 @@ string.h
 unistd.h
 -
 
-/home/shoham/CLionProjects/ex3/src/client/src/Game.cpp
+/home/shir/CLionProjects/ex4_client/src/client/src/Game.cpp
 ../include/Game.h
-/home/shoham/CLionProjects/ex3/src/client/include/Game.h
+/home/shir/CLionProjects/ex4_client/src/client/include/Game.h
 
-/home/shoham/CLionProjects/ex3/src/client/src/GameLogic.cpp
+/home/shir/CLionProjects/ex4_client/src/client/src/GameLogic.cpp
 ../include/GameLogic.h
-/home/shoham/CLionProjects/ex3/src/client/include/GameLogic.h
+/home/shir/CLionProjects/ex4_client/src/client/include/GameLogic.h
 iostream
 -
 
-/home/shoham/CLionProjects/ex3/src/client/src/HumanPlayer.cpp
+/home/shir/CLionProjects/ex4_client/src/client/src/HumanPlayer.cpp
 ../include/HumanPlayer.h
-/home/shoham/CLionProjects/ex3/src/client/include/HumanPlayer.h
+/home/shir/CLionProjects/ex4_client/src/client/include/HumanPlayer.h
 
-/home/shoham/CLionProjects/ex3/src/client/src/Player.cpp
+/home/shir/CLionProjects/ex4_client/src/client/src/Player.cpp
 ../include/Player.h
-/home/shoham/CLionProjects/ex3/src/client/include/Player.h
+/home/shir/CLionProjects/ex4_client/src/client/include/Player.h
 iostream
 -
 limits
 -
 
-/home/shoham/CLionProjects/ex3/src/client/src/RemotePlayer.cpp
+/home/shir/CLionProjects/ex4_client/src/client/src/RemotePlayer.cpp
 ../include/RemotePlayer.h
-/home/shoham/CLionProjects/ex3/src/client/include/RemotePlayer.h
+/home/shir/CLionProjects/ex4_client/src/client/include/RemotePlayer.h
 iostream
 -
 sys/socket.h
@@ -176,13 +176,13 @@ string.h
 unistd.h
 -
 
-/home/shoham/CLionProjects/ex3/src/client/src/Square.cpp
+/home/shir/CLionProjects/ex4_client/src/client/src/Square.cpp
 ../include/Square.h
-/home/shoham/CLionProjects/ex3/src/client/include/Square.h
+/home/shir/CLionProjects/ex4_client/src/client/include/Square.h
 iostream
 -
 
-/home/shoham/CLionProjects/ex3/src/client/src/main.cpp
+/home/shir/CLionProjects/ex4_client/src/client/src/main.cpp
 ../include/Game.h
-/home/shoham/CLionProjects/ex3/src/client/include/Game.h
+/home/shir/CLionProjects/ex4_client/src/client/include/Game.h
 
