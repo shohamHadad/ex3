@@ -192,7 +192,6 @@ void GameLogic::turnDisks(Player* current, Player* opponent, Square move) {
  * operation: prints out the board, get the player's next move and operates it
  */
 void GameLogic::playOneTurn(Player* current, Player* opponent) {
-	cout << current->getType() << ": It's your move. ";
 	// check if there are possible moves
 	vector<Square> moves = possibleMoves(current, opponent);
 	if (moves.empty()) {

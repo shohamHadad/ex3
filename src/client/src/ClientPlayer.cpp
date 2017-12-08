@@ -38,6 +38,10 @@ int ClientPlayer::readOrder() {
 }
 
 Square ClientPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Player* opponent) {
+<<<<<<< HEAD
+=======
+	cout << type << ": It's your move. ";
+>>>>>>> 9f4bdc6554770ccb5f8cfd23fa1a94e551f0b405
 	// print the moves to the current player
 	printPossibleMoves(possibleMoves);
 	cout << endl << "Please enter your move, row col:";
@@ -80,11 +84,15 @@ void ClientPlayer::printPossibleMoves(vector <Square> moves) {
 void ClientPlayer::waitForOtherPlayer() {
 	cout << "Waiting for other player to join..." << endl;
 	// read the server's message
-	char* msg;
+	int msg;
 	int n = read(clientSocket, &msg, sizeof(msg));
 	if (n == -1) {
 		throw "Error reading msg from socket";
 	}
+<<<<<<< HEAD
 }
 
 
+=======
+}
+>>>>>>> 9f4bdc6554770ccb5f8cfd23fa1a94e551f0b405

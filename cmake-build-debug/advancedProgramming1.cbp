@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/shoham/CLionProjects/ex3/cmake-build-debug"/>
+				<Option working_dir="/home/shir/CLionProjects/ex4_client/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/shir/CLionProjects/ex4_client/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/shir/CLionProjects/ex4_client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/shir/CLionProjects/ex4_client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/shir/CLionProjects/ex4_client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/shoham/CLionProjects/ex3/cmake-build-debug"/>
+				<Option working_dir="/home/shir/CLionProjects/ex4_client/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/shir/CLionProjects/ex4_client/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/shir/CLionProjects/ex4_client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/shir/CLionProjects/ex4_client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/shir/CLionProjects/ex4_client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/shoham/CLionProjects/ex3/cmake-build-debug"/>
+				<Option working_dir="/home/shir/CLionProjects/ex4_client/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/shir/CLionProjects/ex4_client/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/shir/CLionProjects/ex4_client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/shir/CLionProjects/ex4_client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/shir/CLionProjects/ex4_client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="advancedProgramming1">
-				<Option output="/home/shoham/CLionProjects/ex3/cmake-build-debug/advancedProgramming1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/shoham/CLionProjects/ex3/cmake-build-debug"/>
+				<Option output="/home/shir/CLionProjects/ex4_client/cmake-build-debug/advancedProgramming1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/shir/CLionProjects/ex4_client/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -54,15 +54,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 advancedProgramming1"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/shir/CLionProjects/ex4_client/cmake-build-debug/Makefile&quot;  VERBOSE=1 advancedProgramming1"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/shir/CLionProjects/ex4_client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/shir/CLionProjects/ex4_client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/shir/CLionProjects/ex4_client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="advancedProgramming1/fast">
-				<Option output="/home/shoham/CLionProjects/ex3/cmake-build-debug/advancedProgramming1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/shoham/CLionProjects/ex3/cmake-build-debug"/>
+				<Option output="/home/shir/CLionProjects/ex4_client/cmake-build-debug/advancedProgramming1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/shir/CLionProjects/ex4_client/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -77,77 +77,77 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 advancedProgramming1/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/home/shoham/CLionProjects/ex3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/shir/CLionProjects/ex4_client/cmake-build-debug/Makefile&quot;  VERBOSE=1 advancedProgramming1/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/shir/CLionProjects/ex4_client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/shir/CLionProjects/ex4_client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/shir/CLionProjects/ex4_client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/include/AIPlayer.h">
+		<Unit filename="/home/shir/CLionProjects/ex4_client/src/client/include/AIPlayer.h">
 			<Option target="advancedProgramming1"/>
 		</Unit>
-		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/include/Board.h">
+		<Unit filename="/home/shir/CLionProjects/ex4_client/src/client/include/Board.h">
 			<Option target="advancedProgramming1"/>
 		</Unit>
-		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/include/Client.h">
+		<Unit filename="/home/shir/CLionProjects/ex4_client/src/client/include/Client.h">
 			<Option target="advancedProgramming1"/>
 		</Unit>
-		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/include/ClientPlayer.h">
+		<Unit filename="/home/shir/CLionProjects/ex4_client/src/client/include/ClientPlayer.h">
 			<Option target="advancedProgramming1"/>
 		</Unit>
-		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/include/Game.h">
+		<Unit filename="/home/shir/CLionProjects/ex4_client/src/client/include/Game.h">
 			<Option target="advancedProgramming1"/>
 		</Unit>
-		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/include/GameLogic.h">
+		<Unit filename="/home/shir/CLionProjects/ex4_client/src/client/include/GameLogic.h">
 			<Option target="advancedProgramming1"/>
 		</Unit>
-		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/include/HumanPlayer.h">
+		<Unit filename="/home/shir/CLionProjects/ex4_client/src/client/include/HumanPlayer.h">
 			<Option target="advancedProgramming1"/>
 		</Unit>
-		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/include/Player.h">
+		<Unit filename="/home/shir/CLionProjects/ex4_client/src/client/include/Player.h">
 			<Option target="advancedProgramming1"/>
 		</Unit>
-		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/include/RemotePlayer.h">
+		<Unit filename="/home/shir/CLionProjects/ex4_client/src/client/include/RemotePlayer.h">
 			<Option target="advancedProgramming1"/>
 		</Unit>
-		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/include/Square.h">
+		<Unit filename="/home/shir/CLionProjects/ex4_client/src/client/include/Square.h">
 			<Option target="advancedProgramming1"/>
 		</Unit>
-		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/src/AIPlayer.cpp">
+		<Unit filename="/home/shir/CLionProjects/ex4_client/src/client/src/AIPlayer.cpp">
 			<Option target="advancedProgramming1"/>
 		</Unit>
-		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/src/Board.cpp">
+		<Unit filename="/home/shir/CLionProjects/ex4_client/src/client/src/Board.cpp">
 			<Option target="advancedProgramming1"/>
 		</Unit>
-		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/src/Client.cpp">
+		<Unit filename="/home/shir/CLionProjects/ex4_client/src/client/src/Client.cpp">
 			<Option target="advancedProgramming1"/>
 		</Unit>
-		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/src/ClientPlayer.cpp">
+		<Unit filename="/home/shir/CLionProjects/ex4_client/src/client/src/ClientPlayer.cpp">
 			<Option target="advancedProgramming1"/>
 		</Unit>
-		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/src/Game.cpp">
+		<Unit filename="/home/shir/CLionProjects/ex4_client/src/client/src/Game.cpp">
 			<Option target="advancedProgramming1"/>
 		</Unit>
-		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/src/GameLogic.cpp">
+		<Unit filename="/home/shir/CLionProjects/ex4_client/src/client/src/GameLogic.cpp">
 			<Option target="advancedProgramming1"/>
 		</Unit>
-		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/src/HumanPlayer.cpp">
+		<Unit filename="/home/shir/CLionProjects/ex4_client/src/client/src/HumanPlayer.cpp">
 			<Option target="advancedProgramming1"/>
 		</Unit>
-		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/src/Player.cpp">
+		<Unit filename="/home/shir/CLionProjects/ex4_client/src/client/src/Player.cpp">
 			<Option target="advancedProgramming1"/>
 		</Unit>
-		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/src/RemotePlayer.cpp">
+		<Unit filename="/home/shir/CLionProjects/ex4_client/src/client/src/RemotePlayer.cpp">
 			<Option target="advancedProgramming1"/>
 		</Unit>
-		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/src/Square.cpp">
+		<Unit filename="/home/shir/CLionProjects/ex4_client/src/client/src/Square.cpp">
 			<Option target="advancedProgramming1"/>
 		</Unit>
-		<Unit filename="/home/shoham/CLionProjects/ex3/src/client/src/main.cpp">
+		<Unit filename="/home/shir/CLionProjects/ex4_client/src/client/src/main.cpp">
 			<Option target="advancedProgramming1"/>
 		</Unit>
-		<Unit filename="/home/shoham/CLionProjects/ex3/CMakeLists.txt">
+		<Unit filename="/home/shir/CLionProjects/ex4_client/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

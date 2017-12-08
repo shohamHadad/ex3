@@ -24,8 +24,8 @@ Square RemotePlayer::getNextMove() {
 }
 
 Square RemotePlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Player* opponent) {
-    waitForOtherPlayerMove();
-    return getNextMove();
+	cout << "Waiting for other player's move..." << endl;
+	return getNextMove();
 }
 
 void RemotePlayer::waitForOtherPlayerMove() {
