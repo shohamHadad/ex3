@@ -1,5 +1,6 @@
 #include "../include/RemotePlayer.h"
 #include <unistd.h>
+#include <iostream>
 
 RemotePlayer::RemotePlayer(const char *serverIP, int serverPort): Client(serverIP, serverPort) {
 }
@@ -23,5 +24,16 @@ Square RemotePlayer::getNextMove() {
 }
 
 Square RemotePlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Player* opponent) {
-	return getNextMove();
+    waitForOtherPlayerMove();
+    return getNextMove();
+}
+
+void RemotePlayer::waitForOtherPlayerMove() {
+    cout << "Waiting for other player's move..." << endl;
+    // read the server's message
+    char* msg;
+    int n = read(clientSocket, &msg, sizeof(msg));
+    if (n == -1) {
+        throw "Error reading msg from socket";
+    }
 }

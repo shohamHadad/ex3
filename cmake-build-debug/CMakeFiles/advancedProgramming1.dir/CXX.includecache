@@ -161,19 +161,9 @@ limits
 /home/shoham/CLionProjects/ex3/src/client/src/RemotePlayer.cpp
 ../include/RemotePlayer.h
 /home/shoham/CLionProjects/ex3/src/client/include/RemotePlayer.h
-iostream
--
-sys/socket.h
--
-netinet/in.h
--
-arpa/inet.h
--
-netdb.h
--
-string.h
--
 unistd.h
+-
+iostream
 -
 
 /home/shoham/CLionProjects/ex3/src/client/src/Square.cpp

@@ -11,6 +11,7 @@ public:
 	Square getNextMove();
 	Square chooseSquare(vector<Square>, Player*, Player*);
 	virtual ~RemotePlayer();
+    void waitForOtherPlayerMove();
 };
 
 #endif /* REMOTEPLAYER_H_ */
