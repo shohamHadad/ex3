@@ -26,6 +26,12 @@ Board::Board(int s) {
 	array[size/2][size/2 - 1]->setType('X');
 }
 
+/**
+ * function name: Board
+ * input: original board
+ * output:copy object of board
+ * operation:copy constructor
+ */
 Board::Board(const Board &board){
 	size = board.size;
 	array = vector<vector<Square*> >(board.size, vector<Square*> (board.size));
