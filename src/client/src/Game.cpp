@@ -53,8 +53,8 @@ void Game::initialize() {
 		break;
 	case 3:
         sd = new SettingData();
-        assignClientAndRemotePlayers(sd);
         settingDataFlag = true;
+        assignClientAndRemotePlayers(sd);
         break;
 	default:
 		break;
@@ -91,7 +91,7 @@ void Game::play() {
  * function name: assignClientAndRemotePlayers
  * input: SettingData* sd
  * output: void
- * operation: the function creates the ClientPlayer and the RemotePlayer 
+ * operation: creates ClientPlayer and RemotePlayer from the given SettingData
  */
 void Game::assignClientAndRemotePlayers(SettingData* sd) {
 	try {

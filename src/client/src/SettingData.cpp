@@ -2,7 +2,7 @@
 
 /**
  * function name: SettingData
- * input: FILE
+ * input: void
  * output: SettingData
  * operation: constructor
  */

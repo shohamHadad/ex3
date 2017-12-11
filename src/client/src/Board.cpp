@@ -206,7 +206,7 @@ Winner Board::whoWin() {
 
 /**
  * function name: numOfX
- * input: int
+ * input: void
  * output: number of x's in the board.
  * operation: the function counts number of x's in the board.
  */

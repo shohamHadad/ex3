@@ -44,7 +44,7 @@ Square Player::getNextMove() {
  * function name: noMove
  * input: void
  * output: void
- * operation: send "NoMove" message to server
+ * operation: print out the noMove message and send "NoMove" message to server
  */
 void Player::noMove(Player* current, Player* opponent) {
 	cout << current->getType() << " Has no possible moves. Play passes back to " << opponent->getType()
@@ -86,7 +86,7 @@ bool Player::equals(Player* other) {
  * function name: setType
  * input: void
  * output: void
- * operation: setType
+ * operation: set the type
  */
 void Player::setType(char t) {
 	type = t;

@@ -137,16 +137,6 @@ unistd.h
 /home/shir/CLionProjects/ex4_client/src/client/include/ClientPlayer.h
 iostream
 -
-sys/socket.h
--
-netinet/in.h
--
-arpa/inet.h
--
-netdb.h
--
-string.h
--
 unistd.h
 -
 

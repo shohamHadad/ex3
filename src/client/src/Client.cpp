@@ -20,7 +20,7 @@ Client::Client(const char *serverIP, int serverPort): serverIP(serverIP), server
  * function name: ~Client
  * input: void
  * output: delete object of client
- * operation: delete a constructor
+ * operation: destructor
  */
 Client::~Client() {
 }

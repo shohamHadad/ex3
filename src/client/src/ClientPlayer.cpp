@@ -1,13 +1,10 @@
 #include "../include/ClientPlayer.h"
 #include <iostream>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
-#include <netdb.h>
-#include <string.h>
+
 #include <unistd.h>
 
 using namespace std;
+
 /**
  * function name: ClientPlayer
  * input: the server IP, server port
@@ -21,7 +18,7 @@ ClientPlayer::ClientPlayer(const char *serverIP, int serverPort): Client(serverI
  * function name: ~ClientPlayer
  * input: void
  * output: delete ClientPlayer
- * operation: delete constructor
+ * operation: destructor
  */
 ClientPlayer::~ClientPlayer() {
 }
@@ -30,7 +27,7 @@ ClientPlayer::~ClientPlayer() {
  * function name: sendNextMove
  * input: int x, int y
  * output: void
- * operation: the function write the move of player to the socket
+ * operation: write the given numbers to the socket
  */
 void ClientPlayer::sendNextMove(int x, int y) {
     int xCpy = x;
@@ -49,7 +46,7 @@ void ClientPlayer::sendNextMove(int x, int y) {
  * function name: readOrder
  * input: void
  * output: int
- * operation: the function read the player's order from the socket
+ * operation: read the player's order from the socket
  */
 int ClientPlayer::readOrder() {
 	// read the player's order from the socket
@@ -63,8 +60,8 @@ int ClientPlayer::readOrder() {
 
 /**
  * function name: chooseSquare
- * input: vector of possible move of player, player current and player oppoent
- * output: the square that player choose. 
+ * input: vector of possible move of player, player current, player opponent
+ * output: Square
  * operation: get a valid move from the user and returns it
  */
 Square ClientPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Player* opponent) {
@@ -92,9 +89,9 @@ Square ClientPlayer::chooseSquare(vector<Square> possibleMoves, Player* current,
 
 /**
  * function name: noMove
- * input: player current and player opponent
+ * input: player current, player opponent
  * output: void
- * operation: the function checks the case that there is no move to the player
+ * operation: write message to socket that the current player has no move
  */
 void ClientPlayer::noMove(Player* current, Player* opponent) {
     cout << current->getType() << " Has no possible moves. Play passes back to " << opponent->getType() << endl;
@@ -108,7 +105,7 @@ void ClientPlayer::noMove(Player* current, Player* opponent) {
  * function name: endGame
  * input: void
  * output: void
- * operation: the function checks the case that the end game
+ * operation: write message to socket that the game is over
  */
 void ClientPlayer::endGame() {
 	int end = -1;
@@ -140,7 +137,7 @@ void ClientPlayer::printPossibleMoves(vector <Square> moves) {
  * function name: waitForOtherPlayer
  * input: void
  * output: void
- * operation: the function wait for other player
+ * operation: stops the flow of the program until a message that another player's joined is received
  */
 void ClientPlayer::waitForOtherPlayer() {
 	cout << "Waiting for other player to join..." << endl;
@@ -156,7 +153,7 @@ void ClientPlayer::waitForOtherPlayer() {
  * function name: getNextMove
  * input: void 
  * output: square
- * operation: the function get next move of player
+ * operation: read the next move from the socket
  */
 Square ClientPlayer::getNextMove() {
 	// read the opponent's next move from the socket
