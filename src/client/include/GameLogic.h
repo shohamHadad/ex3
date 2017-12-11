@@ -26,7 +26,7 @@ public:
 	void playOneTurn(Player*, Player*);
 	bool gameShouldStop(Player*, Player*);
 	Player* whosTurn(Player*, Player*);
-	void endGame();
+	void endGame(Player*, Player*);
     Board* getBoard() const;
 
     void setBoard(Board *board);

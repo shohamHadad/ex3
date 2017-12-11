@@ -14,7 +14,10 @@ public:
 	Square chooseSquare(vector<Square>, Player*, Player*);
 	void printPossibleMoves(vector <Square> moves);
 	void waitForOtherPlayer();
-	virtual ~ClientPlayer();
+    Square getNextMove();
+    void noMove(Player*, Player*);
+	void endGame();
+    virtual ~ClientPlayer();
 };
 
 #endif /* CLIENTPLAYER_H_ */

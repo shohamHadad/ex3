@@ -6,10 +6,9 @@
 #include "Square.h"
 #include <iostream>
 
-class RemotePlayer: public Player, public Client {
+class RemotePlayer: public Player {
 public:
-	RemotePlayer(const char *serverIP, int serverPort);
-	Square getNextMove();
+	RemotePlayer();
 	Square chooseSquare(vector<Square>, Player*, Player*);
 	virtual ~RemotePlayer();
 };

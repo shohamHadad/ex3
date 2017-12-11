@@ -195,12 +195,12 @@ void GameLogic::playOneTurn(Player* current, Player* opponent) {
 	// check if there are possible moves
 	vector<Square> moves = possibleMoves(current, opponent);
 	if (moves.empty()) {
-		cout << "No possible moves. Play passes back to the other player." << endl;
-		this->turns++;
+		current->noMove(current, opponent);
+        this->turns++;
 		return;
 	}
 	// get the player's next move
-	Square nextMove = current->chooseSquare(moves,current, opponent);
+	Square nextMove = current->chooseSquare(moves, current, opponent);
 	// make the move
 	turnDisks(current, opponent, nextMove);
 	// print the move
@@ -259,7 +259,7 @@ Player* GameLogic::whosTurn(Player* X, Player* O) {
  * output: void
  * operation: prints out the game result
  */
-void GameLogic::endGame() {
+void GameLogic::endGame(Player* p1, Player* p2) {
 	cout << "Game is over.";
 	Winner result = board->whoWin();
 	if (result == O) {
@@ -269,6 +269,8 @@ void GameLogic::endGame() {
 	} else {
 		cout << " No one wins - it's a tie." << endl;
 	}
+	p1->endGame();
+	p2->endGame();
 }
 /**
  * function name: getBoard

@@ -16,12 +16,14 @@ ClientPlayer::~ClientPlayer() {
 }
 
 void ClientPlayer::sendNextMove(int x, int y) {
+    int xCpy = x;
+    int yCpy = y;
 	// write the move to the socket
-	int n = write(clientSocket, &x, sizeof(x));
+	int n = write(clientSocket, &xCpy, sizeof(int));
 	if (n == -1) {
 		throw "Error writing move to socket";
 	}
-    n = write(clientSocket, &y, sizeof(y));
+    n = write(clientSocket, &yCpy, sizeof(int));
     if (n == -1) {
         throw "Error writing move to socket";
     }
@@ -60,7 +62,22 @@ Square ClientPlayer::chooseSquare(vector<Square> possibleMoves, Player* current,
 	}
 }
 
+void ClientPlayer::noMove(Player* current, Player* opponent) {
+    cout << current->getType() << " Has no possible moves. Play passes back to " << opponent->getType() << endl;
+    int noMove = -2;
+    int n = write(clientSocket, &noMove, sizeof(int));
+    if (n == -1) {
+        throw "Error writing move to socket";
+    }
+}
 
+void ClientPlayer::endGame() {
+	int end = -1;
+	int n = write(clientSocket, &end, sizeof(int));
+	if (n == -1) {
+		throw "Error writing move to socket";
+	}
+}
 /**
  * function name: printPossibleMoves
  * input: vector<Square>
@@ -86,4 +103,18 @@ void ClientPlayer::waitForOtherPlayer() {
 	if (n == -1) {
 		throw "Error reading msg from socket";
 	}
+}
+
+Square ClientPlayer::getNextMove() {
+	// read the opponent's next move from the socket
+	int x, y;
+	int n = read(clientSocket, &x, sizeof(x));
+	if (n == -1) {
+		throw "Error reading opponentMove from socket";
+	}
+	n = read(clientSocket, &y, sizeof(y));
+	if (n == -1) {
+		throw "Error reading opponentMove from socket";
+	}
+	return Square(x,y);
 }

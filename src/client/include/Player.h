@@ -19,6 +19,9 @@ public:
 	char getType();
 	void setType(char);
 	bool equals(Player*);
+	virtual Square getNextMove();
+    virtual void noMove(Player*, Player*);
+	virtual void endGame();
 };
 
 #endif /* PLAYER_H_ */

@@ -7,7 +7,7 @@
  * operation: constructor
  */
 Game::Game() {
-	this->logic = new GameLogic(new Board(8));
+	this->logic = new GameLogic(new Board(4));
 }
 
 /**
@@ -77,15 +77,15 @@ void Game::play() {
 		}
 		logic->playOneTurn(current, opponent);
 	}
-	logic->endGame();
+	logic->endGame(X, O);
 }
 
 
 
 void Game::assignClientAndRemotePlayers() {
 	try {
-		ClientPlayer* cp = new ClientPlayer("127.0.0.1", 8000);
-		RemotePlayer* rp = new RemotePlayer("127.0.0.1", 8000);
+		ClientPlayer* cp = new ClientPlayer("127.0.0.1", 5000);
+		RemotePlayer* rp = new RemotePlayer();
 		cp->connectToServer();
 		int cpOrder = cp->readOrder();
 		if (cpOrder == 1) {

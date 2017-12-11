@@ -31,6 +31,37 @@ Square Player::chooseSquare(vector<Square> possibleMoves, Player* current, Playe
 }
 
 /**
+ * function name: getNextMove
+ * input: void
+ * output: Square
+ * operation: get the next move from the opponent
+ */
+Square Player::getNextMove() {
+
+}
+
+/**
+ * function name: noMove
+ * input: void
+ * output: void
+ * operation: send "NoMove" message to server
+ */
+void Player::noMove(Player* current, Player* opponent) {
+	cout << current->getType() << " Has no possible moves. Play passes back to " << opponent->getType()
+		 << endl;
+}
+
+/**
+ * function name: endGame
+ * input: void
+ * output: void
+ * operation: send "End" message to server
+ */
+void Player::endGame() {
+
+}
+
+/**
  * function name: getType
  * input: void
  * output: char
