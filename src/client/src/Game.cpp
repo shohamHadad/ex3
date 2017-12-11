@@ -87,7 +87,12 @@ void Game::play() {
 }
 
 
-
+/**
+ * function name: assignClientAndRemotePlayers
+ * input: SettingData* sd
+ * output: void
+ * operation: the function creates the ClientPlayer and the RemotePlayer 
+ */
 void Game::assignClientAndRemotePlayers(SettingData* sd) {
 	try {
 		ClientPlayer* cp = new ClientPlayer(sd->getIP(), sd->getPort());
