@@ -1,9 +1,20 @@
 #include "../include/HumanPlayer.h"
-
+/**
+ * function name: HumanPlayer
+ * input: char type
+ * output: HumanPlayer player
+ * operation: constructor
+ */
 HumanPlayer::HumanPlayer(char type): Player(type) {
 
 }
 
+/**
+ * function name: HumanPlayer
+ * input: void
+ * output: void
+ * operation: delete constructor
+ */
 HumanPlayer::~HumanPlayer() {
 }
 
