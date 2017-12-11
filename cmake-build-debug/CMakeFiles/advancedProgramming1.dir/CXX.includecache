@@ -45,6 +45,8 @@ ClientPlayer.h
 /home/shir/CLionProjects/ex4_client/src/client/include/ClientPlayer.h
 RemotePlayer.h
 /home/shir/CLionProjects/ex4_client/src/client/include/RemotePlayer.h
+SettingData.h
+/home/shir/CLionProjects/ex4_client/src/client/include/SettingData.h
 stdlib.h
 /home/shir/CLionProjects/ex4_client/src/client/include/stdlib.h
 iostream
@@ -84,6 +86,16 @@ Client.h
 Square.h
 /home/shir/CLionProjects/ex4_client/src/client/include/Square.h
 iostream
+-
+
+/home/shir/CLionProjects/ex4_client/src/client/include/SettingData.h
+iostream
+-
+fstream
+-
+cstdlib
+-
+cstring
 -
 
 /home/shir/CLionProjects/ex4_client/src/client/include/Square.h
@@ -163,6 +175,10 @@ limits
 /home/shir/CLionProjects/ex4_client/src/client/src/RemotePlayer.cpp
 ../include/RemotePlayer.h
 /home/shir/CLionProjects/ex4_client/src/client/include/RemotePlayer.h
+
+/home/shir/CLionProjects/ex4_client/src/client/src/SettingData.cpp
+../include/SettingData.h
+/home/shir/CLionProjects/ex4_client/src/client/include/SettingData.h
 
 /home/shir/CLionProjects/ex4_client/src/client/src/Square.cpp
 ../include/Square.h

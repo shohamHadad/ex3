@@ -7,7 +7,8 @@
  * operation: constructor
  */
 Game::Game() {
-	this->logic = new GameLogic(new Board(4));
+	logic = new GameLogic(new Board(4));
+    settingDataFlag = false;
 }
 
 /**
@@ -20,6 +21,9 @@ Game::~Game() {
 	delete logic;
 	delete X;
 	delete O;
+    if (settingDataFlag) {
+        delete sd;
+    }
 }
 
 /**
@@ -48,8 +52,10 @@ void Game::initialize() {
 		O = new AIPlayer('O', logic);
 		break;
 	case 3:
-		assignClientAndRemotePlayers();
-		break;
+        sd = new SettingData();
+        assignClientAndRemotePlayers(sd);
+        settingDataFlag = true;
+        break;
 	default:
 		break;
 	}
@@ -64,7 +70,7 @@ void Game::initialize() {
  * operation: activates the game loop
  */
 void Game::play() {
-	logic->printBoard();
+    logic->printBoard();
 	while (!logic->gameShouldStop(X, O)) {
 		Player* current;
 		Player* opponent;
@@ -82,9 +88,9 @@ void Game::play() {
 
 
 
-void Game::assignClientAndRemotePlayers() {
+void Game::assignClientAndRemotePlayers(SettingData* sd) {
 	try {
-		ClientPlayer* cp = new ClientPlayer("127.0.0.1", 5000);
+		ClientPlayer* cp = new ClientPlayer(sd->getIP(), sd->getPort());
 		RemotePlayer* rp = new RemotePlayer();
 		cp->connectToServer();
 		int cpOrder = cp->readOrder();
@@ -98,7 +104,7 @@ void Game::assignClientAndRemotePlayers() {
 		}
 		X->setType('X');
 		O->setType('O');
-	} catch (const char *msg) {
+    } catch (const char *msg) {
 		cout << "Failed to connect to server. Reason: " << msg << endl;
 		exit(-1);
 	}

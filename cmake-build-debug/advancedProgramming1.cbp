@@ -111,6 +111,9 @@
 		<Unit filename="/home/shir/CLionProjects/ex4_client/src/client/include/RemotePlayer.h">
 			<Option target="advancedProgramming1"/>
 		</Unit>
+		<Unit filename="/home/shir/CLionProjects/ex4_client/src/client/include/SettingData.h">
+			<Option target="advancedProgramming1"/>
+		</Unit>
 		<Unit filename="/home/shir/CLionProjects/ex4_client/src/client/include/Square.h">
 			<Option target="advancedProgramming1"/>
 		</Unit>
@@ -139,6 +142,9 @@
 			<Option target="advancedProgramming1"/>
 		</Unit>
 		<Unit filename="/home/shir/CLionProjects/ex4_client/src/client/src/RemotePlayer.cpp">
+			<Option target="advancedProgramming1"/>
+		</Unit>
+		<Unit filename="/home/shir/CLionProjects/ex4_client/src/client/src/SettingData.cpp">
 			<Option target="advancedProgramming1"/>
 		</Unit>
 		<Unit filename="/home/shir/CLionProjects/ex4_client/src/client/src/Square.cpp">

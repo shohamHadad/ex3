@@ -297,9 +297,33 @@ CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.o.provides: CMakeF
 CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.o.provides.build: CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.o
 
 
+CMakeFiles/advancedProgramming1.dir/src/client/src/SettingData.cpp.o: CMakeFiles/advancedProgramming1.dir/flags.make
+CMakeFiles/advancedProgramming1.dir/src/client/src/SettingData.cpp.o: ../src/client/src/SettingData.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shir/CLionProjects/ex4_client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/advancedProgramming1.dir/src/client/src/SettingData.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/advancedProgramming1.dir/src/client/src/SettingData.cpp.o -c /home/shir/CLionProjects/ex4_client/src/client/src/SettingData.cpp
+
+CMakeFiles/advancedProgramming1.dir/src/client/src/SettingData.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/advancedProgramming1.dir/src/client/src/SettingData.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/shir/CLionProjects/ex4_client/src/client/src/SettingData.cpp > CMakeFiles/advancedProgramming1.dir/src/client/src/SettingData.cpp.i
+
+CMakeFiles/advancedProgramming1.dir/src/client/src/SettingData.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/advancedProgramming1.dir/src/client/src/SettingData.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/shir/CLionProjects/ex4_client/src/client/src/SettingData.cpp -o CMakeFiles/advancedProgramming1.dir/src/client/src/SettingData.cpp.s
+
+CMakeFiles/advancedProgramming1.dir/src/client/src/SettingData.cpp.o.requires:
+
+.PHONY : CMakeFiles/advancedProgramming1.dir/src/client/src/SettingData.cpp.o.requires
+
+CMakeFiles/advancedProgramming1.dir/src/client/src/SettingData.cpp.o.provides: CMakeFiles/advancedProgramming1.dir/src/client/src/SettingData.cpp.o.requires
+	$(MAKE) -f CMakeFiles/advancedProgramming1.dir/build.make CMakeFiles/advancedProgramming1.dir/src/client/src/SettingData.cpp.o.provides.build
+.PHONY : CMakeFiles/advancedProgramming1.dir/src/client/src/SettingData.cpp.o.provides
+
+CMakeFiles/advancedProgramming1.dir/src/client/src/SettingData.cpp.o.provides.build: CMakeFiles/advancedProgramming1.dir/src/client/src/SettingData.cpp.o
+
+
 CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o: CMakeFiles/advancedProgramming1.dir/flags.make
 CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o: ../src/client/src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shir/CLionProjects/ex4_client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/shir/CLionProjects/ex4_client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o -c /home/shir/CLionProjects/ex4_client/src/client/src/main.cpp
 
 CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.i: cmake_force
@@ -333,6 +357,7 @@ advancedProgramming1_OBJECTS = \
 "CMakeFiles/advancedProgramming1.dir/src/client/src/ClientPlayer.cpp.o" \
 "CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.o" \
 "CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.o" \
+"CMakeFiles/advancedProgramming1.dir/src/client/src/SettingData.cpp.o" \
 "CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o"
 
 # External object files for target advancedProgramming1
@@ -348,10 +373,11 @@ advancedProgramming1: CMakeFiles/advancedProgramming1.dir/src/client/src/Square.
 advancedProgramming1: CMakeFiles/advancedProgramming1.dir/src/client/src/ClientPlayer.cpp.o
 advancedProgramming1: CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.o
 advancedProgramming1: CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.o
+advancedProgramming1: CMakeFiles/advancedProgramming1.dir/src/client/src/SettingData.cpp.o
 advancedProgramming1: CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o
 advancedProgramming1: CMakeFiles/advancedProgramming1.dir/build.make
 advancedProgramming1: CMakeFiles/advancedProgramming1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/shir/CLionProjects/ex4_client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable advancedProgramming1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/shir/CLionProjects/ex4_client/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable advancedProgramming1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/advancedProgramming1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -369,6 +395,7 @@ CMakeFiles/advancedProgramming1.dir/requires: CMakeFiles/advancedProgramming1.di
 CMakeFiles/advancedProgramming1.dir/requires: CMakeFiles/advancedProgramming1.dir/src/client/src/ClientPlayer.cpp.o.requires
 CMakeFiles/advancedProgramming1.dir/requires: CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.o.requires
 CMakeFiles/advancedProgramming1.dir/requires: CMakeFiles/advancedProgramming1.dir/src/client/src/Client.cpp.o.requires
+CMakeFiles/advancedProgramming1.dir/requires: CMakeFiles/advancedProgramming1.dir/src/client/src/SettingData.cpp.o.requires
 CMakeFiles/advancedProgramming1.dir/requires: CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o.requires
 
 .PHONY : CMakeFiles/advancedProgramming1.dir/requires

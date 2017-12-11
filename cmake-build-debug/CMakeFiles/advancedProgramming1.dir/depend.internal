@@ -31,6 +31,7 @@ CMakeFiles/advancedProgramming1.dir/src/client/src/Game.cpp.o
  /home/shir/CLionProjects/ex4_client/src/client/include/HumanPlayer.h
  /home/shir/CLionProjects/ex4_client/src/client/include/Player.h
  /home/shir/CLionProjects/ex4_client/src/client/include/RemotePlayer.h
+ /home/shir/CLionProjects/ex4_client/src/client/include/SettingData.h
  /home/shir/CLionProjects/ex4_client/src/client/include/Square.h
  /home/shir/CLionProjects/ex4_client/src/client/src/Game.cpp
 CMakeFiles/advancedProgramming1.dir/src/client/src/GameLogic.cpp.o
@@ -54,6 +55,9 @@ CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.o
  /home/shir/CLionProjects/ex4_client/src/client/include/RemotePlayer.h
  /home/shir/CLionProjects/ex4_client/src/client/include/Square.h
  /home/shir/CLionProjects/ex4_client/src/client/src/RemotePlayer.cpp
+CMakeFiles/advancedProgramming1.dir/src/client/src/SettingData.cpp.o
+ /home/shir/CLionProjects/ex4_client/src/client/include/SettingData.h
+ /home/shir/CLionProjects/ex4_client/src/client/src/SettingData.cpp
 CMakeFiles/advancedProgramming1.dir/src/client/src/Square.cpp.o
  /home/shir/CLionProjects/ex4_client/src/client/include/Square.h
  /home/shir/CLionProjects/ex4_client/src/client/src/Square.cpp
@@ -67,5 +71,6 @@ CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o
  /home/shir/CLionProjects/ex4_client/src/client/include/HumanPlayer.h
  /home/shir/CLionProjects/ex4_client/src/client/include/Player.h
  /home/shir/CLionProjects/ex4_client/src/client/include/RemotePlayer.h
+ /home/shir/CLionProjects/ex4_client/src/client/include/SettingData.h
  /home/shir/CLionProjects/ex4_client/src/client/include/Square.h
  /home/shir/CLionProjects/ex4_client/src/client/src/main.cpp

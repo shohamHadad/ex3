@@ -13,6 +13,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/shir/CLionProjects/ex4_client/src/client/src/HumanPlayer.cpp" "/home/shir/CLionProjects/ex4_client/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/HumanPlayer.cpp.o"
   "/home/shir/CLionProjects/ex4_client/src/client/src/Player.cpp" "/home/shir/CLionProjects/ex4_client/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/Player.cpp.o"
   "/home/shir/CLionProjects/ex4_client/src/client/src/RemotePlayer.cpp" "/home/shir/CLionProjects/ex4_client/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.o"
+  "/home/shir/CLionProjects/ex4_client/src/client/src/SettingData.cpp" "/home/shir/CLionProjects/ex4_client/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/SettingData.cpp.o"
   "/home/shir/CLionProjects/ex4_client/src/client/src/Square.cpp" "/home/shir/CLionProjects/ex4_client/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/Square.cpp.o"
   "/home/shir/CLionProjects/ex4_client/src/client/src/main.cpp" "/home/shir/CLionProjects/ex4_client/cmake-build-debug/CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o"
   )

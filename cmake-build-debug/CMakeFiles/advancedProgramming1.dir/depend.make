@@ -30,6 +30,7 @@ CMakeFiles/advancedProgramming1.dir/src/client/src/Game.cpp.o: ../src/client/inc
 CMakeFiles/advancedProgramming1.dir/src/client/src/Game.cpp.o: ../src/client/include/HumanPlayer.h
 CMakeFiles/advancedProgramming1.dir/src/client/src/Game.cpp.o: ../src/client/include/Player.h
 CMakeFiles/advancedProgramming1.dir/src/client/src/Game.cpp.o: ../src/client/include/RemotePlayer.h
+CMakeFiles/advancedProgramming1.dir/src/client/src/Game.cpp.o: ../src/client/include/SettingData.h
 CMakeFiles/advancedProgramming1.dir/src/client/src/Game.cpp.o: ../src/client/include/Square.h
 CMakeFiles/advancedProgramming1.dir/src/client/src/Game.cpp.o: ../src/client/src/Game.cpp
 
@@ -54,6 +55,9 @@ CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.o: ../src/cl
 CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.o: ../src/client/include/Square.h
 CMakeFiles/advancedProgramming1.dir/src/client/src/RemotePlayer.cpp.o: ../src/client/src/RemotePlayer.cpp
 
+CMakeFiles/advancedProgramming1.dir/src/client/src/SettingData.cpp.o: ../src/client/include/SettingData.h
+CMakeFiles/advancedProgramming1.dir/src/client/src/SettingData.cpp.o: ../src/client/src/SettingData.cpp
+
 CMakeFiles/advancedProgramming1.dir/src/client/src/Square.cpp.o: ../src/client/include/Square.h
 CMakeFiles/advancedProgramming1.dir/src/client/src/Square.cpp.o: ../src/client/src/Square.cpp
 
@@ -66,6 +70,7 @@ CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o: ../src/client/inc
 CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o: ../src/client/include/HumanPlayer.h
 CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o: ../src/client/include/Player.h
 CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o: ../src/client/include/RemotePlayer.h
+CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o: ../src/client/include/SettingData.h
 CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o: ../src/client/include/Square.h
 CMakeFiles/advancedProgramming1.dir/src/client/src/main.cpp.o: ../src/client/src/main.cpp
 
