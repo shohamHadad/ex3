@@ -65,7 +65,7 @@ int ClientPlayer::readOrder() {
  * function name: chooseSquare
  * input: vector of possible move of player, player current and player oppoent
  * output: the square that player choose. 
- * operation: 
+ * operation: get a valid move from the user and returns it
  */
 Square ClientPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Player* opponent) {
 	cout << type << ": It's your move. ";
@@ -89,11 +89,12 @@ Square ClientPlayer::chooseSquare(vector<Square> possibleMoves, Player* current,
 		cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 	}
 }
+
 /**
- * function name: Board
- * input: the board's size
- * output: new object of board
- * operation: constructor
+ * function name: noMove
+ * input: player current and player opponent
+ * output: void
+ * operation: the function checks the case that there is no move to the player
  */
 void ClientPlayer::noMove(Player* current, Player* opponent) {
     cout << current->getType() << " Has no possible moves. Play passes back to " << opponent->getType() << endl;
@@ -104,10 +105,10 @@ void ClientPlayer::noMove(Player* current, Player* opponent) {
     }
 }
 /**
- * function name: Board
- * input: the board's size
- * output: new object of board
- * operation: constructor
+ * function name: endGame
+ * input: void
+ * output: void
+ * operation: the function checks the case that the end game
  */
 void ClientPlayer::endGame() {
 	int end = -1;
@@ -116,6 +117,7 @@ void ClientPlayer::endGame() {
 		throw "Error writing move to socket";
 	}
 }
+
 /**
  * function name: printPossibleMoves
  * input: vector<Square>
@@ -133,6 +135,13 @@ void ClientPlayer::printPossibleMoves(vector <Square> moves) {
 	cout << endl;
 }
 
+
+/**
+ * function name: waitForOtherPlayer
+ * input: void
+ * output: void
+ * operation: the function wait for other player
+ */
 void ClientPlayer::waitForOtherPlayer() {
 	cout << "Waiting for other player to join..." << endl;
 	// read the server's message
@@ -143,6 +152,12 @@ void ClientPlayer::waitForOtherPlayer() {
 	}
 }
 
+/**
+ * function name: getNextMove
+ * input: void 
+ * output: square
+ * operation: the function get next move of player
+ */
 Square ClientPlayer::getNextMove() {
 	// read the opponent's next move from the socket
 	int x, y;
