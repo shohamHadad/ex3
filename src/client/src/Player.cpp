@@ -82,6 +82,12 @@ bool Player::equals(Player* other) {
 	return false;
 }
 
+/**
+ * function name: setType
+ * input: void
+ * output: void
+ * operation: setType
+ */
 void Player::setType(char t) {
 	type = t;
 }
