@@ -73,15 +73,3 @@ void Square::setType(char t) {
 char Square::getType() {
 	return type;
 }
-
-Square Square:: fromString(const char* string){
-	int x, y;
-	x = string[0] - '0';
-	y = string[1] - '0';
-	return Square(x,y);
-}
-char* Square:: toString(char* str){
-	str[0] = static_cast<char>(x);
-	str[1] = static_cast<char>(y);
-	return str;
-}
