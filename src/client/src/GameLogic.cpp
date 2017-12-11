@@ -13,7 +13,12 @@ GameLogic::GameLogic(Board* board): turns(0) {
 	this->board = board;
 }
 
-
+/**
+ * function name: GameLogic
+ * input: board object
+ * output: copy GameLogic object
+ * operation: copy constructor
+ */
 GameLogic::GameLogic(const GameLogic &gameLogic) {
     board =  new Board(*gameLogic.getBoard());
 }
