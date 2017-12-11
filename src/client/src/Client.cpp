@@ -8,12 +8,28 @@
 #include <unistd.h>
 using namespace std;
 
+/**
+ * function name: Client
+ * input: the serverIp and the serverPort
+ * output: new object of client
+ * operation: constructor
+ */
 Client::Client(const char *serverIP, int serverPort): serverIP(serverIP), serverPort(serverPort) {
 }
-
+/**
+ * function name: ~Client
+ * input: void
+ * output: delete object of client
+ * operation: delete a constructor
+ */
 Client::~Client() {
 }
-
+/**
+ * function name: connectToServer
+ * input: void
+ * output: void
+ * operation: the function connects the client to the server.
+ */
 void Client::connectToServer() {
 	// Create a socket point
 	clientSocket = socket(AF_INET, SOCK_STREAM, 0);
