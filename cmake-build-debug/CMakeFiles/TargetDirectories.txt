@@ -1,3 +1,0 @@
-/home/shir/CLionProjects/ex4_client/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/shir/CLionProjects/ex4_client/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/shir/CLionProjects/ex4_client/cmake-build-debug/CMakeFiles/advancedProgramming1.dir
