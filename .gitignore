@@ -11,3 +11,4 @@ git log
 *.idea
 cmake-build-debug/
 src/client/cmake-build-debug/
+CMakeLists.txt
