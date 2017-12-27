@@ -5,6 +5,11 @@
 #include "Player.h"
 #include "Square.h"
 #include <limits>
+#include <string>
+#include <sstream>
+#include <cstdlib>
+#include <stdlib.h>
+#include <string.h>
 
 class ClientPlayer: public Client,  public Player {
 public:

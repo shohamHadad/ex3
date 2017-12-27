@@ -30,18 +30,32 @@ ClientPlayer::~ClientPlayer() {
  * operation: write the given numbers to the socket
  */
 void ClientPlayer::sendNextMove(int x, int y) {
-    int xCpy = x;
-    int yCpy = y;
-	// write the move to the socket
-	int n = write(clientSocket, &xCpy, sizeof(int));
-	if (n == -1) {
-		throw "Error writing move to socket";
-	}
-    n = write(clientSocket, &yCpy, sizeof(int));
+	ostringstream messageBuilder;
+	messageBuilder << x << ' ' << y;
+	const char* move = messageBuilder.str().c_str();
+
+    // write the move's size to the socket
+
+    int size = strlen(move);
+
+    cout << "client: " <<clientSocket<<endl;
+    cout << "   sends size: " <<strlen(move)<<endl;
+
+    int n = write(clientSocket, &size, sizeof(size));
     if (n == -1) {
         throw "Error writing move to socket";
     }
+
+	// write the move to the socket
+
+    cout << "   and sends move: " <<move<<endl;
+
+	n = write(clientSocket, move, strlen(move));
+	if (n == -1) {
+		throw "Error writing move to socket";
+	}
 }
+
 /**
  * function name: readOrder
  * input: void
@@ -53,7 +67,7 @@ int ClientPlayer::readOrder() {
 	int order;
 	int n = read(clientSocket, &order, sizeof(order));
 	if (n == -1) {
-		throw "Error reading opponentMove from socket";
+		throw "Error reading order from socket";
 	}
 	return order;
 }
@@ -96,7 +110,9 @@ Square ClientPlayer::chooseSquare(vector<Square> possibleMoves, Player* current,
 void ClientPlayer::noMove(Player* current, Player* opponent) {
     cout << current->getType() << " Has no possible moves. Play passes back to " << opponent->getType() << endl;
     int noMove = -2;
-    int n = write(clientSocket, &noMove, sizeof(int));
+
+    // write noMove to the socket
+    int n = write(clientSocket, &noMove, sizeof(noMove));
     if (n == -1) {
         throw "Error writing move to socket";
     }
@@ -109,7 +125,7 @@ void ClientPlayer::noMove(Player* current, Player* opponent) {
  */
 void ClientPlayer::endGame() {
 	int end = -1;
-	int n = write(clientSocket, &end, sizeof(int));
+	int n = write(clientSocket, &end, sizeof(end));
 	if (n == -1) {
 		throw "Error writing move to socket";
 	}
@@ -156,12 +172,45 @@ void ClientPlayer::waitForOtherPlayer() {
  * operation: read the next move from the socket
  */
 Square ClientPlayer::getNextMove() {
-	// read the opponent's next move from the socket
+//    int size;
+//    // read the string's size
+//    int n = read(clientSocket, &size, sizeof(int));
+//    if (n == -1) {
+//        throw "Error reading opponentMove from socket";
+//    }
+//    // read the opponent's x from the socket
+//	stringstream xBuilder;
+//	for (int i = 0; i < size; i++) {
+//		char c;
+//		int n = read(clientSocket, &c, sizeof(c));
+//		if (n == -1) {
+//			throw "Error reading opponentMove from socket";
+//		}
+//		xBuilder << c;
+//	}
+//	string strX = xBuilder.str();
+//	int x = atoi(strX.c_str());
+//
+//	// read the opponent's y from the socket
+//    stringstream yBuilder;
+//	for (int i = 0; i < sizeof(int); i++) {
+//		char c;
+//		int n = read(clientSocket, &c, sizeof(c));
+//		if (n == -1) {
+//			throw "Error reading opponentMove from socket";
+//		}
+//		yBuilder << c;
+//	}
+//	string strY = yBuilder.str();
+//	int y = atoi(strY.c_str());
+
 	int x, y;
+	// read x from socket
 	int n = read(clientSocket, &x, sizeof(x));
 	if (n == -1) {
 		throw "Error reading opponentMove from socket";
 	}
+	//read y from socket
 	n = read(clientSocket, &y, sizeof(y));
 	if (n == -1) {
 		throw "Error reading opponentMove from socket";
