@@ -60,3 +60,7 @@ void Client::connectToServer() {
 	}
 	cout << "Connected to server" << endl;
 }
+
+int Client::getClientSocket() {
+	return clientSocket;
+}

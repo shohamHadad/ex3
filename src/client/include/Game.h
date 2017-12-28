@@ -9,6 +9,7 @@
 #include "stdlib.h"
 #include <iostream>
 #include <limits>
+#include "../include/CommandManager.h"
 using namespace std;
 
 

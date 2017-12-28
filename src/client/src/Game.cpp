@@ -59,7 +59,6 @@ void Game::initialize() {
 	default:
 		break;
 	}
-
 }
 
 
@@ -98,8 +97,13 @@ void Game::assignClientAndRemotePlayers(SettingData* sd) {
 		ClientPlayer* cp = new ClientPlayer(sd->getIP(), sd->getPort());
 		RemotePlayer* rp = new RemotePlayer();
 		cp->connectToServer();
-		int cpOrder = cp->readOrder();
-		if (cpOrder == 1) {
+		CommandManager* manager = new CommandManager(cp->getClientSocket());
+		int order = -1;
+		while (order == -1) {
+			vector<string> command = manager->commandMenu();
+			order = manager->executeCommand(command[0], command[1]);
+		}
+		if (order == 1) {
 			X = cp;
 			O = rp;
             cp->waitForOtherPlayer();
@@ -109,6 +113,7 @@ void Game::assignClientAndRemotePlayers(SettingData* sd) {
 		}
 		X->setType('X');
 		O->setType('O');
+		delete manager;
     } catch (const char *msg) {
 		cout << "Failed to connect to server. Reason: " << msg << endl;
 		exit(-1);

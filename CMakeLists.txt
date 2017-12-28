@@ -23,8 +23,17 @@ set(SOURCE_FILES
 		src/client/src/RemotePlayer.cpp
         src/client/include/RemotePlayer.h
         src/client/src/Client.cpp
-        src/client/include/Client.h src/client/include/SettingData.h src/client/src/SettingData.cpp)
+        src/client/include/Client.h
+		src/client/include/SettingData.h
+		src/client/src/SettingData.cpp
+		src/client/src/Command.cpp
+		src/client/include/Command.h
+		src/client/src/CommandManager.cpp
+		src/client/include/CommandManager.h
+		src/client/include/StartCommand.h
+		src/client/src/StartCommand.cpp
+		src/client/include/JoinCommand.h
+		src/client/src/JoinCommand.cpp
+		src/client/include/ListCommand.h src/client/src/ListCommand.cpp)
 
-
-
-add_executable(advancedProgramming1	${SOURCE_FILES} src/client/src/main.cpp)
+add_executable(advancedProgramming1	${SOURCE_FILES} src/client/src/main.cpp src/client/include/Command.h src/client/src/CommandManager.cpp src/client/include/CommandManager.h src/client/include/StartCommand.h src/client/src/StartCommand.cpp src/client/include/JoinCommand.h src/client/src/JoinCommand.cpp src/client/src/Command.cpp src/client/include/ListCommand.h src/client/src/ListCommand.cpp)
