@@ -14,9 +14,6 @@ class JoinCommand: public Command {
 public:
     JoinCommand(int scoket);
     int execute(string name);
-
-private:
-    int socket;
 };
 
 

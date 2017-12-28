@@ -13,7 +13,7 @@ using namespace std;
 class CommandManager {
 public:
     CommandManager(int socket);
-    ~CommandsManager();
+    ~CommandManager();
     int executeCommand(string command, string name);
     vector<string> commandMenu();
 

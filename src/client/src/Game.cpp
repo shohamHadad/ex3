@@ -34,8 +34,9 @@ Game::~Game() {
  */
 void Game::initialize() {
 	cout << "Welcome to Reversi!" << endl << "Choose an opponent type:"	<< endl	<<
-			"1. a human local player" << endl << "2. an AI player" << endl << "3. a remote player"
-			<< endl;
+			"	1. a human local player" << endl <<
+		 	"	2. an AI player" << endl <<
+		 	"	3. a remote player"	<< endl;
 	int choice;
 	cin >> choice;
 	while (choice != 1 && choice != 2 && choice != 3) {

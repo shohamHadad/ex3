@@ -12,7 +12,7 @@ int CommandManager::executeCommand(string command, string name) {
     return commandObj->execute(name);
 }
 
-CommandManager::~CommandsManager() {
+CommandManager::~CommandManager() {
     map<string, Command *>::iterator it;
     for (it = commandsMap.begin(); it != commandsMap.end(); it++) {
         delete it->second;
@@ -28,7 +28,7 @@ vector<string> CommandManager::commandMenu() {
         cout << "   2 to join an existing game" << endl;
         cout << "   3 to see the list of available games" << endl;
         cin >> choice;
-    } while (choice < 1 && choice > 3);
+    } while (choice < 1 || choice > 3);
     // match command to choice
     string command;
     vector<string> userInput;
@@ -42,8 +42,8 @@ vector<string> CommandManager::commandMenu() {
         // if user chose to see the list, there is no need to take name
         case 3:
             command = "list_games";
-            userInput[0] = command;
-            userInput[1] = "";
+            userInput.push_back(command);
+            userInput.push_back(" ");
             return userInput;
         default:
             break;
@@ -52,7 +52,7 @@ vector<string> CommandManager::commandMenu() {
     cout << "Please enter your game's name: ";
     string name;
     cin >> name;
-    userInput[0] = command;
-    userInput[1] = name;
+    userInput.push_back(command);
+    userInput.push_back(name);
     return userInput;
 }

@@ -9,9 +9,6 @@ class ListCommand: public Command {
 public:
     ListCommand(int scoket);
     int execute(string name);
-
-private:
-    int socket;
 };
 
 #endif //ADVANCEDPROGRAMMING1_LISTCOMMAND_H

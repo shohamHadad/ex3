@@ -1,5 +1,7 @@
 #include "../include/Command.h"
 
+Command::Command(int socket): socket(socket){}
+
 /**
  * function name: writeCommand
  * input: char*, string
@@ -11,24 +13,25 @@ void Command::writeCommand(char* commandName, string name) {
     int numOfLetters = strlen(commandName);
     int n = write(socket, &numOfLetters, sizeof(numOfLetters));
     if (n == -1) {
-        throw "Error writing command to socket";
+        throw "Error writing command's length to socket";
     }
     n =  write(socket, commandName, numOfLetters);
     if (n == -1) {
-        throw "Error writing command to socket";
+        throw "Error writing command's name to socket";
     }
 
     // writing name to socket
     numOfLetters = strlen(name.c_str());
     n = write(socket, &numOfLetters, sizeof(numOfLetters));
     if (n == -1) {
-        throw "Error writing command to socket";
+        throw "Error writing command's argument's length to socket";
     }
     n =  write(socket, name.c_str(), numOfLetters);
     if (n == -1) {
-        throw "Error writing command to socket";
+        throw "Error writing command's argument to socket";
     }
 }
+
 
 /**
  * function name: nonValidRead
@@ -46,7 +49,6 @@ bool Command::nonValidRead(int n) const {
     };
     return false;
 }
-
 
 int Command::executeFeedback(int order) {
     // reading server's message

@@ -14,9 +14,6 @@ class StartCommand: public Command {
 public:
     StartCommand(int scoket);
     int execute(string name);
-
-private:
-    int socket;
 };
 
 #endif //ADVANCEDPROGRAMMING1_STARTCOMMAND_H

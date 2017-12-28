@@ -1,6 +1,6 @@
 #include "../include/ListCommand.h"
 
-ListCommand::ListCommand(int socket): socket(socket){}
+ListCommand::ListCommand(int socket): Command(socket) {}
 
 int ListCommand::execute(string name) {
     writeCommand("list_games", name);
