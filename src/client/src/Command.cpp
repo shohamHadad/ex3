@@ -58,7 +58,7 @@ int Command::executeFeedback(int order) {
         throw "Error reading from socket";
     }
     // if the message is order, it means everything worked.
-    if (numOfLetters == order){
+    if (numOfLetters == order) {
         return order;
     }
     // if the message isn't the order it means we have to read on
