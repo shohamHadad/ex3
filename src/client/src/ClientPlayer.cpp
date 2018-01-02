@@ -142,7 +142,7 @@ void ClientPlayer::printPossibleMoves(vector <Square> moves) {
 
 
 /**
- * function name: waitForOtherPlayer
+     * function name: waitForOtherPlayer
  * input: void
  * output: void
  * operation: stops the flow of the program until a message that another player's joined is received
@@ -167,7 +167,7 @@ Square ClientPlayer::getNextMove() {
 	int x, y;
 	// read x from socket
 	int n = read(clientSocket, &x, sizeof(x));
-	if (n == -1) {
+    if (n == -1) {
 		throw "Error reading opponent's move from socket";
 	}
 	//read y from socket
