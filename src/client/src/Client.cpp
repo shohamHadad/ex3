@@ -61,6 +61,12 @@ void Client::connectToServer() {
 	cout << "Connected to server" << endl;
 }
 
+/**
+ * function name:getClientSocket
+ * input: void
+ * output: int
+ * operation: the function return clientSocket.
+ */
 int Client::getClientSocket() {
 	return clientSocket;
 }
