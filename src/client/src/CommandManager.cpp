@@ -2,9 +2,9 @@
 #include "../include/CommandManager.h"
 
 /**
- * function name: CommandsManager()
- * input: sturct commandArgs initArgs
- * output: Command
+ * function name: CommandsManager
+ * input: int
+ * output: CommandManager
  * operation: constructor
  */
 CommandManager::CommandManager(int socket){
@@ -16,8 +16,8 @@ CommandManager::CommandManager(int socket){
 /**
  * function name: executeCommand
  * input: string command, string name
- * output:int
- * operation: The function sends to the correct command
+ * output: int
+ * operation: execute the given command using the private map
  */
 int CommandManager::executeCommand(string command, string name) {
     Command* commandObj = commandsMap[command];
@@ -31,17 +31,17 @@ int CommandManager::executeCommand(string command, string name) {
  * operation: destructor
  */
 CommandManager::~CommandManager() {
-    map<string, Command *>::iterator it;
+    map<string, Command*>::iterator it;
     for (it = commandsMap.begin(); it != commandsMap.end(); it++) {
         delete it->second;
     }
 }
 
 /**
- * function name: CommandManager
+ * function name: CommandMenu
  * input: void
  * output: vector<string>
- * operation: The function print the commandMenu
+ * operation: get the user's desired command and returns it
  */
 vector<string> CommandManager::commandMenu() {
     // get the command type from the user
@@ -63,19 +63,19 @@ vector<string> CommandManager::commandMenu() {
         case 2:
             command = "join";
             break;
-        // if user chose to see the list, there is no need to take name
         case 3:
             command = "list_games";
-            userInput.push_back(command);
-            userInput.push_back(" ");
-            return userInput;
         default:
             break;
     }
-    // get the game's name from user and return the input
-    cout << "Please enter your game's name: ";
-    string name;
-    cin >> name;
+    string name = " ";
+
+    // if user didn't choose to see the list, we need to take name
+    if (command != "list_games") {
+        // get the game's name from user and return the input
+        cout << "Please enter your game's name: ";
+        cin >> name;
+    }
     userInput.push_back(command);
     userInput.push_back(name);
     return userInput;

@@ -2,7 +2,7 @@
 
 /**
  * function name: ListCommand
- * input: gets a socket, and list of args
+ * input: int
  * output: new object of ListCommand
  * operation: constructor
  */
@@ -12,7 +12,7 @@ ListCommand::ListCommand(int socket): Command(socket) {}
  * function name: execute
  * input: string name
  * output: int
- * operation: The function write to the server list of rooms game
+ * operation: send a list command to the server and execute the server's feedback
  */
 int ListCommand::execute(string name) {
     writeCommand("list_games", name);

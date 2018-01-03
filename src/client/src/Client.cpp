@@ -16,6 +16,7 @@ using namespace std;
  */
 Client::Client(const char *serverIP, int serverPort): serverIP(serverIP), serverPort(serverPort) {
 }
+
 /**
  * function name: ~Client
  * input: void
@@ -24,6 +25,7 @@ Client::Client(const char *serverIP, int serverPort): serverIP(serverIP), server
  */
 Client::~Client() {
 }
+
 /**
  * function name: connectToServer
  * input: void

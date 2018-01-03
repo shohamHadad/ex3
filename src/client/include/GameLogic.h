@@ -28,9 +28,6 @@ public:
 	Player* whosTurn(Player*, Player*);
 	void endGame(Player*, Player*);
     Board* getBoard() const;
-
-    void setBoard(Board *board);
-
 };
 
 #endif /* GAMELOGIC_H_ */

@@ -27,7 +27,7 @@ ClientPlayer::~ClientPlayer() {
  * function name: sendNextMove
  * input: int x, int y
  * output: void
- * operation: write the given numbers to the socket
+ * operation: write the given numbers to the socket as a move
  */
 void ClientPlayer::sendNextMove(int x, int y) {
 	ostringstream messageBuilder;
@@ -49,26 +49,10 @@ void ClientPlayer::sendNextMove(int x, int y) {
 }
 
 /**
- * function name: readOrder
- * input: void
- * output: int
- * operation: read the player's order from the socket
- */
-int ClientPlayer::readOrder() {
-	// read the player's order from the socket
-	int order;
-	int n = read(clientSocket, &order, sizeof(order));
-	if (n == -1) {
-		throw "Error reading order from socket";
-	}
-	return order;
-}
-
-/**
  * function name: chooseSquare
  * input: vector of possible move of player, player current, player opponent
  * output: Square
- * operation: get a valid move from the user and returns it
+ * operation: get a valid move from the user, send it to socket and returns it
  */
 Square ClientPlayer::chooseSquare(vector<Square> possibleMoves, Player* current, Player* opponent) {
 	cout << type << ": It's your move. ";
@@ -97,7 +81,7 @@ Square ClientPlayer::chooseSquare(vector<Square> possibleMoves, Player* current,
  * function name: noMove
  * input: player current, player opponent
  * output: void
- * operation: write message to socket that the current player has no move
+ * operation: notify the server that the current player has no move (via the socket)
  */
 void ClientPlayer::noMove(Player* current, Player* opponent) {
     cout << current->getType() << " Has no possible moves. Play passes back to " << opponent->getType() << endl;
@@ -109,11 +93,12 @@ void ClientPlayer::noMove(Player* current, Player* opponent) {
         throw "Error writing move to socket";
     }
 }
+
 /**
  * function name: endGame
  * input: void
  * output: void
- * operation: write message to socket that the game is over
+ * operation: notify the server that the game is over (via the socket)
  */
 void ClientPlayer::endGame() {
 	int end = -1;
@@ -142,7 +127,7 @@ void ClientPlayer::printPossibleMoves(vector <Square> moves) {
 
 
 /**
-     * function name: waitForOtherPlayer
+ * function name: waitForOtherPlayer
  * input: void
  * output: void
  * operation: stops the flow of the program until a message that another player's joined is received
@@ -161,7 +146,7 @@ void ClientPlayer::waitForOtherPlayer() {
  * function name: getNextMove
  * input: void 
  * output: square
- * operation: read the next move from the socket
+ * operation: read the next move from the socket and returns it
  */
 Square ClientPlayer::getNextMove() {
 	int x, y;

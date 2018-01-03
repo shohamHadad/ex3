@@ -286,13 +286,3 @@ void GameLogic::endGame(Player* p1, Player* p2) {
 Board* GameLogic::getBoard() const{
     return this->board;
 }
-
-/**
- * function name: setBoard
- * input: Board*
- * output: void
- * operation: set the board of the game.
- */
-void GameLogic::setBoard(Board *board) {
-    GameLogic::board = board;
-}

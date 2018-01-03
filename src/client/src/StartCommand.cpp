@@ -13,7 +13,7 @@ StartCommand:: StartCommand(int socket): Command(socket) {}
  * function name: execute
  * input: string name
  * output: int
- * operation: The function write to the server a new name of room
+ * operation: send the server a start command with the name of the game and execut the server's feedback
  */
 int StartCommand::execute(string name) {
     writeCommand("start", name);

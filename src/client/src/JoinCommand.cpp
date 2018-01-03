@@ -2,7 +2,7 @@
 
 /**
  * function name: JoinCommand
- * input: gets a socket, and list of args
+ * input: int
  * output: new object of JoinCommand
  * operation: constructor
  */
@@ -12,7 +12,7 @@ JoinCommand::JoinCommand(int socket): Command(socket) {}
  * function name: execute
  * input: string name
  * output: int
- * operation: The function join the player whit play exist
+ * operation: send a join command to server with the name of the game to join, and execute the server's feedback
  */
 int JoinCommand::execute(string name) {
     writeCommand("join", name);

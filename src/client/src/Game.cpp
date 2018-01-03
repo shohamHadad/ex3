@@ -91,7 +91,8 @@ void Game::play() {
  * function name: assignClientAndRemotePlayers
  * input: SettingData* sd
  * output: void
- * operation: creates ClientPlayer and RemotePlayer from the given SettingData
+ * operation: get the user's command, and according to it and to the given SettingData creates
+ *            ClientPlayer and RemotePlayer
  */
 void Game::assignClientAndRemotePlayers(SettingData* sd) {
 	try {

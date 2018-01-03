@@ -62,7 +62,8 @@ bool Command::nonValidRead(int n) const {
  * function name: executeFeedback
  * input: int order
  * output: int
- * operation: The function reading server's message
+ * operation: read server's answer to the command. returns the order if the server executed the command.
+ *            if it didn't, print the message that explains why and return -1.
  */
 int Command::executeFeedback(int order) {
     // reading server's message
