@@ -1,17 +1,35 @@
 
 #include "../include/CommandManager.h"
 
+/**
+ * function name: CommandsManager()
+ * input: sturct commandArgs initArgs
+ * output: Command
+ * operation: constructor
+ */
 CommandManager::CommandManager(int socket){
     commandsMap["start"] = new StartCommand(socket);
     commandsMap["join"] = new JoinCommand(socket);
     commandsMap["list_games"] = new ListCommand(socket);
 }
 
+/**
+ * function name: executeCommand
+ * input: string command, string name
+ * output:int
+ * operation: The function sends to the correct command
+ */
 int CommandManager::executeCommand(string command, string name) {
     Command* commandObj = commandsMap[command];
     return commandObj->execute(name);
 }
 
+/**
+ * function name: ~CommandsManager
+ * input: void
+ * output: void
+ * operation: destructor
+ */
 CommandManager::~CommandManager() {
     map<string, Command *>::iterator it;
     for (it = commandsMap.begin(); it != commandsMap.end(); it++) {
@@ -19,6 +37,12 @@ CommandManager::~CommandManager() {
     }
 }
 
+/**
+ * function name: CommandManager
+ * input: void
+ * output: vector<string>
+ * operation: The function print the commandMenu
+ */
 vector<string> CommandManager::commandMenu() {
     // get the command type from the user
     int choice = 0;
