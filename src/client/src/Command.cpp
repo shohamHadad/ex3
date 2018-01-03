@@ -1,5 +1,13 @@
 #include "../include/Command.h"
 
+
+
+/**
+ * function name: Command
+ * input: int socket
+ * output: new object of Command
+ * operation: constructor
+ */
 Command::Command(int socket): socket(socket){}
 
 /**
@@ -50,6 +58,12 @@ bool Command::nonValidRead(int n) const {
     return false;
 }
 
+/**
+ * function name: executeFeedback
+ * input: int order
+ * output: int
+ * operation: The function reading server's message
+ */
 int Command::executeFeedback(int order) {
     // reading server's message
     int numOfLetters;
