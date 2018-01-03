@@ -12,7 +12,7 @@ ListCommand::ListCommand(int socket): Command(socket) {}
  * function name: execute
  * input: string name
  * output: int
- * operation: The function write to the client list of rooms game
+ * operation: The function write to the server list of rooms game
  */
 int ListCommand::execute(string name) {
     writeCommand("list_games", name);
